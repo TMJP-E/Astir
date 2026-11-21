@@ -2,6 +2,12 @@
 
 Aplicacion de gestion de reservaciones hoteleras.
 
+## Instalacion
+
+Para instalar y ejecutar la aplicacion, es necesario contar con la version 8.2.12-0 o superior de XAMPP, los modulos de servidor web y MySQL e importar la base de datos con anterioridad.
+
+Todos los archivos de la aplicacion se colocan en una carpeta, esa carpeta se coloca dentro de `htdocs` en la instalacion de XAMPP.
+
 ## Funcionalidades
 
 General
@@ -47,7 +53,6 @@ Gestion
 Reservaciones
 
 - [ ] Se guardan los resultados de busquedas anteriores.
-- [ ] Las busquedas se realizan mediante peticiones GET.
 
 Carrito
 
@@ -56,7 +61,7 @@ Carrito
 
 Manejo de Sesion
 
-- [ ] Se almacena la sesion mediante un header `HTTPOnly`, se genera y valida a traves del servidor.
+- [ ] Se almacena la sesion mediante un header `HTTPOnly`, se genera, guarda y valida a traves del servidor.
 - [ ] El rol del usuario se almacena en `localstorage`.
 - [ ] Validacion para paginas protegidas que requieren una sesion.
 
@@ -84,8 +89,6 @@ Table Users {
 Table Rooms {
   uuid binary(16) [pk, not null]
 
-  id int [not null, unique]
-
   name varchar(96) [not null]
 
   description varchar(512) [not null]
@@ -95,8 +98,6 @@ Table Rooms {
   price decimal(10,2) [not null]
 
   available int [not null, note: 'Must be >= 0']
-
-  image varchar(128)
 
   indexes {
     category [name: 'idx_rooms_category']
@@ -130,6 +131,20 @@ Table User_Rooms {
     room_uuid [name: 'idx_user_rooms_room']
   }
 }
+
+Table Images {
+  uuid binary(16) [pk, not null]
+
+  room_uuid binary(16) [not null]
+
+  url varchar(512) [not null]
+
+  indexes {
+    room_uuid [name: 'idx_images_room']
+  }
+}
+
+Ref: Images.room_uuid > Rooms.uuid
 
 Ref: Room_Commodities.room_uuid > Rooms.uuid
 
