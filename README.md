@@ -81,7 +81,7 @@ Table Users {
 
   email varchar(96) [not null, unique]
 
-  password varchar(60) [not null, note: 'Bcrypt hashed by the backend']
+  password varchar(255) [not null, note: 'Bcrypt hashed by the backend']
 
   role enum('regular', 'admin') [not null, default: 'regular']
 }
