@@ -226,6 +226,27 @@ function getAllUserRooms(): array
     );
 }
 
+/** Reservation list for a guest account, or for the whole administration view. */
+function getReservationRows(?string $userUuid): array
+{
+    $db = connectDatabase();
+    try {
+        $sql = "SELECT ur.user_uuid, ur.room_uuid, ur.quantity, u.name AS customer,
+                       r.name, r.category, r.price,
+                       (SELECT MIN(url) FROM images WHERE room_uuid = r.uuid) AS image
+                FROM user_rooms ur JOIN users u ON u.uuid = ur.user_uuid
+                JOIN rooms r ON r.uuid = ur.room_uuid";
+        $params = [];
+        if ($userUuid !== null) {
+            $sql .= " WHERE ur.user_uuid = ?";
+            $params[] = $userUuid;
+        }
+        return $db->execute_query($sql . " ORDER BY r.name, u.name", $params)->fetch_all(MYSQLI_ASSOC);
+    } finally {
+        $db->close();
+    }
+}
+
 /**
  * Searches for rooms using any combination of category, commodity, price,
  * availability, and name filters.
@@ -917,6 +938,7 @@ function insertUserRooms(string $userUuid, array $rooms): bool
  * @param int|null $available New non-negative available quantity, or null to preserve the current quantity.
  * @param array<int, string>|null $commodities Complete replacement array of commodity type strings, null to preserve, or [] to clear.
  * @param array<int, string>|null $images Complete replacement array of image paths, null to preserve, or [] to clear.
+ * @param array<int, string> $additionalImages Uploaded image paths to append under the room lock.
  * @return bool True when the database update is committed successfully.
  * @throws RuntimeException If no update value is provided, the room does not exist, validation fails, or the transaction fails.
  */
@@ -928,11 +950,12 @@ function updateRoom(
     mixed $price = null,
     mixed $available = null,
     mixed $commodities = null,
-    mixed $images = null
+    mixed $images = null,
+    array $additionalImages = []
 ): bool {
     try {
         Validator::validateUuid("Identificador de habitación", $uuid);
-        if ($name === null && $description === null && $category === null && $price === null && $available === null && $commodities === null && $images === null) {
+        if ($name === null && $description === null && $category === null && $price === null && $available === null && $commodities === null && $images === null && $additionalImages === []) {
             throw new RuntimeException("Debe proporcionar al menos un dato para actualizar.");
         }
     } catch (ValidationException $exception) {
@@ -994,8 +1017,10 @@ function updateRoom(
         mysqli_free_result($imagesResult);
         $imagesResult = null;
         // Preserve values whose arguments were not provided.
+        $replaceImages = $images !== null || $additionalImages !== [];
+        $replaceCommodities = $commodities !== null;
         $commodities ??= $currentCommodities;
-        $images ??= $currentImages;
+        $images = array_merge($images ?? $currentImages, $additionalImages);
         try {
             $room = new Room(
                 $uuid,
@@ -1031,7 +1056,7 @@ function updateRoom(
             throw new RuntimeException("No fue posible actualizar los datos de la habitación.");
         }
         // Replace commodities only if a new array was provided.
-        if (func_num_args() >= 7 && func_get_arg(6) !== null) {
+        if ($replaceCommodities) {
             $deleted = mysqli_execute_query(
                 $connection,
                 "DELETE FROM room_commodities WHERE room_uuid = ?",
@@ -1052,7 +1077,7 @@ function updateRoom(
             }
         }
         // Replace images only if a new array was provided.
-        if (func_num_args() >= 8 && func_get_arg(7) !== null) {
+        if ($replaceImages) {
             $deleted = mysqli_execute_query(
                 $connection,
                 "DELETE FROM images WHERE room_uuid = ?",
@@ -1326,10 +1351,11 @@ function removeUserRoom(string $userUuid, string $roomUuid): bool
  * if the UUID does not identify an existing user.
  *
  * @param string $userUuid UUID of the user whose role should be toggled.
+ * @param string|null $desiredRole Explicit role from a confirmation form, or null to toggle.
  * @return bool True when the role change is committed successfully.
  * @throws RuntimeException If the UUID is invalid, the user does not exist, or the transaction fails.
  */
-function toggleUserRole(string $userUuid): bool
+function toggleUserRole(string $userUuid, ?string $desiredRole = null): bool
 {
     try {
         Validator::validateUuid("Identificador de usuario", $userUuid);
@@ -1359,7 +1385,8 @@ function toggleUserRole(string $userUuid): bool
         if ($userData === null) {
             throw new RuntimeException("El usuario seleccionado no existe.");
         }
-        $newRole = $userData["role"] === "regular" ? "admin" : "regular";
+        $newRole = $desiredRole ?? ($userData["role"] === "regular" ? "admin" : "regular");
+        Validator::validateEnum("Rol", $newRole, ["regular", "admin"]);
         $updated = mysqli_execute_query(
             $connection,
             "UPDATE users SET role = ? WHERE uuid = ?",

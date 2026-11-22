@@ -1,164 +1,48 @@
+// El formato persistido sigue siendo { UUID: cantidad } bajo la clave de la sesión PHP.
 (() => {
-    "use strict";
+  const key = window.ASTIR.storageKey;
+  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
-    const storageKey = window.ASTIR_CART_CONFIG?.storageKey;
-    const itemsElement = document.getElementById("cart-items");
-    const totalElement = document.getElementById("cart-total");
-    const statusElement = document.getElementById("cart-status");
-    const currency = new Intl.NumberFormat("es-MX", { style: "currency", currency: "MXN" });
-    let cart = readCart();
-    let roomsByUuid = new Map();
-    let refreshRequest = 0;
-
-    function readCart() {
-        if (!storageKey) return {};
-        try {
-            const stored = JSON.parse(localStorage.getItem(storageKey) || "{}");
-            if (!stored || typeof stored !== "object" || Array.isArray(stored)) return {};
-            return Object.fromEntries(Object.entries(stored).filter(([uuid, quantity]) =>
-                /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(uuid) &&
-                Number.isSafeInteger(quantity) && quantity > 0
-            ));
-        } catch {
-            return {};
-        }
+  function read() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(key) || "{}");
+      if (!stored || typeof stored !== "object" || Array.isArray(stored)) return [];
+      return Object.entries(stored)
+        .filter(([id, qty]) => uuid.test(id) && Number.isSafeInteger(qty) && qty > 0)
+        .map(([id, qty]) => ({id, qty}));
+    } catch {
+      return [];
     }
+  }
 
-    function saveCart() {
-        try {
-            localStorage.setItem(storageKey, JSON.stringify(cart));
-            return true;
-        } catch {
-            showStatus("No fue posible guardar el carrito en este navegador.");
-            return false;
-        }
+  function write(items) {
+    try {
+      localStorage.setItem(key, JSON.stringify(Object.fromEntries(items.map(item => [item.id, item.qty]))));
+      return true;
+    } catch {
+      astirSnackbar("No fue posible guardar el carrito en este navegador.");
+      return false;
     }
+  }
 
-    function showStatus(message = "") {
-        statusElement.textContent = message;
+  function add(id, qty) {
+    const room = window.ASTIR.rooms.find(room => room.id === id);
+    const items = read();
+    const selected = items.find(item => item.id === id);
+    const next = (selected?.qty || 0) + qty;
+    if (!room || !Number.isSafeInteger(qty) || qty < 1 || next > room.available) {
+      astirSnackbar("Revisa la cantidad y las unidades disponibles.");
+      return;
     }
-
-    function makeElement(tag, className, text) {
-        const element = document.createElement(tag);
-        if (className) element.className = className;
-        if (text !== undefined) element.textContent = text;
-        return element;
+    if (!selected && items.length >= 100) {
+      astirSnackbar("El carrito admite hasta 100 habitaciones distintas.");
+      return;
     }
-
-    function renderCart() {
-        itemsElement.replaceChildren();
-        let total = 0;
-        const entries = Object.entries(cart);
-        if (entries.length === 0) {
-            itemsElement.append(makeElement("p", "muted", "Tu carrito está vacío."));
-            totalElement.textContent = currency.format(0);
-            return;
-        }
-
-        for (const [uuid, quantity] of entries) {
-            const room = roomsByUuid.get(uuid);
-            if (!room) continue;
-            const item = makeElement("div", "cart-item");
-            const title = makeElement("div", "cart-title");
-            title.append(makeElement("strong", "", room.name));
-            title.append(makeElement("span", "", currency.format(room.price * quantity)));
-            item.append(title);
-
-            const controls = makeElement("div", "cart-controls");
-            controls.append(makeElement("label", "", "Cantidad"));
-            const input = document.createElement("input");
-            input.type = "number";
-            input.min = "1";
-            input.max = String(room.available);
-            input.step = "1";
-            input.value = String(quantity);
-            input.setAttribute("aria-label", `Cantidad para ${room.name}`);
-            input.addEventListener("change", () => {
-                const next = Number(input.value);
-                if (!Number.isSafeInteger(next) || next < 1 || next > room.available) {
-                    input.value = String(cart[uuid]);
-                    showStatus(`La cantidad debe estar entre 1 y ${room.available} para ${room.name}.`);
-                    return;
-                }
-                cart[uuid] = next;
-                saveCart();
-                showStatus();
-                renderCart();
-            });
-            controls.append(input);
-            const remove = makeElement("button", "remove", "Quitar");
-            remove.type = "button";
-            remove.addEventListener("click", () => {
-                delete cart[uuid];
-                saveCart();
-                showStatus();
-                renderCart();
-            });
-            controls.append(remove);
-            item.append(controls);
-            item.append(makeElement("small", "muted", `${currency.format(room.price)} por noche · ${room.available} disponibles`));
-            itemsElement.append(item);
-            total += room.price * quantity;
-        }
-        totalElement.textContent = currency.format(total);
-    }
-
-    async function refreshCart() {
-        const requestId = ++refreshRequest;
-        const uuids = Object.keys(cart);
-        if (uuids.length === 0) {
-            roomsByUuid = new Map();
-            renderCart();
-            return;
-        }
-        try {
-            const response = await fetch("?action=cart_rooms", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ uuids })
-            });
-            const result = await response.json();
-            if (!response.ok) throw new Error(result.error || "No fue posible actualizar el carrito.");
-            if (requestId !== refreshRequest) return;
-
-            roomsByUuid = new Map(result.rooms.map(room => [room.uuid, room]));
-            let changed = false;
-            for (const uuid of uuids) {
-                const room = roomsByUuid.get(uuid);
-                if (!room || room.available < 1) {
-                    delete cart[uuid];
-                    changed = true;
-                } else if (cart[uuid] > room.available) {
-                    cart[uuid] = room.available;
-                    changed = true;
-                }
-            }
-            if (changed) saveCart();
-            showStatus(changed ? "Se ajustó el carrito según la disponibilidad actual." : "");
-            renderCart();
-        } catch (error) {
-            if (requestId !== refreshRequest) return;
-            showStatus(error.message || "No fue posible actualizar el carrito.");
-            itemsElement.replaceChildren(makeElement("p", "muted", "No se pudieron consultar los precios y la disponibilidad."));
-        }
-    }
-
-    document.querySelectorAll("[data-add-room]").forEach(button => {
-        button.addEventListener("click", () => {
-            const uuid = button.dataset.addRoom;
-            const available = Number(button.dataset.available);
-            const current = cart[uuid] || 0;
-            if (current >= available) {
-                showStatus(`Ya agregaste todas las unidades disponibles (${available}).`);
-                return;
-            }
-            cart[uuid] = current + 1;
-            saveCart();
-            showStatus("Habitación agregada al carrito.");
-            refreshCart();
-        });
+    if (selected) selected.qty = next;
+    else items.push({id, qty});
+    if (write(items)) astirSnackbar("Habitación agregada al carrito.", {
+      action: "Ver carrito", onAction: () => location.assign("carrito.php")
     });
-
-    renderCart();
-    refreshCart();
+  }
+  window.astirCart = {read, write, add};
 })();

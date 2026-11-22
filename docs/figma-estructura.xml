@@ -1,0 +1,2284 @@
+<canvas id="0:1" name="Vista" x="0" y="0" width="0" height="0">
+  <frame id="9:4" name="Small" x="-591" y="-1447" width="360" height="800" />
+  <frame id="46:2620" name="Small" x="-591" y="-506" width="639" height="800" />
+  <frame id="24:173" name="FrontS" x="-531" y="1758" width="360" height="1258">
+    <instance id="23:119" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="24:165" name="Frame 2" x="0" y="92" width="360" height="98">
+      <text id="24:163" name="Para juntas y negocios Confía en nosotros" x="15" y="8" width="330" height="82" />
+    </frame>
+    <frame id="23:129" name="Frame 1" x="0" y="202" width="360" height="312">
+      <instance id="24:144" name="CarouselS" x="12" y="7.20001220703125" width="336" height="297.5999755859375" />
+    </frame>
+    <frame id="24:169" name="Frame 3" x="0" y="526" width="360" height="105">
+      <text id="24:170" name="Reuniones, contratos, y un descanso" x="10" y="10" width="340" height="50" />
+      <text id="24:172" name="Tenemos todo para tus asuntos" x="10" y="70" width="340" height="25" />
+    </frame>
+    <text id="24:174" name="Alojamiento" x="52.5" y="643" width="255" height="42" />
+    <instance id="25:229" name="ShowCarousel" x="0" y="697" width="360" height="471" />
+    <instance id="85:7545" name="Footer" x="0" y="1180" width="360" height="78" />
+  </frame>
+  <frame id="38:9792" name="RegisterS" x="1468" y="1738" width="360" height="800">
+    <instance id="38:9793" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:10006" name="Frame 55" x="0" y="80" width="360" height="720">
+      <text id="38:9936" name="Registrar Usuario" x="55.5" y="157" width="249" height="33" />
+      <frame id="38:9937" name="Frame 45" x="12" y="214" width="336" height="288">
+        <frame id="38:9943" name="Frame 51" x="8" y="8" width="320" height="51">
+          <text id="38:9944" name="Nombre:" x="0" y="0" width="93" height="25" />
+          <instance id="38:9945" name="Field" x="0" y="27" width="320" height="24" />
+        </frame>
+        <frame id="38:9948" name="Frame 52" x="8" y="71" width="320" height="67">
+          <text id="38:9949" name="Correo electrónico:" x="0" y="0" width="204" height="25" />
+          <instance id="38:9950" name="Field" x="0" y="27" width="320" height="24" />
+          <text id="38:9965" name="El correo ingresado no es valido." x="0" y="53" width="202" height="14" />
+        </frame>
+        <frame id="38:9953" name="Frame 53" x="8" y="150" width="320" height="67">
+          <text id="38:9954" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="38:9955" name="Field" x="0" y="27" width="320" height="24" />
+          <text id="38:9966" name="La contraseña no tiene N caracteristicas." x="0" y="53" width="256" height="14" />
+        </frame>
+        <frame id="38:9958" name="Frame 54" x="8" y="229" width="320" height="51">
+          <text id="38:9959" name="Confirmar contraseña:" x="0" y="0" width="241" height="25" />
+          <instance id="38:9960" name="Field" x="0" y="27" width="320" height="24" />
+        </frame>
+      </frame>
+      <instance id="38:9969" name="Button" x="127" y="526" width="106" height="37" />
+    </frame>
+  </frame>
+  <frame id="77:5511" name="RegisterS" x="1468" y="2627" width="639" height="800">
+    <instance id="77:5512" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:5513" name="Frame 55" x="0" y="80" width="639" height="720">
+      <text id="77:5514" name="Registrar Usuario" x="195" y="163" width="249" height="33" />
+      <frame id="77:5515" name="Frame 45" x="12" y="220" width="615" height="276">
+        <frame id="77:5516" name="Frame 51" x="8" y="8" width="599" height="47">
+          <text id="77:5517" name="Nombre:" x="0" y="-2" width="93" height="25" />
+          <instance id="77:5518" name="FieldsS" x="0" y="25" width="599" height="24" />
+        </frame>
+        <frame id="77:5519" name="Frame 52" x="8" y="79" width="599" height="47">
+          <text id="77:5520" name="Correo electrónico:" x="0" y="-10" width="204" height="25" />
+          <instance id="77:5521" name="FieldsS" x="0" y="17" width="599" height="24" />
+          <text id="77:5522" name="El correo ingresado no es valido." x="0" y="43" width="202" height="14" />
+        </frame>
+        <frame id="77:5523" name="Frame 53" x="8" y="150" width="599" height="47">
+          <text id="77:5524" name="Contraseña:" x="0" y="-10" width="132" height="25" />
+          <instance id="77:5525" name="FieldsS" x="0" y="17" width="599" height="24" />
+          <text id="77:5526" name="La contraseña no tiene N caracteristicas." x="0" y="43" width="256" height="14" />
+        </frame>
+        <frame id="77:5527" name="Frame 54" x="8" y="221" width="599" height="47">
+          <text id="77:5528" name="Confirmar contraseña:" x="0" y="-2" width="241" height="25" />
+          <instance id="77:5529" name="FieldsS" x="0" y="25" width="599" height="24" />
+        </frame>
+      </frame>
+      <instance id="77:5530" name="Button" x="266.5" y="520" width="106" height="37" />
+    </frame>
+  </frame>
+  <frame id="38:10007" name="LoginS" x="2173" y="1738" width="360" height="800">
+    <instance id="38:10008" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:10009" name="Frame 55" x="0" y="80" width="360" height="720">
+      <text id="38:10010" name="Iniciar Sesión" x="85.5" y="230" width="189" height="33" />
+      <frame id="38:10011" name="Frame 45" x="12" y="287" width="336" height="142">
+        <frame id="38:10015" name="Frame 52" x="8" y="8" width="320" height="51">
+          <text id="38:10016" name="Correo electrónico:" x="0" y="0" width="204" height="25" />
+          <instance id="38:10017" name="Field" x="0" y="27" width="320" height="24" />
+        </frame>
+        <frame id="38:10019" name="Frame 53" x="8" y="83" width="320" height="51">
+          <text id="38:10020" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="38:10021" name="Field" x="0" y="27" width="320" height="24" />
+        </frame>
+      </frame>
+      <instance id="38:10026" name="Button" x="141" y="453" width="78" height="37" />
+    </frame>
+  </frame>
+  <frame id="77:5545" name="LoginS" x="2173" y="2631" width="639" height="800">
+    <instance id="77:5546" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:5547" name="Frame 55" x="0" y="80" width="639" height="720">
+      <text id="77:5548" name="Iniciar Sesión" x="225" y="232" width="189" height="33" />
+      <frame id="77:5549" name="Frame 45" x="12" y="289" width="615" height="138">
+        <frame id="77:5550" name="Frame 52" x="8" y="8" width="599" height="47">
+          <text id="77:5551" name="Correo electrónico:" x="0" y="-2" width="204" height="25" />
+          <instance id="77:5552" name="FieldsS" x="0" y="25" width="599" height="24" />
+        </frame>
+        <frame id="77:5553" name="Frame 53" x="8" y="79" width="599" height="51">
+          <text id="77:5554" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="77:5555" name="FieldsS" x="0" y="27" width="599" height="24" />
+        </frame>
+      </frame>
+      <instance id="77:5556" name="Button" x="280.5" y="451" width="78" height="37" />
+    </frame>
+  </frame>
+  <frame id="28:198" name="FrontS" x="-36" y="1758" width="639" height="1468.800048828125">
+    <instance id="28:199" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="28:200" name="Frame 2" x="0" y="92" width="639" height="98">
+      <text id="28:201" name="Para juntas y negocios Confía en nosotros" x="154.5" y="8" width="330" height="82" />
+    </frame>
+    <frame id="28:202" name="Frame 1" x="0" y="202" width="639" height="553.7999877929688">
+      <instance id="28:203" name="CarouselS" x="12" y="24.471405029296875" width="615" height="504.857177734375" />
+    </frame>
+    <frame id="28:204" name="Frame 3" x="0" y="767.7999877929688" width="639" height="80">
+      <text id="28:205" name="Reuniones, contratos, y un descanso" x="10" y="10" width="619" height="25" />
+      <text id="28:206" name="Tenemos todo para tus asuntos" x="10" y="45" width="619" height="25" />
+    </frame>
+    <text id="28:207" name="Alojamiento" x="192" y="859.7999877929688" width="255" height="42" />
+    <instance id="28:208" name="ShowCarousel" x="0" y="913.7999877929688" width="639" height="471" />
+    <instance id="85:7557" name="Footer" x="0" y="1396.800048828125" width="639" height="72" />
+  </frame>
+  <frame id="28:61" name="HabitacionesS" x="-531" y="3572" width="360" height="1159">
+    <instance id="28:63" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <instance id="28:190" name="SubSelectorS" x="0" y="80" width="360" height="41" />
+    <frame id="28:427" name="Frame 7" x="0" y="121" width="360" height="56">
+      <instance id="28:421" name="SearchBarS" x="8" y="8" width="344" height="40" />
+    </frame>
+    <frame id="32:2527" name="Frame 19" x="0" y="177" width="360" height="982">
+      <instance id="32:2460" name="RoomS" x="40" y="8" width="280" height="471" />
+      <instance id="32:2589" name="RoomS" x="40" y="503" width="280" height="471" />
+    </frame>
+  </frame>
+  <frame id="72:7261" name="HabitacionS" x="-531" y="7853" width="360" height="1271">
+    <instance id="72:7262" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="95:16223" name="Frame 67" x="0" y="80" width="360" height="1191">
+      <frame id="72:7266" name="Frame 19" x="0" y="0" width="360" height="675">
+        <instance id="72:7267" name="RoomS" x="8" y="8" width="344" height="659" />
+      </frame>
+      <frame id="95:15866" name="Frame 66" x="0" y="687" width="360" height="504">
+        <text id="95:15865" name="Ver Más Habitaciones" x="8" y="0" width="234" height="25" />
+        <instance id="95:15867" name="ShowCarousel" x="8" y="33" width="344" height="471" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="77:5569" name="HabitacionS" x="-70" y="7853" width="639" height="953">
+    <instance id="77:5570" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:5571" name="Frame 19" x="0" y="80" width="639" height="873">
+      <instance id="77:5572" name="RoomS" x="8" y="8" width="623" height="329" />
+      <frame id="95:16044" name="Frame 66" x="8" y="361" width="623" height="504">
+        <text id="95:16045" name="Ver Más Habitaciones" x="8" y="0" width="234" height="25" />
+        <instance id="95:16046" name="ShowCarousel" x="8" y="33" width="607" height="471" />
+      </frame>
+    </frame>
+  </frame>
+  <instance id="72:7593" name="Snackbar" x="817" y="3431" width="320" height="58" />
+  <frame id="38:7868" name="Comprar" x="5366" y="3563" width="360" height="1246">
+    <instance id="38:7869" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:7871" name="Frame 7" x="0" y="80" width="360" height="56">
+      <instance id="38:7872" name="SearchBarS" x="8" y="8" width="344" height="40" />
+    </frame>
+    <frame id="38:7873" name="Frame 19" x="0" y="136" width="360" height="1110">
+      <instance id="38:7874" name="RoomS" x="40" y="8" width="280" height="535" />
+      <instance id="38:7875" name="RoomS" x="40" y="567" width="280" height="535" />
+    </frame>
+  </frame>
+  <frame id="77:6892" name="Comprar" x="4658" y="3563" width="639" height="1246">
+    <instance id="77:6893" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:6894" name="Frame 7" x="0" y="80" width="639" height="56">
+      <instance id="77:6895" name="SearchBarS" x="8" y="8" width="623" height="40" />
+    </frame>
+    <frame id="77:6896" name="Frame 19" x="0" y="136" width="639" height="1110">
+      <instance id="77:6897" name="RoomS" x="27.5" y="8" width="280" height="535" />
+      <instance id="77:6898" name="RoomS" x="331.5" y="8" width="280" height="535" />
+      <instance id="77:7016" name="RoomS" x="27.5" y="567" width="280" height="535" />
+      <instance id="77:7067" name="RoomS" x="331.5" y="567" width="280" height="535" />
+    </frame>
+  </frame>
+  <frame id="38:8930" name="Carrito" x="5264" y="5681" width="360" height="806">
+    <instance id="38:8931" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:9170" name="Frame 35" x="0" y="80" width="360" height="41">
+      <text id="38:9169" name="Carrito" x="12" y="4" width="98" height="33" />
+    </frame>
+    <frame id="38:8934" name="Frame 19" x="0" y="121" width="360" height="685">
+      <instance id="38:9066" name="Carrito" x="8" y="8" width="344" height="72" />
+      <instance id="38:9100" name="Carrito" x="8" y="92" width="344" height="72" />
+      <instance id="38:9123" name="Carrito" x="8" y="176" width="344" height="72" />
+      <instance id="38:9209" name="Carrito" x="8" y="260" width="344" height="72" />
+      <instance id="38:9232" name="Carrito" x="8" y="344" width="344" height="72" />
+      <instance id="38:9255" name="Carrito" x="8" y="428" width="344" height="72" />
+      <instance id="38:9146" name="Carrito" x="8" y="512" width="344" height="72" />
+      <frame id="38:9172" name="Frame 36" x="8" y="596" width="344" height="39">
+        <text id="38:9173" name="Total:" x="0" y="14" width="57" height="25" />
+        <instance id="38:9184" name="FilterCostS" x="216" y="14" width="128" height="24" />
+      </frame>
+      <frame id="38:9190" name="Frame 37" x="8" y="647" width="344" height="30">
+        <instance id="38:9192" name="Button" x="0" y="0" width="110" height="30" />
+        <instance id="38:9195" name="Button" x="212" y="0" width="132" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="77:6520" name="Carrito" x="6715" y="6715" width="639" height="806">
+    <instance id="77:6521" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:6522" name="Frame 35" x="0" y="80" width="639" height="41">
+      <text id="77:6523" name="Carrito" x="12" y="4" width="98" height="33" />
+    </frame>
+    <frame id="77:6524" name="Frame 19" x="0" y="121" width="639" height="685">
+      <instance id="77:6525" name="Carrito" x="8" y="8" width="623" height="72" />
+      <instance id="77:6526" name="Carrito" x="8" y="92" width="623" height="72" />
+      <instance id="77:6527" name="Carrito" x="8" y="176" width="623" height="72" />
+      <instance id="77:6528" name="Carrito" x="8" y="260" width="623" height="72" />
+      <instance id="77:6529" name="Carrito" x="8" y="344" width="623" height="72" />
+      <instance id="77:6530" name="Carrito" x="8" y="428" width="623" height="72" />
+      <instance id="77:6531" name="Carrito" x="8" y="512" width="623" height="72" />
+      <frame id="77:6532" name="Frame 36" x="8" y="596" width="623" height="39">
+        <text id="77:6533" name="Total:" x="0" y="14" width="57" height="25" />
+        <instance id="77:6534" name="FilterCostS" x="495" y="14" width="128" height="24" />
+      </frame>
+      <frame id="77:6535" name="Frame 37" x="8" y="647" width="623" height="30">
+        <instance id="77:6536" name="Button" x="0" y="0" width="110" height="30" />
+        <instance id="77:6537" name="Button" x="491" y="0" width="132" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="72:8334" name="Carrito" x="4844" y="5681" width="360" height="800">
+    <instance id="72:8335" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="72:8336" name="Frame 35" x="0" y="80" width="360" height="41">
+      <text id="72:8337" name="Carrito" x="12" y="4" width="98" height="33" />
+    </frame>
+    <frame id="72:8338" name="Frame 19" x="0" y="121" width="360" height="679">
+      <text id="72:8542" name="Tu carrito esta vacío." x="69.5" y="8" width="221" height="25" />
+      <frame id="72:8548" name="Frame 58" x="8" y="590" width="344" height="81">
+        <frame id="72:8346" name="Frame 36" x="0" y="0" width="344" height="39">
+          <text id="72:8347" name="Total:" x="0" y="14" width="57" height="25" />
+          <instance id="72:8348" name="FilterCostS" x="216" y="14" width="128" height="24" />
+        </frame>
+        <frame id="72:8349" name="Frame 37" x="0" y="51" width="344" height="30">
+          <instance id="72:8350" name="Button" x="0" y="0" width="110" height="30" />
+          <instance id="72:8351" name="Button" x="212" y="0" width="132" height="30" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="77:6289" name="Carrito" x="4524" y="6715" width="639" height="800">
+    <instance id="77:6290" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:6291" name="Frame 35" x="0" y="80" width="639" height="41">
+      <text id="77:6292" name="Carrito" x="12" y="4" width="98" height="33" />
+    </frame>
+    <frame id="77:6293" name="Frame 19" x="0" y="121" width="639" height="679">
+      <text id="77:6294" name="Tu carrito esta vacío." x="209" y="8" width="221" height="25" />
+      <frame id="77:6295" name="Frame 58" x="8" y="590" width="623" height="81">
+        <frame id="77:6296" name="Frame 36" x="0" y="0" width="623" height="39">
+          <text id="77:6297" name="Total:" x="0" y="14" width="57" height="25" />
+          <instance id="77:6298" name="FilterCostS" x="495" y="14" width="128" height="24" />
+        </frame>
+        <frame id="77:6299" name="Frame 37" x="0" y="51" width="623" height="30">
+          <instance id="77:6300" name="Button" x="0" y="0" width="110" height="30" />
+          <instance id="77:6301" name="Button" x="491" y="0" width="132" height="30" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="38:9507" name="Carrito" x="6064" y="5681" width="360" height="800">
+    <instance id="38:9508" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:9692" name="Frame 44" x="0" y="80" width="360" height="720">
+      <text id="38:9687" name="Se han realizado sus reservaciones" x="12" y="238.5" width="336" height="66" />
+      <frame id="38:9691" name="Frame 43" x="144" y="336.5" width="72" height="72">
+        <frame id="38:9688" name="Check" x="12" y="12" width="48" height="48">
+          <vector id="38:9689" name="Vector" x="0" y="0" width="48" height="48" />
+          <vector id="38:9690" name="Vector" x="6.409999847412109" y="10.59000015258789" width="35.18000030517578" height="26.81999969482422" />
+        </frame>
+      </frame>
+      <instance id="38:9719" name="Button" x="118.5" y="440.5" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="72:8057" name="HabitacionesS" x="629" y="5905" width="639" height="800">
+    <instance id="72:8058" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="72:8059" name="Frame 44" x="0" y="80" width="639" height="720">
+      <text id="72:8060" name="Se ha agregado la habitación" x="12" y="255" width="615" height="33" />
+      <frame id="72:8061" name="Frame 43" x="283.5" y="320" width="72" height="72">
+        <frame id="72:8062" name="Check" x="12" y="12" width="48" height="48">
+          <vector id="72:8063" name="Vector" x="0" y="0" width="48" height="48" />
+          <vector id="72:8064" name="Vector" x="6.409999847412109" y="10.59000015258789" width="35.18000030517578" height="26.81999969482422" />
+        </frame>
+      </frame>
+      <instance id="72:8065" name="Button" x="258" y="424" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="38:9693" name="Carrito" x="5664" y="5681" width="360" height="800">
+    <instance id="38:9694" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:9695" name="Frame 44" x="0" y="80" width="360" height="720">
+      <text id="38:9696" name="Algo salió mal" x="12" y="255" width="336" height="33" />
+      <frame id="38:9697" name="Frame 43" x="144" y="320" width="72" height="72">
+        <frame id="38:9713" name="Sentiment very dissatisfied" x="12" y="12" width="48" height="48" />
+      </frame>
+      <instance id="38:9723" name="Button" x="118.5" y="424" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="77:6268" name="Carrito" x="5975" y="6715" width="639" height="800">
+    <instance id="77:6269" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:6270" name="Frame 44" x="0" y="80" width="639" height="720">
+      <text id="77:6271" name="Algo salió mal" x="12" y="255" width="615" height="33" />
+      <frame id="77:6272" name="Frame 43" x="283.5" y="320" width="72" height="72">
+        <frame id="77:6273" name="Sentiment very dissatisfied" x="12" y="12" width="48" height="48" />
+      </frame>
+      <instance id="77:6278" name="Button" x="258" y="424" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="38:9279" name="Carrito" x="6484" y="5601" width="360" height="997">
+    <instance id="38:9280" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:9506" name="Frame 42" x="0" y="80" width="360" height="33">
+      <text id="38:9505" name="Informacion de Pago" x="12" y="4" width="224" height="25" />
+    </frame>
+    <frame id="38:9473" name="Frame 38" x="0" y="113" width="360" height="166">
+      <frame id="38:9492" name="Frame 39" x="12" y="8" width="336" height="42">
+        <text id="38:9474" name="Número de Tarjeta:" x="0" y="0" width="120" height="14" />
+        <instance id="38:9493" name="FieldsS" x="0" y="18" width="336" height="24" />
+      </frame>
+      <frame id="38:9496" name="Frame 40" x="12" y="62" width="336" height="42">
+        <text id="38:9475" name="Fecha de Caducidad:" x="0" y="0" width="135" height="14" />
+        <instance id="38:9497" name="FieldsS" x="0" y="18" width="336" height="24" />
+      </frame>
+      <frame id="38:9501" name="Frame 41" x="12" y="116" width="336" height="42">
+        <text id="38:9491" name="CVV:" x="0" y="0" width="31" height="14" />
+        <instance id="38:9502" name="FieldsS" x="0" y="18" width="336" height="24" />
+      </frame>
+    </frame>
+    <frame id="38:9281" name="Frame 35" x="0" y="279" width="360" height="33">
+      <text id="38:9282" name="Resumen de Reservaciones" x="12" y="4" width="299" height="25" />
+    </frame>
+    <frame id="38:9283" name="Frame 19" x="0" y="312" width="360" height="685">
+      <instance id="38:9284" name="Checkout" x="8" y="8" width="344" height="72" />
+      <instance id="38:9285" name="Checkout" x="8" y="92" width="344" height="72" />
+      <instance id="38:9286" name="Checkout" x="8" y="176" width="344" height="72" />
+      <instance id="38:9287" name="Checkout" x="8" y="260" width="344" height="72" />
+      <instance id="38:9288" name="Checkout" x="8" y="344" width="344" height="72" />
+      <instance id="38:9289" name="Checkout" x="8" y="428" width="344" height="72" />
+      <instance id="38:9290" name="Checkout" x="8" y="512" width="344" height="72" />
+      <frame id="38:9291" name="Frame 36" x="8" y="596" width="344" height="39">
+        <text id="38:9292" name="Total:" x="0" y="14" width="57" height="25" />
+        <instance id="38:9293" name="FilterCostS" x="216" y="14" width="128" height="24" />
+      </frame>
+      <frame id="38:9294" name="Frame 37" x="8" y="647" width="344" height="30">
+        <instance id="38:9295" name="Button" x="0" y="0" width="118" height="30" />
+        <instance id="38:9296" name="Button" x="281" y="0" width="63" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="77:6318" name="Carrito" x="5264" y="6715" width="639" height="1015">
+    <instance id="77:6319" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:6320" name="Frame 42" x="0" y="80" width="639" height="33">
+      <text id="77:6321" name="Informacion de Pago" x="12" y="4" width="224" height="25" />
+    </frame>
+    <frame id="77:6322" name="Frame 38" x="0" y="113" width="639" height="184">
+      <frame id="77:6323" name="Frame 39" x="12" y="8" width="615" height="60">
+        <text id="77:6324" name="Número de Tarjeta:" x="0" y="0" width="120" height="14" />
+        <instance id="77:6325" name="FieldsS" x="0" y="18" width="615" height="24" />
+        <text id="89:9973" name="El número de tarjeta solo puede tener 16 digitos" x="0" y="46" width="297" height="14" />
+      </frame>
+      <frame id="77:6326" name="Frame 40" x="12" y="80" width="615" height="42">
+        <text id="77:6327" name="Fecha de Caducidad:" x="0" y="0" width="135" height="14" />
+        <instance id="77:6328" name="FieldsS" x="0" y="18" width="615" height="24" />
+      </frame>
+      <frame id="77:6329" name="Frame 41" x="12" y="134" width="615" height="42">
+        <text id="77:6330" name="CVV:" x="0" y="0" width="31" height="14" />
+        <instance id="77:6331" name="FieldsS" x="0" y="18" width="615" height="24" />
+      </frame>
+    </frame>
+    <frame id="77:6332" name="Frame 35" x="0" y="297" width="639" height="33">
+      <text id="77:6333" name="Resumen de Reservaciones" x="12" y="4" width="299" height="25" />
+    </frame>
+    <frame id="77:6334" name="Frame 19" x="0" y="330" width="639" height="685">
+      <instance id="77:6335" name="Checkout" x="8" y="8" width="623" height="72" />
+      <instance id="77:6336" name="Checkout" x="8" y="92" width="623" height="72" />
+      <instance id="77:6337" name="Checkout" x="8" y="176" width="623" height="72" />
+      <instance id="77:6338" name="Checkout" x="8" y="260" width="623" height="72" />
+      <instance id="77:6339" name="Checkout" x="8" y="344" width="623" height="72" />
+      <instance id="77:6340" name="Checkout" x="8" y="428" width="623" height="72" />
+      <instance id="77:6341" name="Checkout" x="8" y="512" width="623" height="72" />
+      <frame id="77:6342" name="Frame 36" x="8" y="596" width="623" height="39">
+        <text id="77:6343" name="Total:" x="0" y="14" width="57" height="25" />
+        <instance id="77:6344" name="FilterCostS" x="495" y="14" width="128" height="24" />
+      </frame>
+      <frame id="77:6345" name="Frame 37" x="8" y="647" width="623" height="30">
+        <instance id="77:6346" name="Button" x="0" y="0" width="118" height="30" />
+        <instance id="77:6347" name="Button" x="560" y="0" width="63" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="32:2723" name="HabitacionesS" x="-531" y="4995" width="360" height="800">
+    <instance id="32:2724" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <instance id="32:2725" name="SubSelectorS" x="0" y="80" width="360" height="41" />
+    <frame id="32:2726" name="Frame 7" x="0" y="121" width="360" height="56">
+      <instance id="32:2727" name="SearchBarS" x="8" y="8" width="344" height="40" />
+    </frame>
+    <frame id="32:2728" name="Frame 19" x="0" y="177" width="360" height="178">
+      <frame id="32:2897" name="Frame 20" x="8" y="8" width="344" height="162">
+        <frame id="32:2891" name="Sentiment very dissatisfied" x="124" y="0" width="96" height="96" />
+        <text id="32:2890" name="No se encontraron resultados" x="0" y="96" width="344" height="66" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="72:7597" name="HabitacionesS" x="-531" y="5861" width="360" height="887">
+    <instance id="72:7598" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <instance id="72:7599" name="SubSelectorS" x="0" y="80" width="360" height="41" />
+    <frame id="72:7637" name="Frame 57" x="0" y="121" width="360" height="766">
+      <instance id="37:7330" name="RoomInfoS" x="8" y="8" width="344" height="750" />
+    </frame>
+  </frame>
+  <frame id="72:7638" name="HabitacionesS" x="-131" y="5861" width="639" height="887">
+    <instance id="72:7639" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <instance id="72:7640" name="SubSelectorS" x="0" y="80" width="639" height="41" />
+    <frame id="72:7641" name="Frame 57" x="0" y="121" width="639" height="766">
+      <instance id="72:7642" name="RoomInfoS" x="8" y="8" width="623" height="750" />
+    </frame>
+  </frame>
+  <frame id="37:5572" name="HabitacionesS" x="-131" y="4995" width="639" height="800">
+    <instance id="37:5573" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <instance id="37:5574" name="SubSelectorS" x="0" y="80" width="639" height="41" />
+    <frame id="37:5575" name="Frame 7" x="0" y="121" width="639" height="56">
+      <instance id="37:5576" name="SearchBarS" x="8" y="8" width="623" height="40" />
+    </frame>
+    <frame id="37:5577" name="Frame 19" x="0" y="177" width="639" height="145">
+      <frame id="37:5578" name="Frame 20" x="8" y="8" width="623" height="129">
+        <frame id="37:5579" name="Sentiment very dissatisfied" x="263.5" y="0" width="96" height="96" />
+        <text id="37:5584" name="No se encontraron resultados" x="0" y="96" width="623" height="33" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="32:2626" name="HabitacionesS" x="-36" y="3572" width="639" height="664">
+    <instance id="32:2627" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <instance id="32:2628" name="SubSelectorS" x="0" y="80" width="639" height="41" />
+    <frame id="32:2629" name="Frame 7" x="0" y="121" width="639" height="56">
+      <instance id="32:2630" name="SearchBarS" x="8" y="8" width="623" height="40" />
+    </frame>
+    <frame id="32:2631" name="Frame 19" x="0" y="177" width="639" height="487">
+      <instance id="32:2632" name="RoomS" x="27.5" y="8" width="280" height="471" />
+      <instance id="32:2633" name="RoomS" x="331.5" y="8" width="280" height="471" />
+    </frame>
+  </frame>
+  <frame id="32:1078" name="FiltrosOverlay" x="-1084" y="4523" width="360" height="800">
+    <frame id="31:714" name="Frame 9" x="0" y="0" width="80" height="800" />
+    <frame id="31:713" name="Frame 8" x="80" y="0" width="280" height="800">
+      <frame id="31:715" name="Frame 10" x="12" y="12" width="256" height="42">
+        <text id="31:716" name="Filtros" x="0" y="1.5" width="87" height="33" />
+        <frame id="31:717" name="Close" x="220" y="0" width="36" height="36" />
+      </frame>
+      <frame id="32:887" name="Frame 12" x="12" y="70" width="256" height="89">
+        <text id="31:720" name="Categorías" x="0" y="0" width="119" height="25" />
+        <frame id="32:723" name="Frame 11" x="0" y="29" width="256" height="60">
+          <instance id="32:731" name="Tags" x="2" y="2" width="104" height="24" />
+          <instance id="32:734" name="Tags" x="114" y="2" width="104" height="24" />
+          <instance id="32:737" name="Tags" x="2" y="34" width="104" height="24" />
+          <instance id="32:748" name="Tags" x="114" y="34" width="104" height="24" />
+        </frame>
+      </frame>
+      <frame id="32:888" name="Frame 13" x="12" y="175" width="256" height="137">
+        <text id="32:721" name="Comodidades" x="0" y="0" width="152" height="25" />
+        <frame id="32:890" name="Frame 11" x="0" y="29" width="256" height="108">
+          <instance id="32:916" name="Attribute" x="2" y="2" width="81" height="20" />
+          <instance id="32:919" name="Attribute" x="91" y="2" width="81" height="20" />
+          <instance id="32:922" name="Attribute" x="2" y="30" width="81" height="20" />
+          <instance id="32:925" name="Attribute" x="91" y="30" width="81" height="20" />
+          <instance id="32:928" name="Attribute" x="2" y="58" width="81" height="20" />
+          <instance id="32:931" name="Attribute" x="91" y="58" width="81" height="20" />
+          <instance id="32:934" name="Attribute" x="2" y="86" width="81" height="20" />
+        </frame>
+      </frame>
+      <frame id="32:1002" name="Frame 14" x="12" y="328" width="256" height="81">
+        <text id="32:722" name="Precio" x="0" y="0" width="68" height="25" />
+        <frame id="32:1003" name="Frame 15" x="0" y="29" width="256" height="52">
+          <frame id="32:1071" name="Frame 16" x="0" y="0" width="256" height="24">
+            <text id="32:1004" name="Desde" x="0" y="4" width="47" height="16" />
+            <instance id="32:1053" name="FilterCostS" x="76" y="0" width="180" height="24" />
+          </frame>
+          <frame id="32:1072" name="Frame 17" x="0" y="28" width="256" height="24">
+            <text id="32:1005" name="Hasta" x="0" y="4" width="43" height="16" />
+            <instance id="32:1065" name="FilterCostS" x="76" y="0" width="180" height="24" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="32:1081" name="Frame 18" x="12" y="425" width="256" height="21">
+        <text id="32:1082" name="Disponibilidad" x="0" y="0" width="127" height="21" />
+        <instance id="32:1097" name="QuantityS" x="181" y="0.5" width="75" height="20" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="28:283" name="ReservacionesS" x="-1084" y="3572" width="360" height="800">
+    <instance id="28:284" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <instance id="28:285" name="SubSelectorS" x="0" y="80" width="360" height="133" />
+  </frame>
+  <frame id="37:7676" name="Perfil" x="1468" y="5979" width="360" height="800">
+    <instance id="37:7677" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="37:7694" name="Frame 28" x="0" y="80" width="360" height="720">
+      <frame id="37:7704" name="Frame 29" x="12" y="12" width="336" height="161">
+        <frame id="37:7695" name="Person" x="104" y="0" width="128" height="128">
+          <vector id="37:7696" name="Vector" x="0" y="0" width="128" height="128" />
+          <vector id="37:7697" name="Vector" x="32" y="32" width="64" height="64" />
+        </frame>
+        <text id="37:7698" name="NOMBRE DE USUARIO" x="44" y="136" width="248" height="25" />
+      </frame>
+      <frame id="37:7705" name="Frame 30" x="12" y="205" width="336" height="42">
+        <text id="37:7699" name="correo.electronico@dominio.ext" x="55.5" y="0" width="225" height="16" />
+        <text id="37:7700" name="Administrador" x="123.5" y="28" width="89" height="14" />
+      </frame>
+      <instance id="37:7701" name="Button" x="125.5" y="279" width="109" height="30" />
+    </frame>
+  </frame>
+  <frame id="37:7747" name="Nosotros" x="2779" y="5979" width="360" height="890">
+    <instance id="37:7748" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="37:7749" name="Frame 28" x="0" y="80" width="360" height="720">
+      <text id="38:7772" name="ASTIR" x="90" y="12" width="180" height="74" />
+      <frame id="38:7774" name="Frame 31" x="12" y="110" width="336" height="140">
+        <text id="38:7768" name="ASTIR es una entidad dedicada al desarrollo de herramientas digitales para la gestión de reservaciones hoteleras. Su actividad se enfoca en facilitar el registro, la organización y la consulta de información relacionada con las reservaciones, las habitaciones y las estancias de los huéspedes." x="0" y="0" width="208" height="140" />
+        <rounded-rectangle id="38:7778" name="Rectangle 1" x="216" y="10" width="120" height="120" />
+      </frame>
+      <frame id="38:7775" name="Frame 32" x="12" y="274" width="336" height="140">
+        <rounded-rectangle id="38:7779" name="Rectangle 2" x="0" y="10" width="120" height="120" />
+        <text id="38:7769" name="Este tipo de sistemas permite mantener la información organizada en un solo lugar, facilitando las tareas relacionadas con la administración de alojamientos. También ayuda a llevar un mejor control de las reservaciones y a reducir el uso de registros manuales." x="128" y="0" width="208" height="140" />
+      </frame>
+      <frame id="38:7776" name="Frame 33" x="12" y="438" width="336" height="120">
+        <text id="38:7770" name="ASTIR se enfoca en atender las necesidades básicas de organización que existen dentro de la gestión hotelera, tomando en cuenta las actividades que se realizan al recibir, registrar y administrar reservaciones." x="0" y="11" width="208" height="98" />
+        <rounded-rectangle id="38:7780" name="Rectangle 3" x="216" y="0" width="120" height="120" />
+      </frame>
+      <frame id="38:7777" name="Frame 34" x="12" y="582" width="336" height="126">
+        <rounded-rectangle id="38:7781" name="Rectangle 4" x="0" y="3" width="120" height="120" />
+        <text id="38:7771" name="De esta manera, buscamos que la gestión de reservaciones sea un proceso más ordenado y sencillo, mediante el uso de herramientas digitales que permitan manejar la información de forma clara y facilitar las actividades administrativas relacionadas con el alojamiento." x="128" y="0" width="208" height="126" />
+      </frame>
+    </frame>
+    <frame id="38:7857" name="Frame 29" x="0" y="800" width="360" height="90">
+      <instance id="85:7599" name="Footer" x="0" y="36" width="360" height="54" />
+    </frame>
+  </frame>
+  <frame id="38:7809" name="Nosotros" x="3179" y="5979" width="639" height="826">
+    <instance id="38:7810" name="NavigationSM" x="0" y="0" width="639" height="80" />
+    <frame id="38:7811" name="Frame 28" x="0" y="80" width="639" height="674">
+      <text id="38:7812" name="ASTIR" x="229.5" y="12" width="180" height="74" />
+      <frame id="38:7813" name="Frame 31" x="12" y="110" width="615" height="120">
+        <text id="38:7814" name="ASTIR es una entidad dedicada al desarrollo de herramientas digitales para la gestión de reservaciones hoteleras. Su actividad se enfoca en facilitar el registro, la organización y la consulta de información relacionada con las reservaciones, las habitaciones y las estancias de los huéspedes." x="0" y="32" width="487" height="56" />
+        <rounded-rectangle id="38:7815" name="Rectangle 1" x="495" y="0" width="120" height="120" />
+      </frame>
+      <frame id="38:7816" name="Frame 32" x="12" y="254" width="615" height="120">
+        <rounded-rectangle id="38:7817" name="Rectangle 2" x="0" y="0" width="120" height="120" />
+        <text id="38:7818" name="Este tipo de sistemas permite mantener la información organizada en un solo lugar, facilitando las tareas relacionadas con la administración de alojamientos. También ayuda a llevar un mejor control de las reservaciones y a reducir el uso de registros manuales." x="128" y="32" width="487" height="56" />
+      </frame>
+      <frame id="38:7819" name="Frame 33" x="12" y="398" width="615" height="120">
+        <text id="38:7820" name="ASTIR se enfoca en atender las necesidades básicas de organización que existen dentro de la gestión hotelera, tomando en cuenta las actividades que se realizan al recibir, registrar y administrar reservaciones." x="0" y="39" width="487" height="42" />
+        <rounded-rectangle id="38:7821" name="Rectangle 3" x="495" y="0" width="120" height="120" />
+      </frame>
+      <frame id="38:7822" name="Frame 34" x="12" y="542" width="615" height="120">
+        <rounded-rectangle id="38:7823" name="Rectangle 4" x="0" y="0" width="120" height="120" />
+        <text id="38:7824" name="De esta manera, buscamos que la gestión de reservaciones sea un proceso más ordenado y sencillo, mediante el uso de herramientas digitales que permitan manejar la información de forma clara y facilitar las actividades administrativas relacionadas con el alojamiento." x="128" y="32" width="487" height="56" />
+      </frame>
+    </frame>
+    <frame id="38:7831" name="Frame 6" x="0" y="754" width="639" height="72">
+      <instance id="85:7610" name="Footer" x="0" y="0" width="639" height="72" />
+    </frame>
+  </frame>
+  <frame id="37:7720" name="Perfil" x="1868" y="5979" width="639" height="800">
+    <instance id="37:7721" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="37:7722" name="Frame 28" x="0" y="80" width="639" height="720">
+      <frame id="37:7723" name="Frame 29" x="12" y="12" width="615" height="161">
+        <frame id="37:7724" name="Person" x="243.5" y="0" width="128" height="128">
+          <vector id="37:7725" name="Vector" x="0" y="0" width="128" height="128" />
+          <vector id="37:7726" name="Vector" x="32" y="32" width="64" height="64" />
+        </frame>
+        <text id="37:7727" name="NOMBRE DE USUARIO" x="183.5" y="136" width="248" height="25" />
+      </frame>
+      <frame id="37:7728" name="Frame 30" x="12" y="205" width="615" height="42">
+        <text id="37:7729" name="correo.electronico@dominio.ext" x="195" y="0" width="225" height="16" />
+        <text id="37:7730" name="Usuario" x="283" y="28" width="49" height="14" />
+      </frame>
+      <instance id="37:7731" name="Button" x="265" y="279" width="109" height="30" />
+    </frame>
+  </frame>
+  <frame id="33:4170" name="ReservacionesS" x="3332" y="3588" width="360" height="1009">
+    <instance id="33:4171" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <instance id="33:4172" name="SubSelectorS" x="0" y="80" width="360" height="41" />
+    <frame id="33:4585" name="Frame 22" x="0" y="121" width="360" height="52">
+      <instance id="33:4586" name="SearchBarS" x="8" y="8" width="344" height="36" />
+    </frame>
+    <frame id="33:4686" name="Frame 27" x="0" y="173" width="360" height="836">
+      <instance id="33:4673" name="UserS" x="8" y="8" width="344" height="92" />
+      <instance id="33:4687" name="UserS" x="8" y="112" width="344" height="92" />
+      <instance id="33:4700" name="UserS" x="8" y="216" width="344" height="92" />
+      <instance id="33:4739" name="UserS" x="8" y="320" width="344" height="92" />
+      <instance id="33:4752" name="UserS" x="8" y="424" width="344" height="92" />
+      <instance id="33:4765" name="UserS" x="8" y="528" width="344" height="92" />
+      <instance id="33:4713" name="UserS" x="8" y="632" width="344" height="92" />
+      <instance id="33:4726" name="UserS" x="8" y="736" width="344" height="92" />
+    </frame>
+  </frame>
+  <frame id="33:4839" name="ReservacionesS" x="3819" y="3588" width="639" height="881">
+    <instance id="33:4840" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <instance id="33:4841" name="SubSelectorS" x="0" y="80" width="639" height="41" />
+    <frame id="33:4842" name="Frame 22" x="0" y="121" width="639" height="52">
+      <instance id="33:4843" name="SearchBarS" x="8" y="8" width="623" height="36" />
+    </frame>
+    <frame id="33:4844" name="Frame 27" x="0" y="173" width="639" height="708">
+      <instance id="33:4845" name="UserS" x="8" y="8" width="623" height="76" />
+      <instance id="33:4846" name="UserS" x="8" y="96" width="623" height="76" />
+      <instance id="33:4847" name="UserS" x="8" y="184" width="623" height="76" />
+      <instance id="33:4848" name="UserS" x="8" y="272" width="623" height="76" />
+      <instance id="33:4849" name="UserS" x="8" y="360" width="623" height="76" />
+      <instance id="33:4850" name="UserS" x="8" y="448" width="623" height="76" />
+      <instance id="33:4851" name="UserS" x="8" y="536" width="623" height="76" />
+      <instance id="33:4852" name="UserS" x="8" y="624" width="623" height="76" />
+    </frame>
+  </frame>
+  <frame id="33:2964" name="Reservas" x="1471" y="3585" width="360" height="1057">
+    <instance id="33:2965" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <instance id="33:2966" name="SubSelectorS" x="0" y="80" width="360" height="41" />
+    <frame id="33:4345" name="Frame 20" x="0" y="121" width="360" height="52">
+      <instance id="33:4346" name="SearchBarS" x="8" y="8" width="344" height="36" />
+    </frame>
+    <frame id="33:3558" name="Frame 21" x="0" y="173" width="360" height="884">
+      <instance id="33:3540" name="GestionRoom" x="8" y="8" width="344" height="68" />
+      <instance id="33:3559" name="GestionRoom" x="8" y="88" width="344" height="68" />
+      <instance id="33:3577" name="GestionRoom" x="8" y="168" width="344" height="68" />
+      <instance id="33:3595" name="GestionRoom" x="8" y="248" width="344" height="68" />
+      <instance id="33:3613" name="GestionRoom" x="8" y="328" width="344" height="68" />
+      <instance id="33:3631" name="GestionRoom" x="8" y="408" width="344" height="68" />
+      <instance id="33:3649" name="GestionRoom" x="8" y="488" width="344" height="68" />
+      <instance id="33:3667" name="GestionRoom" x="8" y="568" width="344" height="68" />
+      <instance id="33:3685" name="GestionRoom" x="8" y="648" width="344" height="68" />
+      <instance id="33:3703" name="GestionRoom" x="8" y="728" width="344" height="68" />
+      <instance id="33:3721" name="GestionRoom" x="8" y="808" width="344" height="68" />
+    </frame>
+  </frame>
+  <frame id="38:8149" name="Reservas" x="5795" y="3585" width="360" height="812">
+    <instance id="38:8150" name="NavigationS/M" x="0" y="0" width="360" height="80" />
+    <frame id="38:8152" name="Frame 20" x="0" y="80" width="360" height="56">
+      <instance id="38:8153" name="SearchBarS" x="8" y="8" width="344" height="40" />
+    </frame>
+    <frame id="38:8154" name="Frame 21" x="0" y="136" width="360" height="676">
+      <instance id="38:8659" name="Reservaciones" x="8" y="8" width="344" height="72" />
+      <instance id="38:8678" name="Reservaciones" x="8" y="92" width="344" height="72" />
+      <instance id="38:8697" name="Reservaciones" x="8" y="176" width="344" height="72" />
+      <instance id="38:8716" name="Reservaciones" x="8" y="260" width="344" height="72" />
+      <instance id="38:8735" name="Reservaciones" x="8" y="344" width="344" height="72" />
+      <instance id="38:8754" name="Reservaciones" x="8" y="428" width="344" height="72" />
+      <instance id="38:8773" name="Reservaciones" x="8" y="512" width="344" height="72" />
+      <instance id="38:8792" name="Reservaciones" x="8" y="596" width="344" height="72" />
+    </frame>
+  </frame>
+  <frame id="77:6728" name="Reservas" x="6224" y="3586" width="639" height="812">
+    <instance id="77:6729" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <frame id="77:6730" name="Frame 20" x="0" y="80" width="639" height="56">
+      <instance id="77:6731" name="SearchBarS" x="8" y="8" width="623" height="40" />
+    </frame>
+    <frame id="77:6732" name="Frame 21" x="0" y="136" width="639" height="676">
+      <instance id="77:6733" name="ReservacionesS" x="8" y="8" width="623" height="72" />
+      <instance id="77:6734" name="ReservacionesS" x="8" y="92" width="623" height="72" />
+      <instance id="77:6735" name="ReservacionesS" x="8" y="176" width="623" height="72" />
+      <instance id="77:6736" name="ReservacionesS" x="8" y="260" width="623" height="72" />
+      <instance id="77:6737" name="ReservacionesS" x="8" y="344" width="623" height="72" />
+      <instance id="77:6738" name="ReservacionesS" x="8" y="428" width="623" height="72" />
+      <instance id="77:6739" name="ReservacionesS" x="8" y="512" width="623" height="72" />
+      <instance id="77:6740" name="ReservacionesS" x="8" y="596" width="623" height="72" />
+    </frame>
+  </frame>
+  <frame id="33:3739" name="Reservas" x="2004" y="3585" width="639" height="1057">
+    <instance id="33:3740" name="NavigationS/M" x="0" y="0" width="639" height="80" />
+    <instance id="33:3741" name="SubSelectorS" x="0" y="80" width="639" height="41" />
+    <frame id="33:4327" name="Frame 20" x="-0.5" y="121" width="640" height="52">
+      <instance id="33:4328" name="SearchBarS" x="8" y="8" width="624" height="36" />
+    </frame>
+    <frame id="33:3742" name="Frame 21" x="0" y="173" width="639" height="884">
+      <instance id="33:3743" name="GestionRoom" x="8" y="8" width="623" height="68" />
+      <instance id="33:3744" name="GestionRoom" x="8" y="88" width="623" height="68" />
+      <instance id="33:3745" name="GestionRoom" x="8" y="168" width="623" height="68" />
+      <instance id="33:3746" name="GestionRoom" x="8" y="248" width="623" height="68" />
+      <instance id="33:3747" name="GestionRoom" x="8" y="328" width="623" height="68" />
+      <instance id="33:3748" name="GestionRoom" x="8" y="408" width="623" height="68" />
+      <instance id="33:3749" name="GestionRoom" x="8" y="488" width="623" height="68" />
+      <instance id="33:3750" name="GestionRoom" x="8" y="568" width="623" height="68" />
+      <instance id="33:3751" name="GestionRoom" x="8" y="648" width="623" height="68" />
+      <instance id="33:3752" name="GestionRoom" x="8" y="728" width="623" height="68" />
+      <instance id="33:3753" name="GestionRoom" x="8" y="808" width="623" height="68" />
+    </frame>
+  </frame>
+  <frame id="9:5" name="Medium" x="9025" y="-149" width="1023" height="768" />
+  <frame id="46:2622" name="Medium" x="9025" y="-1090" width="640" height="768" />
+  <frame id="10:7" name="Large" x="23290" y="-370" width="1024" height="1080" />
+  <frame id="46:2624" name="Large" x="23290" y="831" width="1919" height="1080" />
+  <text id="33:3940" name="Text" x="1899" y="3804" width="0" height="10" />
+  <frame id="33:4142" name="ConfirmRevokeOverlay" x="1471" y="4718" width="360" height="800">
+    <frame id="33:4143" name="Frame 22" x="48" y="331" width="264" height="138">
+      <frame id="33:4148" name="Frame 25" x="24" y="12" width="216" height="52">
+        <text id="33:4144" name="¿Desea retirar una reservación del cliente NOMBRE DEL CLIENTE?" x="0" y="0" width="216" height="28" />
+        <text id="33:4145" name="Esta acción no se puede deshacer." x="14.5" y="40" width="187" height="12" />
+      </frame>
+      <frame id="33:4149" name="Frame 26" x="24" y="88" width="216" height="38">
+        <instance id="33:4153" name="Button" x="8" y="4" width="82" height="30" />
+        <instance id="33:4156" name="Button" x="121" y="4" width="87" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="38:8907" name="ConfirmRevokeOverlay" x="5795" y="4514" width="360" height="800">
+    <frame id="38:8908" name="Frame 22" x="48" y="324" width="264" height="152">
+      <frame id="38:8909" name="Frame 25" x="24" y="12" width="216" height="66">
+        <text id="38:8910" name="¿Desea cancelar una reservación de la habitación NOMBRE DE HABITACIÓN?" x="0" y="0" width="216" height="42" />
+        <text id="38:8911" name="Esta acción no se puede deshacer." x="14.5" y="54" width="187" height="12" />
+      </frame>
+      <frame id="38:8912" name="Frame 26" x="24" y="102" width="216" height="38">
+        <instance id="38:8913" name="Button" x="8" y="4" width="82" height="30" />
+        <instance id="38:8914" name="Button" x="121" y="4" width="87" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="38:8918" name="ConfirmRevokeOverlay" x="6224" y="4514" width="360" height="800">
+    <frame id="38:8919" name="Frame 22" x="48" y="324" width="264" height="152">
+      <frame id="38:8920" name="Frame 25" x="24" y="12" width="216" height="66">
+        <text id="38:8921" name="¿Desea cancelar todas las reservaciónes de la habitación NOMBRE DE HABITACIÓN?" x="0" y="0" width="216" height="42" />
+        <text id="38:8922" name="Esta acción no se puede deshacer." x="14.5" y="54" width="187" height="12" />
+      </frame>
+      <frame id="38:8923" name="Frame 26" x="24" y="102" width="216" height="38">
+        <instance id="38:8924" name="Button" x="8" y="4" width="82" height="30" />
+        <instance id="38:8925" name="Button" x="121" y="4" width="87" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="33:4159" name="ConfirmRevokeOverlay" x="2004" y="4718" width="640" height="800">
+    <frame id="33:4160" name="Frame 22" x="48" y="318.5" width="544" height="163">
+      <frame id="33:4161" name="Frame 25" x="24" y="12" width="496" height="70">
+        <text id="33:4162" name="¿Desea retirar una reservación del cliente NOMBRE DEL CLIENTE?" x="0" y="0" width="496" height="42" />
+        <text id="33:4163" name="Esta acción no se puede deshacer." x="123.5" y="54" width="249" height="16" />
+      </frame>
+      <frame id="33:4164" name="Frame 26" x="24" y="106" width="496" height="45">
+        <instance id="33:4165" name="Button" x="80" y="4" width="106" height="37" />
+        <instance id="33:4166" name="Button" x="302" y="4" width="114" height="37" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="33:4960" name="ConfirmRevokeOverlay" x="3332" y="4777" width="360" height="800">
+    <frame id="33:4961" name="Frame 22" x="48" y="336" width="264" height="128">
+      <frame id="33:4962" name="Frame 25" x="24" y="12" width="216" height="42">
+        <text id="33:4963" name="¿Desea otorgar el rol de Administrador a NOMBRE DE USUARIO?" x="0" y="0" width="216" height="42" />
+      </frame>
+      <frame id="33:4965" name="Frame 26" x="24" y="78" width="216" height="38">
+        <instance id="33:4966" name="Button" x="8" y="4" width="82" height="30" />
+        <instance id="33:4967" name="Button" x="121" y="4" width="87" height="30" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="37:7641" name="ConfirmDelete" x="-531" y="6854" width="360" height="800">
+    <instance id="79:7178" name="DialogWarnsS" x="49" y="331" width="262" height="138" />
+  </frame>
+  <frame id="37:7661" name="ConfirmEdit" x="269" y="6854" width="360" height="800">
+    <instance id="79:7236" name="DialogWarnsS" x="49" y="336" width="262" height="128" />
+  </frame>
+  <text id="37:7675" name="Text" x="742" y="7198" width="0" height="14" />
+  <frame id="37:7651" name="ConfirmCancel" x="-131" y="6854" width="360" height="800">
+    <instance id="79:7210" name="DialogWarnsS" x="48" y="336" width="264" height="128" />
+  </frame>
+  <frame id="33:4968" name="ConfirmRevokeOverlay" x="3865" y="4777" width="640" height="800">
+    <frame id="33:4969" name="Frame 22" x="48" y="332.5" width="544" height="135">
+      <frame id="33:4970" name="Frame 25" x="24" y="12" width="496" height="42">
+        <text id="33:4971" name="¿Desea retirar el rol de Administrador a NOMBRE DE USUARIO?" x="0" y="0" width="496" height="42" />
+      </frame>
+      <frame id="33:4973" name="Frame 26" x="24" y="78" width="496" height="45">
+        <instance id="33:4974" name="Button" x="80" y="4" width="106" height="37" />
+        <instance id="33:4975" name="Button" x="302" y="4" width="114" height="37" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="37:7707" name="NavBarS" x="-2552" y="3572" width="402" height="2482">
+    <symbol id="37:7708" name="Property 1=Admin" x="21" y="21" width="360" height="800" />
+    <symbol id="67:6281" name="Property 1=User" x="21" y="841" width="360" height="800" />
+    <symbol id="67:6365" name="Property 1=Anon" x="21" y="1661" width="360" height="800" />
+  </frame>
+  <frame id="70:6382" name="NavBarM" x="-2038" y="3572" width="682" height="2482">
+    <symbol id="70:6383" name="Property 1=Admin" x="21" y="21" width="640" height="800" />
+    <symbol id="70:6396" name="Property 1=User" x="21" y="841" width="640" height="800" />
+    <symbol id="70:6398" name="Property 1=Anon" x="21" y="1661" width="640" height="800" />
+  </frame>
+  <text id="38:9783" name="Text" x="471" y="3374" width="0" height="25" />
+  <instance id="38:10045" name="Snackbar" x="5386" y="4835" width="320" height="79" />
+  <instance id="38:10049" name="Snackbar" x="5284" y="6540" width="320" height="58" />
+  <instance id="38:10054" name="Snackbar" x="2173" y="2566" width="209" height="37" />
+  <instance id="38:10079" name="Snackbar" x="1889" y="6817" width="209" height="37" />
+  <frame id="73:8570" name="RegisterS" x="11016" y="1689" width="640" height="800">
+    <instance id="73:8571" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8572" name="Frame 55" x="0" y="80" width="640" height="720">
+      <text id="73:8573" name="Registrar Usuario" x="133" y="101" width="374" height="49" />
+      <frame id="73:8574" name="Frame 45" x="12" y="174" width="616" height="380">
+        <frame id="73:8575" name="Frame 51" x="8" y="8" width="600" height="64">
+          <text id="73:8576" name="Nombre:" x="0" y="0" width="93" height="25" />
+          <instance id="73:8577" name="FieldsM" x="0" y="27" width="600" height="37" />
+        </frame>
+        <frame id="73:8578" name="Frame 52" x="8" y="96" width="600" height="82">
+          <text id="73:8579" name="Correo electrónico:" x="0" y="0" width="204" height="25" />
+          <instance id="73:8580" name="FieldsM" x="0" y="27" width="600" height="37" />
+          <text id="73:8581" name="El correo ingresado no es valido." x="0" y="66" width="231" height="16" />
+        </frame>
+        <frame id="73:8582" name="Frame 53" x="8" y="202" width="600" height="82">
+          <text id="73:8583" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="73:8584" name="FieldsM" x="0" y="27" width="600" height="37" />
+          <text id="73:8585" name="La contraseña no tiene N caracteristicas." x="0" y="66" width="293" height="16" />
+        </frame>
+        <frame id="73:8586" name="Frame 54" x="8" y="308" width="600" height="64">
+          <text id="73:8587" name="Confirmar contraseña:" x="0" y="0" width="241" height="25" />
+          <instance id="73:8588" name="FieldsM" x="0" y="27" width="600" height="37" />
+        </frame>
+      </frame>
+      <instance id="73:8589" name="Button" x="258.5" y="578" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="73:8590" name="LoginS" x="11016" y="2644" width="1023" height="800">
+    <instance id="73:8591" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <frame id="73:8592" name="Frame 55" x="0" y="80" width="1023" height="720">
+      <text id="73:8593" name="Iniciar Sesión" x="369.5" y="207" width="284" height="49" />
+      <frame id="73:8594" name="Frame 45" x="12" y="280" width="999" height="168">
+        <frame id="73:8595" name="Frame 52" x="8" y="8" width="983" height="64">
+          <text id="73:8596" name="Correo electrónico:" x="0" y="0" width="204" height="25" />
+          <instance id="73:8597" name="FieldsM" x="0" y="27" width="983" height="37" />
+        </frame>
+        <frame id="73:8598" name="Frame 53" x="8" y="96" width="983" height="64">
+          <text id="73:8599" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="73:8600" name="FieldsM" x="0" y="27" width="983" height="37" />
+        </frame>
+      </frame>
+      <instance id="73:8601" name="Button" x="467" y="472" width="89" height="41" />
+    </frame>
+  </frame>
+  <frame id="73:8602" name="FrontS" x="9025" y="1689" width="640" height="1487">
+    <instance id="73:8603" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="85:7508" name="Frame 59" x="0" y="92" width="640" height="566">
+      <frame id="73:8604" name="Frame 2" x="106" y="0" width="428" height="126">
+        <text id="73:8605" name="Para juntas y negocios Confía en nosotros" x="8" y="12" width="412" height="102" />
+      </frame>
+      <frame id="73:8606" name="Frame 1" x="80" y="150" width="480" height="415.9999694824219">
+        <instance id="73:8608" name="CarouselM" x="12" y="6.128570556640625" width="456" height="403.74285888671875" />
+      </frame>
+    </frame>
+    <frame id="73:8609" name="Frame 3" x="0" y="670" width="640" height="96">
+      <text id="73:8610" name="Reuniones, contratos, y un descanso" x="10" y="10" width="620" height="33" />
+      <text id="73:8611" name="Tenemos todo para tus asuntos" x="10" y="53" width="620" height="33" />
+    </frame>
+    <text id="73:8612" name="Alojamiento" x="150.5" y="778" width="339" height="56" />
+    <instance id="73:8613" name="ShowCarousel" x="0" y="846" width="640" height="529" />
+    <instance id="85:7621" name="Footer" x="0" y="1387" width="640" height="100" />
+  </frame>
+  <frame id="85:7683" name="FrontS" x="9728" y="1689" width="1023" height="1337">
+    <instance id="85:7684" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <frame id="85:7685" name="Frame 59" x="0" y="92" width="1023" height="415.9999694824219">
+      <frame id="85:7686" name="Frame 2" x="45.5" y="144.99998474121094" width="428" height="126">
+        <text id="85:7687" name="Para juntas y negocios Confía en nosotros" x="8" y="12" width="412" height="102" />
+      </frame>
+      <frame id="85:7688" name="Frame 1" x="497.5" y="0" width="480" height="415.9999694824219">
+        <instance id="85:7689" name="CarouselM" x="12" y="6.128570556640625" width="456" height="403.74285888671875" />
+      </frame>
+    </frame>
+    <frame id="85:7690" name="Frame 3" x="0" y="520" width="1023" height="96">
+      <text id="85:7691" name="Reuniones, contratos, y un descanso" x="10" y="10" width="1003" height="33" />
+      <text id="85:7692" name="Tenemos todo para tus asuntos" x="10" y="53" width="1003" height="33" />
+    </frame>
+    <text id="85:7693" name="Alojamiento" x="342" y="628" width="339" height="56" />
+    <instance id="85:7694" name="ShowCarousel" x="0" y="696" width="1023" height="529" />
+    <instance id="85:7695" name="Footer" x="0" y="1237" width="1023" height="100" />
+  </frame>
+  <frame id="73:8632" name="HabitacionS" x="9208" y="9421" width="640" height="1277">
+    <instance id="73:8633" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8634" name="Frame 19" x="0" y="80" width="640" height="1197">
+      <frame id="95:16403" name="Frame 68" x="12" y="12" width="616" height="1173">
+        <instance id="73:8635" name="RoomL" x="0" y="0" width="616" height="579" />
+        <frame id="95:16224" name="Frame 66" x="0" y="603" width="616" height="570">
+          <text id="95:16225" name="Ver Más Habitaciones" x="8" y="0" width="311" height="33" />
+          <instance id="95:16581" name="ShowCarousel" x="8" y="41" width="600" height="529" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="86:9214" name="HabitacionS" x="9940" y="9421" width="1023" height="1181">
+    <instance id="86:9215" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <frame id="95:16937" name="Frame 69" x="0" y="80" width="1023" height="1101">
+      <frame id="86:9216" name="Frame 19" x="8" y="8" width="1007" height="503">
+        <instance id="86:9217" name="RoomL" x="8" y="8" width="991" height="487" />
+      </frame>
+      <frame id="95:16758" name="Frame 66" x="8" y="523" width="1007" height="570">
+        <text id="95:16759" name="Ver Más Habitaciones" x="8" y="0" width="311" height="33" />
+        <instance id="95:16760" name="ShowCarousel" x="8" y="41" width="991" height="529" />
+      </frame>
+    </frame>
+  </frame>
+  <instance id="73:8636" name="Snackbar" x="9216" y="10721" width="600" height="41" />
+  <frame id="73:8637" name="Comprar" x="14394" y="3710" width="640" height="746">
+    <instance id="73:8638" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8639" name="Frame 7" x="0" y="80" width="640" height="57">
+      <instance id="73:8640" name="SearchBarM" x="8" y="8" width="624" height="41" />
+    </frame>
+    <frame id="73:8641" name="Frame 19" x="0" y="137" width="640" height="609">
+      <instance id="73:8642" name="RoomM" x="28" y="8" width="280" height="593" />
+      <instance id="73:8643" name="RoomM" x="332" y="8" width="280" height="593" />
+    </frame>
+  </frame>
+  <frame id="89:8582" name="Comprar" x="14368" y="4724" width="1023" height="1363">
+    <instance id="89:8583" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <frame id="89:8584" name="Frame 7" x="0" y="80" width="1023" height="57">
+      <instance id="89:8585" name="SearchBarM" x="8" y="8" width="1007" height="41" />
+    </frame>
+    <frame id="89:8586" name="Frame 19" x="0" y="137" width="1023" height="1226">
+      <instance id="89:8587" name="RoomM" x="67.5" y="8" width="280" height="593" />
+      <instance id="89:8588" name="RoomM" x="371.5" y="8" width="280" height="593" />
+      <instance id="89:8706" name="RoomM" x="675.5" y="8" width="280" height="593" />
+      <instance id="89:8757" name="RoomM" x="219.5" y="625" width="280" height="593" />
+      <instance id="89:8808" name="RoomM" x="523.5" y="625" width="280" height="593" />
+    </frame>
+  </frame>
+  <frame id="73:8662" name="Carrito" x="15865" y="5861" width="640" height="800">
+    <instance id="73:8663" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8664" name="Frame 35" x="0" y="80" width="640" height="57">
+      <text id="73:8665" name="Carrito" x="12" y="4" width="147" height="49" />
+    </frame>
+    <frame id="73:8666" name="Frame 19" x="0" y="137" width="640" height="663">
+      <text id="73:8667" name="Tu carrito esta vacío." x="173" y="8" width="294" height="33" />
+      <frame id="73:8668" name="Frame 58" x="8" y="551" width="624" height="104">
+        <frame id="73:8669" name="Frame 36" x="0" y="0" width="624" height="47">
+          <text id="73:8670" name="Total:" x="0" y="14" width="76" height="33" />
+          <instance id="73:8671" name="FilterCostM" x="336" y="14" width="288" height="29" />
+        </frame>
+        <frame id="73:8672" name="Frame 37" x="0" y="59" width="624" height="45">
+          <instance id="73:8673" name="Button" x="0" y="0" width="147" height="45" />
+          <instance id="73:8674" name="Button" x="446" y="0" width="178" height="45" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:9172" name="Carrito" x="15865" y="6836" width="640" height="950">
+    <instance id="89:9173" name="NavigationSM" x="0" y="0" width="640" height="80" />
+    <frame id="89:9174" name="Frame 35" x="0" y="80" width="640" height="57">
+      <text id="89:9175" name="Carrito" x="12" y="4" width="147" height="49" />
+    </frame>
+    <frame id="89:9176" name="Frame 19" x="0" y="137" width="640" height="813">
+      <instance id="73:8649" name="Carrito" x="8" y="8" width="624" height="87" />
+      <instance id="89:9241" name="Carrito" x="8" y="107" width="624" height="87" />
+      <instance id="89:9268" name="Carrito" x="8" y="206" width="624" height="87" />
+      <instance id="89:9295" name="Carrito" x="8" y="305" width="624" height="87" />
+      <instance id="89:9322" name="Carrito" x="8" y="404" width="624" height="87" />
+      <instance id="89:9349" name="Carrito" x="8" y="503" width="624" height="87" />
+      <instance id="89:9376" name="Carrito" x="8" y="602" width="624" height="87" />
+      <frame id="89:9178" name="Frame 58" x="8" y="701" width="624" height="104">
+        <frame id="89:9179" name="Frame 36" x="0" y="0" width="624" height="47">
+          <text id="89:9180" name="Total:" x="0" y="14" width="76" height="33" />
+          <instance id="89:9181" name="FilterCostM" x="336" y="14" width="288" height="29" />
+        </frame>
+        <frame id="89:9182" name="Frame 37" x="0" y="59" width="624" height="45">
+          <instance id="89:9183" name="Button" x="0" y="0" width="147" height="45" />
+          <instance id="89:9184" name="Button" x="446" y="0" width="178" height="45" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:9403" name="Carrito" x="15673" y="7894" width="1023" height="950">
+    <instance id="89:9404" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <frame id="89:9405" name="Frame 35" x="0" y="80" width="1023" height="57">
+      <text id="89:9406" name="Carrito" x="12" y="4" width="147" height="49" />
+    </frame>
+    <frame id="89:9407" name="Frame 19" x="0" y="137" width="1023" height="813">
+      <instance id="89:9409" name="Carrito" x="8" y="8" width="1007" height="87" />
+      <instance id="89:9410" name="Carrito" x="8" y="107" width="1007" height="87" />
+      <instance id="89:9411" name="Carrito" x="8" y="206" width="1007" height="87" />
+      <instance id="89:9412" name="Carrito" x="8" y="305" width="1007" height="87" />
+      <instance id="89:9413" name="Carrito" x="8" y="404" width="1007" height="87" />
+      <instance id="89:9414" name="Carrito" x="8" y="503" width="1007" height="87" />
+      <instance id="89:9415" name="Carrito" x="8" y="602" width="1007" height="87" />
+      <frame id="89:9416" name="Frame 58" x="8" y="701" width="1007" height="104">
+        <frame id="89:9417" name="Frame 36" x="0" y="0" width="1007" height="47">
+          <text id="89:9418" name="Total:" x="0" y="14" width="76" height="33" />
+          <instance id="89:9419" name="FilterCostM" x="719" y="14" width="288" height="29" />
+        </frame>
+        <frame id="89:9420" name="Frame 37" x="0" y="59" width="1007" height="45">
+          <instance id="89:9421" name="Button" x="0" y="0" width="147" height="45" />
+          <instance id="89:9422" name="Button" x="829" y="0" width="178" height="45" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="73:8675" name="Carrito" x="17426" y="4886" width="640" height="768">
+    <instance id="73:8676" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8677" name="Frame 44" x="0" y="80" width="640" height="688">
+      <text id="73:8678" name="Se han realizado sus reservaciones" x="12" y="203" width="616" height="33" />
+      <frame id="73:8679" name="Frame 43" x="256" y="268" width="128" height="128">
+        <frame id="73:8680" name="Check" x="24" y="24" width="80" height="80">
+          <vector id="73:8681" name="Vector" x="0" y="0" width="80" height="80" />
+          <vector id="73:8682" name="Vector" x="0" y="9.505399703979492" width="80" height="60.989200592041016" />
+        </frame>
+      </frame>
+      <instance id="73:8683" name="Button" x="242" y="428" width="156" height="57" />
+    </frame>
+  </frame>
+  <frame id="77:5492" name="Carrito" x="18262" y="4883" width="1023" height="768">
+    <instance id="77:5493" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <frame id="77:5494" name="Frame 44" x="0" y="80" width="1023" height="688">
+      <text id="77:5495" name="Se han realizado sus reservaciones" x="12" y="203" width="999" height="33" />
+      <frame id="77:5496" name="Frame 43" x="447.5" y="268" width="128" height="128">
+        <frame id="77:5497" name="Check" x="24" y="24" width="80" height="80">
+          <vector id="77:5498" name="Vector" x="0" y="0" width="80" height="80" />
+          <vector id="77:5499" name="Vector" x="0" y="9.505399703979492" width="80" height="60.989200592041016" />
+        </frame>
+      </frame>
+      <instance id="77:5500" name="Button" x="433.5" y="428" width="156" height="57" />
+    </frame>
+  </frame>
+  <frame id="73:8684" name="HabitacionesS" x="10400" y="7543" width="640" height="800">
+    <instance id="73:8685" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8686" name="Frame 44" x="0" y="80" width="640" height="720">
+      <text id="73:8687" name="Se ha agregado la habitación" x="12" y="255" width="616" height="33" />
+      <frame id="73:8688" name="Frame 43" x="284" y="320" width="72" height="72">
+        <frame id="73:8689" name="Check" x="12" y="12" width="48" height="48">
+          <vector id="73:8690" name="Vector" x="0" y="0" width="48" height="48" />
+          <vector id="73:8691" name="Vector" x="6.409999847412109" y="10.59000015258789" width="35.18000030517578" height="26.81999969482422" />
+        </frame>
+      </frame>
+      <instance id="73:8692" name="Button" x="258.5" y="424" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="73:8693" name="Carrito" x="17426" y="3873" width="640" height="768">
+    <instance id="73:8694" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8695" name="Frame 44" x="0" y="80" width="640" height="688">
+      <text id="73:8696" name="Algo salió mal" x="12" y="203" width="616" height="33" />
+      <frame id="73:8697" name="Frame 43" x="256" y="268" width="128" height="128">
+        <frame id="73:8698" name="Sentiment very dissatisfied" x="24" y="24" width="80" height="80" />
+      </frame>
+      <instance id="73:8703" name="Button" x="242" y="428" width="156" height="57" />
+    </frame>
+  </frame>
+  <frame id="77:5471" name="Carrito" x="18259" y="3870" width="1023" height="768">
+    <instance id="77:5472" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <frame id="77:5473" name="Frame 44" x="0" y="80" width="1023" height="688">
+      <text id="77:5474" name="Algo salió mal" x="12" y="203" width="999" height="33" />
+      <frame id="77:5475" name="Frame 43" x="447.5" y="268" width="128" height="128">
+        <frame id="77:5476" name="Sentiment very dissatisfied" x="24" y="24" width="80" height="80" />
+      </frame>
+      <instance id="77:5481" name="Button" x="433.5" y="428" width="156" height="57" />
+    </frame>
+  </frame>
+  <frame id="73:8704" name="Carrito" x="17157" y="6836" width="640" height="1135">
+    <instance id="73:8705" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8706" name="Frame 42" x="0" y="80" width="640" height="41">
+      <text id="73:8707" name="Informacion de Pago" x="12" y="4" width="298" height="33" />
+    </frame>
+    <frame id="73:8708" name="Frame 38" x="0" y="121" width="640" height="176">
+      <frame id="73:8709" name="Frame 39" x="12" y="8" width="616" height="62">
+        <text id="73:8710" name="Número de Tarjeta:" x="0" y="0" width="171" height="21" />
+        <instance id="73:8711" name="FieldsM" x="0" y="25" width="616" height="37" />
+      </frame>
+      <frame id="73:8712" name="Frame 40" x="12" y="82" width="616" height="37">
+        <text id="73:8713" name="Fecha de Caducidad:" x="0" y="8" width="192" height="21" />
+        <instance id="73:8714" name="FieldsM" x="200" y="0" width="76" height="37" />
+      </frame>
+      <frame id="73:8715" name="Frame 41" x="12" y="131" width="616" height="37">
+        <text id="73:8716" name="CVV:" x="0" y="8" width="43" height="21" />
+        <instance id="73:8717" name="FieldsM" x="51" y="0" width="57" height="37" />
+      </frame>
+    </frame>
+    <frame id="73:8718" name="Frame 35" x="0" y="297" width="640" height="33">
+      <text id="73:8719" name="Resumen de Reservaciones" x="12" y="4" width="299" height="25" />
+    </frame>
+    <frame id="73:8720" name="Frame 19" x="0" y="330" width="640" height="805">
+      <instance id="73:8721" name="Checkout" x="8" y="8" width="624" height="87" />
+      <instance id="73:8722" name="Checkout" x="8" y="107" width="624" height="87" />
+      <instance id="73:8723" name="Checkout" x="8" y="206" width="624" height="87" />
+      <instance id="73:8724" name="Checkout" x="8" y="305" width="624" height="87" />
+      <instance id="73:8725" name="Checkout" x="8" y="404" width="624" height="87" />
+      <instance id="73:8726" name="Checkout" x="8" y="503" width="624" height="87" />
+      <instance id="73:8727" name="Checkout" x="8" y="602" width="624" height="87" />
+      <frame id="73:8728" name="Frame 36" x="8" y="701" width="624" height="39">
+        <text id="73:8729" name="Total:" x="0" y="14" width="57" height="25" />
+        <instance id="73:8730" name="FilterCostS" x="496" y="14" width="128" height="24" />
+      </frame>
+      <frame id="73:8731" name="Frame 37" x="8" y="752" width="624" height="45">
+        <instance id="73:8732" name="Button" x="0" y="0" width="158" height="45" />
+        <instance id="73:8733" name="Button" x="544" y="0" width="80" height="45" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:9771" name="Carrito" x="17006" y="8058" width="1023" height="1209">
+    <instance id="89:9772" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <frame id="89:9773" name="Frame 42" x="0" y="80" width="1023" height="41">
+      <text id="89:9774" name="Informacion de Pago" x="12" y="4" width="298" height="33" />
+    </frame>
+    <frame id="89:9775" name="Frame 38" x="0" y="121" width="1023" height="246">
+      <frame id="89:9776" name="Frame 39" x="12" y="8" width="999" height="82">
+        <text id="89:9777" name="Número de Tarjeta:" x="0" y="0" width="171" height="21" />
+        <instance id="89:9778" name="FieldsM" x="0" y="25" width="999" height="37" />
+        <text id="89:9975" name="El número de tarjeta solo puede tener 16 digitos" x="0" y="66" width="340" height="16" />
+      </frame>
+      <frame id="89:9779" name="Frame 40" x="12" y="102" width="999" height="62">
+        <text id="89:9780" name="Fecha de Caducidad:" x="0" y="0" width="192" height="21" />
+        <instance id="89:9781" name="FieldsM" x="0" y="25" width="999" height="37" />
+      </frame>
+      <frame id="89:9782" name="Frame 41" x="12" y="176" width="999" height="62">
+        <text id="89:9783" name="CVV:" x="0" y="0" width="43" height="21" />
+        <instance id="89:9784" name="FieldsM" x="0" y="25" width="999" height="37" />
+      </frame>
+    </frame>
+    <frame id="89:9785" name="Frame 35" x="0" y="367" width="1023" height="33">
+      <text id="89:9786" name="Resumen de Reservaciones" x="12" y="4" width="299" height="25" />
+    </frame>
+    <frame id="89:9787" name="Frame 19" x="0" y="400" width="1023" height="809">
+      <instance id="89:9788" name="Checkout" x="8" y="8" width="1007" height="87" />
+      <instance id="89:9789" name="Checkout" x="8" y="107" width="1007" height="87" />
+      <instance id="89:9790" name="Checkout" x="8" y="206" width="1007" height="87" />
+      <instance id="89:9791" name="Checkout" x="8" y="305" width="1007" height="87" />
+      <instance id="89:9792" name="Checkout" x="8" y="404" width="1007" height="87" />
+      <instance id="89:9793" name="Checkout" x="8" y="503" width="1007" height="87" />
+      <instance id="89:9794" name="Checkout" x="8" y="602" width="1007" height="87" />
+      <frame id="89:9795" name="Frame 36" x="8" y="701" width="1007" height="43">
+        <text id="89:9796" name="Total:" x="0" y="14" width="57" height="25" />
+        <instance id="89:9797" name="FilterCostM" x="719" y="14" width="288" height="29" />
+      </frame>
+      <frame id="89:9798" name="Frame 37" x="8" y="756" width="1007" height="45">
+        <instance id="89:9799" name="Button" x="0" y="0" width="158" height="45" />
+        <instance id="89:9800" name="Button" x="927" y="0" width="80" height="45" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="73:8752" name="HabitacionesM" x="9208" y="6589" width="640" height="940">
+    <instance id="73:8753" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <instance id="73:8754" name="SubSelectorM" x="0" y="80" width="640" height="49" />
+    <frame id="73:8755" name="Frame 57" x="0" y="129" width="640" height="811">
+      <instance id="73:8756" name="RoomInfoM" x="8" y="8" width="624" height="795" />
+    </frame>
+  </frame>
+  <frame id="74:11641" name="HabitacionesM" x="9208" y="7543" width="1023" height="940">
+    <instance id="74:11642" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <instance id="74:11643" name="SubSelectorM" x="0" y="80" width="1023" height="49" />
+    <frame id="74:11644" name="Frame 57" x="0" y="129" width="1023" height="811">
+      <instance id="74:11645" name="RoomInfoM" x="8" y="8" width="1007" height="795" />
+    </frame>
+  </frame>
+  <frame id="73:8757" name="HabitacionesM" x="9208" y="5730" width="640" height="800">
+    <instance id="73:8758" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <instance id="73:8759" name="SubSelectorM" x="0" y="80" width="640" height="49" />
+    <frame id="73:8760" name="Frame 7" x="0" y="129" width="640" height="57">
+      <instance id="73:8761" name="SearchBarM" x="8" y="8" width="624" height="41" />
+    </frame>
+    <frame id="73:8762" name="Frame 19" x="0" y="186" width="640" height="145">
+      <frame id="73:8763" name="Frame 20" x="8" y="8" width="624" height="129">
+        <frame id="73:8764" name="Sentiment very dissatisfied" x="264" y="0" width="96" height="96" />
+        <text id="73:8769" name="No se encontraron resultados" x="0" y="96" width="624" height="33" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="76:4768" name="HabitacionesM" x="9992" y="5730" width="1024" height="800">
+    <instance id="76:4769" name="NavigationS/M" x="0" y="0" width="1024" height="80" />
+    <instance id="76:4770" name="SubSelectorM" x="0" y="80" width="1024" height="49" />
+    <frame id="76:4771" name="Frame 7" x="0" y="129" width="1024" height="57">
+      <instance id="76:4772" name="SearchBarM" x="8" y="8" width="1008" height="41" />
+    </frame>
+    <frame id="76:4773" name="Frame 19" x="0" y="186" width="1024" height="145">
+      <frame id="76:4774" name="Frame 20" x="8" y="8" width="1008" height="129">
+        <frame id="76:4775" name="Sentiment very dissatisfied" x="456" y="0" width="96" height="96" />
+        <text id="76:4780" name="No se encontraron resultados" x="0" y="96" width="1008" height="33" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="73:8770" name="HabitacionesM" x="9208" y="3629" width="640" height="723">
+    <instance id="73:8771" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <instance id="73:8772" name="SubSelectorM" x="0" y="80" width="640" height="49" />
+    <frame id="73:8773" name="Frame 7" x="0" y="129" width="640" height="57">
+      <instance id="73:8774" name="SearchBarM" x="8" y="8" width="624" height="41" />
+    </frame>
+    <frame id="73:8775" name="Frame 19" x="0" y="186" width="640" height="537">
+      <instance id="73:8776" name="RoomM" x="28" y="8" width="280" height="521" />
+      <instance id="73:8777" name="RoomM" x="332" y="8" width="280" height="521" />
+    </frame>
+  </frame>
+  <frame id="74:11366" name="HabitacionesM" x="9208" y="4405" width="1023" height="1268">
+    <instance id="74:11367" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <instance id="74:11368" name="SubSelectorM" x="0" y="80" width="1023" height="49" />
+    <frame id="74:11369" name="Frame 7" x="0" y="129" width="1023" height="57">
+      <instance id="74:11370" name="SearchBarM" x="8" y="8" width="1007" height="41" />
+    </frame>
+    <frame id="74:11371" name="Frame 19" x="0" y="186" width="1023" height="1082">
+      <instance id="74:11372" name="RoomM" x="67.5" y="8" width="280" height="521" />
+      <instance id="74:11373" name="RoomM" x="371.5" y="8" width="280" height="521" />
+      <instance id="74:11471" name="RoomM" x="675.5" y="8" width="280" height="521" />
+      <instance id="74:11508" name="RoomM" x="371.5" y="553" width="280" height="521" />
+    </frame>
+  </frame>
+  <frame id="73:8778" name="FiltrosOverlay" x="8417" y="4532" width="640" height="800">
+    <frame id="73:8779" name="Frame 9" x="0" y="0" width="160" height="800" />
+    <frame id="73:8780" name="Frame 8" x="160" y="0" width="480" height="800">
+      <frame id="73:8781" name="Frame 10" x="12" y="12" width="456" height="55">
+        <text id="73:8782" name="Filtros" x="0" y="0" width="130" height="49" />
+        <frame id="73:8783" name="Close" x="408" y="0.5" width="48" height="48" />
+      </frame>
+      <frame id="73:8786" name="Frame 12" x="12" y="83" width="456" height="107">
+        <text id="73:8787" name="Categorías" x="0" y="0" width="159" height="33" />
+        <frame id="73:8788" name="Frame 11" x="0" y="37" width="456" height="70">
+          <instance id="73:8789" name="TagsM" x="2" y="2" width="134" height="29" />
+          <instance id="73:8790" name="TagsM" x="144" y="2" width="134" height="29" />
+          <instance id="73:8791" name="TagsM" x="286" y="2" width="134" height="29" />
+          <instance id="73:8792" name="TagsM" x="2" y="39" width="134" height="29" />
+        </frame>
+      </frame>
+      <frame id="73:8793" name="Frame 13" x="12" y="206" width="456" height="129">
+        <text id="73:8794" name="Comodidades" x="0" y="0" width="202" height="33" />
+        <frame id="73:8795" name="Frame 11" x="0" y="37" width="456" height="92">
+          <instance id="73:8796" name="AttributeM" x="2" y="2" width="112" height="24" />
+          <instance id="73:8797" name="AttributeM" x="122" y="2" width="112" height="24" />
+          <instance id="73:8798" name="AttributeM" x="242" y="2" width="112" height="24" />
+          <instance id="73:8799" name="AttributeM" x="2" y="34" width="112" height="24" />
+          <instance id="73:8800" name="AttributeM" x="122" y="34" width="112" height="24" />
+          <instance id="73:8801" name="AttributeM" x="242" y="34" width="112" height="24" />
+          <instance id="73:8802" name="AttributeM" x="2" y="66" width="112" height="24" />
+        </frame>
+      </frame>
+      <frame id="73:8803" name="Frame 14" x="12" y="351" width="456" height="99">
+        <text id="73:8804" name="Precio" x="0" y="0" width="91" height="33" />
+        <frame id="73:8805" name="Frame 15" x="0" y="37" width="456" height="62">
+          <frame id="73:8806" name="Frame 16" x="0" y="0" width="456" height="29">
+            <text id="73:8807" name="Desde" x="0" y="4" width="58" height="21" />
+            <instance id="73:8808" name="FilterCostM" x="76" y="0" width="380" height="29" />
+          </frame>
+          <frame id="73:8809" name="Frame 17" x="0" y="33" width="456" height="29">
+            <text id="73:8810" name="Hasta" x="0" y="4" width="54" height="21" />
+            <instance id="73:8811" name="FilterCostM" x="76" y="0" width="380" height="29" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="73:8812" name="Frame 18" x="12" y="466" width="456" height="27">
+        <text id="73:8813" name="Disponibilidad" x="0" y="1" width="152" height="25" />
+        <instance id="73:8814" name="QuantityM" x="361" y="0" width="95" height="27" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="73:8815" name="ReservacionesM" x="8417" y="3629" width="640" height="800">
+    <instance id="73:8816" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <instance id="73:8817" name="SubSelectorM" x="0" y="80" width="640" height="157" />
+  </frame>
+  <frame id="73:8818" name="Perfil" x="11840" y="7543" width="640" height="768">
+    <instance id="73:8819" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8820" name="Frame 28" x="0" y="80" width="640" height="688">
+      <frame id="73:8821" name="Frame 29" x="12" y="24" width="616" height="249">
+        <frame id="73:8822" name="Person" x="212" y="0" width="192" height="192">
+          <vector id="73:8823" name="Vector" x="0" y="0" width="192" height="192" />
+          <vector id="73:8824" name="Vector" x="48" y="48" width="96" height="96" />
+        </frame>
+        <text id="73:8825" name="NOMBRE DE USUARIO" x="143" y="216" width="330" height="33" />
+      </frame>
+      <frame id="73:8826" name="Frame 30" x="12" y="305" width="616" height="54">
+        <text id="73:8827" name="correo.electronico@dominio.ext" x="167.5" y="0" width="281" height="21" />
+        <text id="73:8828" name="Administrador" x="244.5" y="33" width="127" height="21" />
+      </frame>
+      <instance id="73:8829" name="Button" x="247" y="391" width="146" height="45" />
+    </frame>
+  </frame>
+  <frame id="73:8830" name="Nosotros" x="13029" y="7543" width="640" height="891">
+    <instance id="73:8831" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8832" name="Frame 28" x="0" y="80" width="640" height="711">
+      <text id="73:8833" name="ASTIR" x="185.5" y="12" width="269" height="111" />
+      <frame id="73:8834" name="Frame 31" x="12" y="147" width="616" height="120">
+        <text id="73:8835" name="ASTIR es una entidad dedicada al desarrollo de herramientas digitales para la gestión de reservaciones hoteleras. Su actividad se enfoca en facilitar el registro, la organización y la consulta de información relacionada con las reservaciones, las habitaciones y las estancias de los huéspedes." x="0" y="20" width="488" height="80" />
+        <rounded-rectangle id="73:8836" name="Rectangle 1" x="496" y="0" width="120" height="120" />
+      </frame>
+      <frame id="73:8837" name="Frame 32" x="12" y="291" width="616" height="120">
+        <rounded-rectangle id="73:8838" name="Rectangle 2" x="0" y="0" width="120" height="120" />
+        <text id="73:8839" name="Este tipo de sistemas permite mantener la información organizada en un solo lugar, facilitando las tareas relacionadas con la administración de alojamientos. También ayuda a llevar un mejor control de las reservaciones y a reducir el uso de registros manuales." x="128" y="28" width="488" height="64" />
+      </frame>
+      <frame id="73:8840" name="Frame 33" x="12" y="435" width="616" height="120">
+        <text id="73:8841" name="ASTIR se enfoca en atender las necesidades básicas de organización que existen dentro de la gestión hotelera, tomando en cuenta las actividades que se realizan al recibir, registrar y administrar reservaciones." x="0" y="28" width="488" height="64" />
+        <rounded-rectangle id="73:8842" name="Rectangle 3" x="496" y="0" width="120" height="120" />
+      </frame>
+      <frame id="73:8843" name="Frame 34" x="12" y="579" width="616" height="120">
+        <rounded-rectangle id="73:8844" name="Rectangle 4" x="0" y="0" width="120" height="120" />
+        <text id="73:8845" name="De esta manera, buscamos que la gestión de reservaciones sea un proceso más ordenado y sencillo, mediante el uso de herramientas digitales que permitan manejar la información de forma clara y facilitar las actividades administrativas relacionadas con el alojamiento." x="128" y="20" width="488" height="80" />
+      </frame>
+    </frame>
+    <instance id="85:7661" name="Footer" x="0" y="791" width="640" height="100" />
+  </frame>
+  <frame id="73:8856" name="Nosotros" x="12837" y="8531" width="1023" height="891">
+    <instance id="73:8857" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <frame id="73:8858" name="Frame 28" x="0" y="80" width="1023" height="711">
+      <text id="73:8859" name="ASTIR" x="377" y="12" width="269" height="111" />
+      <frame id="73:8860" name="Frame 31" x="12" y="147" width="999" height="120">
+        <text id="73:8861" name="ASTIR es una entidad dedicada al desarrollo de herramientas digitales para la gestión de reservaciones hoteleras. Su actividad se enfoca en facilitar el registro, la organización y la consulta de información relacionada con las reservaciones, las habitaciones y las estancias de los huéspedes." x="0" y="36" width="871" height="48" />
+        <rounded-rectangle id="73:8862" name="Rectangle 1" x="879" y="0" width="120" height="120" />
+      </frame>
+      <frame id="73:8863" name="Frame 32" x="12" y="291" width="999" height="120">
+        <rounded-rectangle id="73:8864" name="Rectangle 2" x="0" y="0" width="120" height="120" />
+        <text id="73:8865" name="Este tipo de sistemas permite mantener la información organizada en un solo lugar, facilitando las tareas relacionadas con la administración de alojamientos. También ayuda a llevar un mejor control de las reservaciones y a reducir el uso de registros manuales." x="128" y="36" width="871" height="48" />
+      </frame>
+      <frame id="73:8866" name="Frame 33" x="12" y="435" width="999" height="120">
+        <text id="73:8867" name="ASTIR se enfoca en atender las necesidades básicas de organización que existen dentro de la gestión hotelera, tomando en cuenta las actividades que se realizan al recibir, registrar y administrar reservaciones." x="0" y="44" width="871" height="32" />
+        <rounded-rectangle id="73:8868" name="Rectangle 3" x="879" y="0" width="120" height="120" />
+      </frame>
+      <frame id="73:8869" name="Frame 34" x="12" y="579" width="999" height="120">
+        <rounded-rectangle id="73:8870" name="Rectangle 4" x="0" y="0" width="120" height="120" />
+        <text id="73:8871" name="De esta manera, buscamos que la gestión de reservaciones sea un proceso más ordenado y sencillo, mediante el uso de herramientas digitales que permitan manejar la información de forma clara y facilitar las actividades administrativas relacionadas con el alojamiento." x="128" y="36" width="871" height="48" />
+      </frame>
+    </frame>
+    <instance id="85:7672" name="Footer" x="0" y="791" width="1023" height="100" />
+  </frame>
+  <frame id="73:8882" name="Perfil" x="11648" y="8480" width="1023" height="768">
+    <instance id="73:8883" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <frame id="73:8884" name="Frame 28" x="0" y="80" width="1023" height="688">
+      <frame id="73:8885" name="Frame 29" x="12" y="24" width="999" height="249">
+        <frame id="73:8886" name="Person" x="403.5" y="0" width="192" height="192">
+          <vector id="73:8887" name="Vector" x="0" y="0" width="192" height="192" />
+          <vector id="73:8888" name="Vector" x="48" y="48" width="96" height="96" />
+        </frame>
+        <text id="73:8889" name="NOMBRE DE USUARIO" x="334.5" y="216" width="330" height="33" />
+      </frame>
+      <frame id="73:8890" name="Frame 30" x="12" y="305" width="999" height="54">
+        <text id="73:8891" name="correo.electronico@dominio.ext" x="359" y="0" width="281" height="21" />
+        <text id="73:8892" name="Usuario" x="464.5" y="33" width="70" height="21" />
+      </frame>
+      <instance id="73:8893" name="Button" x="438.5" y="391" width="146" height="45" />
+    </frame>
+  </frame>
+  <frame id="73:8894" name="ReservacionesS" x="13296" y="3623" width="640" height="966">
+    <instance id="73:8895" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <instance id="73:8896" name="SubSelectorM" x="0" y="80" width="640" height="49" />
+    <frame id="73:8897" name="Frame 22" x="0" y="129" width="640" height="57">
+      <instance id="73:8898" name="SearchBarM" x="8" y="8" width="624" height="41" />
+    </frame>
+    <frame id="73:8899" name="Frame 27" x="0" y="186" width="640" height="780">
+      <instance id="73:8900" name="UserM" x="8" y="8" width="624" height="85" />
+      <instance id="73:8901" name="UserM" x="8" y="105" width="624" height="85" />
+      <instance id="73:8902" name="UserM" x="8" y="202" width="624" height="85" />
+      <instance id="73:8903" name="UserM" x="8" y="299" width="624" height="85" />
+      <instance id="73:8904" name="UserM" x="8" y="396" width="624" height="85" />
+      <instance id="73:8905" name="UserM" x="8" y="493" width="624" height="85" />
+      <instance id="73:8906" name="UserM" x="8" y="590" width="624" height="85" />
+      <instance id="73:8907" name="UserM" x="8" y="687" width="624" height="85" />
+    </frame>
+  </frame>
+  <frame id="73:8908" name="ReservacionesS" x="13104" y="4724" width="1023" height="966">
+    <instance id="73:8909" name="NavigationS/M" x="0" y="0" width="1023" height="80" />
+    <instance id="73:8910" name="SubSelectorM" x="0" y="80" width="1023" height="49" />
+    <frame id="73:8911" name="Frame 22" x="0" y="129" width="1023" height="57">
+      <instance id="73:8912" name="SearchBarM" x="8" y="8" width="1007" height="41" />
+    </frame>
+    <frame id="73:8913" name="Frame 27" x="0" y="186" width="1023" height="780">
+      <instance id="73:8914" name="UserM" x="8" y="8" width="1007" height="85" />
+      <instance id="73:8915" name="UserM" x="8" y="105" width="1007" height="85" />
+      <instance id="73:8916" name="UserM" x="8" y="202" width="1007" height="85" />
+      <instance id="73:8917" name="UserM" x="8" y="299" width="1007" height="85" />
+      <instance id="73:8918" name="UserM" x="8" y="396" width="1007" height="85" />
+      <instance id="73:8919" name="UserM" x="8" y="493" width="1007" height="85" />
+      <instance id="73:8920" name="UserM" x="8" y="590" width="1007" height="85" />
+      <instance id="73:8921" name="UserM" x="8" y="687" width="1007" height="85" />
+    </frame>
+  </frame>
+  <frame id="73:8922" name="Reservas" x="11840" y="3623" width="640" height="1468">
+    <instance id="73:8923" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <instance id="73:8924" name="SubSelectorM" x="0" y="80" width="640" height="49" />
+    <frame id="73:8925" name="Frame 20" x="0" y="129" width="640" height="57">
+      <instance id="73:8926" name="SearchBarM" x="8" y="8" width="624" height="41" />
+    </frame>
+    <frame id="73:8927" name="Frame 21" x="0" y="186" width="640" height="1282">
+      <instance id="73:8928" name="GestionRoomM" x="8" y="8" width="624" height="106" />
+      <instance id="73:8929" name="GestionRoomM" x="8" y="126" width="624" height="101" />
+      <instance id="73:8930" name="GestionRoomM" x="8" y="239" width="624" height="106" />
+      <instance id="73:8931" name="GestionRoomM" x="8" y="357" width="624" height="101" />
+      <instance id="73:8932" name="GestionRoomM" x="8" y="470" width="624" height="106" />
+      <instance id="73:8933" name="GestionRoomM" x="8" y="588" width="624" height="106" />
+      <instance id="73:8934" name="GestionRoomM" x="8" y="706" width="624" height="101" />
+      <instance id="73:8935" name="GestionRoomM" x="8" y="819" width="624" height="106" />
+      <instance id="73:8936" name="GestionRoomM" x="8" y="937" width="624" height="106" />
+      <instance id="73:8937" name="GestionRoomM" x="8" y="1055" width="624" height="106" />
+      <instance id="73:8938" name="GestionRoomM" x="8" y="1173" width="624" height="101" />
+    </frame>
+  </frame>
+  <frame id="89:8008" name="Reservas" x="11628" y="5228" width="1023" height="1468">
+    <instance id="89:8009" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <instance id="89:8010" name="SubSelectorM" x="0" y="80" width="1023" height="49" />
+    <frame id="89:8011" name="Frame 20" x="0" y="129" width="1023" height="57">
+      <instance id="89:8012" name="SearchBarM" x="8" y="8" width="1007" height="41" />
+    </frame>
+    <frame id="89:8013" name="Frame 21" x="0" y="186" width="1023" height="1282">
+      <instance id="89:8014" name="GestionRoomM" x="8" y="8" width="1007" height="106" />
+      <instance id="89:8015" name="GestionRoomM" x="8" y="126" width="1007" height="101" />
+      <instance id="89:8016" name="GestionRoomM" x="8" y="239" width="1007" height="106" />
+      <instance id="89:8017" name="GestionRoomM" x="8" y="357" width="1007" height="101" />
+      <instance id="89:8018" name="GestionRoomM" x="8" y="470" width="1007" height="106" />
+      <instance id="89:8019" name="GestionRoomM" x="8" y="588" width="1007" height="106" />
+      <instance id="89:8020" name="GestionRoomM" x="8" y="706" width="1007" height="101" />
+      <instance id="89:8021" name="GestionRoomM" x="8" y="819" width="1007" height="106" />
+      <instance id="89:8022" name="GestionRoomM" x="8" y="937" width="1007" height="106" />
+      <instance id="89:8023" name="GestionRoomM" x="8" y="1055" width="1007" height="106" />
+      <instance id="89:8024" name="GestionRoomM" x="8" y="1173" width="1007" height="101" />
+    </frame>
+  </frame>
+  <frame id="73:8939" name="Reservas" x="15865" y="3596" width="640" height="1081">
+    <instance id="73:8940" name="NavigationS/M" x="0" y="0" width="640" height="80" />
+    <frame id="73:8941" name="Frame 20" x="0" y="80" width="640" height="57">
+      <instance id="73:8942" name="SearchBarM" x="8" y="8" width="624" height="41" />
+    </frame>
+    <frame id="73:8943" name="Frame 21" x="0" y="137" width="640" height="944">
+      <instance id="73:8944" name="ReservacionesM" x="8" y="8" width="624" height="105" />
+      <instance id="73:8945" name="ReservacionesM" x="8" y="125" width="624" height="105" />
+      <instance id="73:8946" name="ReservacionesM" x="8" y="242" width="624" height="106" />
+      <instance id="73:8947" name="ReservacionesM" x="8" y="360" width="624" height="106" />
+      <instance id="73:8948" name="ReservacionesM" x="8" y="478" width="624" height="106" />
+      <instance id="73:8949" name="ReservacionesM" x="8" y="596" width="624" height="105" />
+      <instance id="73:8950" name="ReservacionesM" x="8" y="713" width="624" height="105" />
+      <instance id="73:8951" name="ReservacionesM" x="8" y="830" width="624" height="106" />
+    </frame>
+  </frame>
+  <frame id="89:9001" name="Reservas" x="15865" y="4706" width="1023" height="1081">
+    <instance id="89:9002" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <frame id="89:9003" name="Frame 20" x="0" y="80" width="1023" height="57">
+      <instance id="89:9004" name="SearchBarM" x="8" y="8" width="1007" height="41" />
+    </frame>
+    <frame id="89:9005" name="Frame 21" x="0" y="137" width="1023" height="944">
+      <instance id="89:9006" name="ReservacionesM" x="8" y="8" width="1007" height="105" />
+      <instance id="89:9007" name="ReservacionesM" x="8" y="125" width="1007" height="105" />
+      <instance id="89:9008" name="ReservacionesM" x="8" y="242" width="1007" height="106" />
+      <instance id="89:9009" name="ReservacionesM" x="8" y="360" width="1007" height="106" />
+      <instance id="89:9010" name="ReservacionesM" x="8" y="478" width="1007" height="106" />
+      <instance id="89:9011" name="ReservacionesM" x="8" y="596" width="1007" height="105" />
+      <instance id="89:9012" name="ReservacionesM" x="8" y="713" width="1007" height="105" />
+      <instance id="89:9013" name="ReservacionesM" x="8" y="830" width="1007" height="106" />
+    </frame>
+  </frame>
+  <text id="73:8969" name="Text" x="13384" y="3896" width="0" height="10" />
+  <text id="73:9046" name="Text" x="10264" y="3431" width="0" height="25" />
+  <instance id="73:9047" name="Snackbar" x="14388" y="4544" width="600" height="41" />
+  <instance id="73:9048" name="Snackbar" x="15865" y="6712" width="600" height="41" />
+  <instance id="73:9049" name="Snackbar" x="11016" y="2546" width="600" height="41" />
+  <instance id="73:9050" name="Snackbar" x="11840" y="8375" width="600" height="41" />
+  <frame id="79:7269" name="ConfirmDelete" x="9208" y="8517" width="640" height="800">
+    <instance id="79:7270" name="DialogWarnsM" x="48" y="302.5" width="544" height="195" />
+  </frame>
+  <frame id="79:7271" name="ConfirmEdit" x="10551" y="8517" width="639" height="800">
+    <instance id="79:7272" name="DialogWarnsM" x="48" y="316.5" width="543" height="167" />
+  </frame>
+  <frame id="79:7273" name="ConfirmCancel" x="9880" y="8517" width="639" height="800">
+    <instance id="79:7274" name="DialogWarnsM" x="48" y="316.5" width="543" height="167" />
+  </frame>
+  <text id="89:9977" name="T" x="16858" y="7990" width="12" height="21" />
+  <frame id="89:9996" name="RegisterS" x="26187" y="2410" width="640" height="800">
+    <instance id="89:9997" name="NavigationSM" x="0" y="0" width="640" height="80" />
+    <frame id="89:9998" name="Frame 55" x="0" y="80" width="640" height="720">
+      <text id="89:9999" name="Registrar Usuario" x="133" y="101" width="374" height="49" />
+      <frame id="89:10000" name="Frame 45" x="12" y="174" width="616" height="380">
+        <frame id="89:10001" name="Frame 51" x="8" y="8" width="600" height="64">
+          <text id="89:10002" name="Nombre:" x="0" y="0" width="93" height="25" />
+          <instance id="89:10003" name="FieldsM" x="0" y="27" width="600" height="37" />
+        </frame>
+        <frame id="89:10004" name="Frame 52" x="8" y="96" width="600" height="82">
+          <text id="89:10005" name="Correo electrónico:" x="0" y="0" width="204" height="25" />
+          <instance id="89:10006" name="FieldsM" x="0" y="27" width="600" height="37" />
+          <text id="89:10007" name="El correo ingresado no es valido." x="0" y="66" width="231" height="16" />
+        </frame>
+        <frame id="89:10008" name="Frame 53" x="8" y="202" width="600" height="82">
+          <text id="89:10009" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="89:10010" name="FieldsM" x="0" y="27" width="600" height="37" />
+          <text id="89:10011" name="La contraseña no tiene N caracteristicas." x="0" y="66" width="293" height="16" />
+        </frame>
+        <frame id="89:10012" name="Frame 54" x="8" y="308" width="600" height="64">
+          <text id="89:10013" name="Confirmar contraseña:" x="0" y="0" width="241" height="25" />
+          <instance id="89:10014" name="FieldsM" x="0" y="27" width="600" height="37" />
+        </frame>
+      </frame>
+      <instance id="89:10015" name="Button" x="258.5" y="578" width="123" height="41" />
+    </frame>
+  </frame>
+  <frame id="89:10016" name="LoginS" x="26187" y="3365" width="1023" height="800">
+    <instance id="89:10017" name="NavigationSM" x="0" y="0" width="1023" height="80" />
+    <frame id="89:10018" name="Frame 55" x="0" y="80" width="1023" height="720">
+      <text id="89:10019" name="Iniciar Sesión" x="369.5" y="207" width="284" height="49" />
+      <frame id="89:10020" name="Frame 45" x="12" y="280" width="999" height="168">
+        <frame id="89:10021" name="Frame 52" x="8" y="8" width="983" height="64">
+          <text id="89:10022" name="Correo electrónico:" x="0" y="0" width="204" height="25" />
+          <instance id="89:10023" name="FieldsM" x="0" y="27" width="983" height="37" />
+        </frame>
+        <frame id="89:10024" name="Frame 53" x="8" y="96" width="983" height="64">
+          <text id="89:10025" name="Contraseña:" x="0" y="0" width="132" height="25" />
+          <instance id="89:10026" name="FieldsM" x="0" y="27" width="983" height="37" />
+        </frame>
+      </frame>
+      <instance id="89:10027" name="Button" x="467" y="472" width="89" height="41" />
+    </frame>
+  </frame>
+  <frame id="89:10028" name="FrontS" x="21278" y="2297" width="1024" height="1337">
+    <instance id="89:10029" name="NavigationSM" x="0" y="0" width="1024" height="80" />
+    <frame id="89:10030" name="Frame 59" x="0" y="92" width="1024" height="415.9999694824219">
+      <frame id="89:10031" name="Frame 2" x="46" y="144.99998474121094" width="428" height="126">
+        <text id="89:10032" name="Para juntas y negocios Confía en nosotros" x="8" y="12" width="412" height="102" />
+      </frame>
+      <frame id="89:10033" name="Frame 1" x="498" y="0" width="480" height="415.9999694824219">
+        <instance id="89:10034" name="CarouselM" x="12" y="6.128570556640625" width="456" height="403.74285888671875" />
+      </frame>
+    </frame>
+    <frame id="89:10035" name="Frame 3" x="0" y="520" width="1024" height="96">
+      <text id="89:10036" name="Reuniones, contratos, y un descanso" x="10" y="10" width="1004" height="33" />
+      <text id="89:10037" name="Tenemos todo para tus asuntos" x="10" y="53" width="1004" height="33" />
+    </frame>
+    <text id="89:10038" name="Alojamiento" x="342.5" y="628" width="339" height="56" />
+    <instance id="89:10039" name="ShowCarousel" x="0" y="696" width="1024" height="529" />
+    <instance id="89:10040" name="Footer" x="0" y="1237" width="1024" height="100" />
+  </frame>
+  <frame id="89:10041" name="FrontS" x="22704" y="2297" width="1919" height="1337">
+    <instance id="89:10042" name="NavigationSM" x="0" y="0" width="1919" height="80" />
+    <frame id="89:10043" name="Frame 59" x="0" y="92" width="1919" height="415.9999694824219">
+      <frame id="89:10044" name="Frame 2" x="493.5" y="144.99998474121094" width="428" height="126">
+        <text id="89:10045" name="Para juntas y negocios Confía en nosotros" x="8" y="12" width="412" height="102" />
+      </frame>
+      <frame id="89:10046" name="Frame 1" x="945.5" y="0" width="480" height="415.9999694824219">
+        <instance id="89:10047" name="CarouselM" x="12" y="6.128570556640625" width="456" height="403.74285888671875" />
+      </frame>
+    </frame>
+    <frame id="89:10048" name="Frame 3" x="0" y="520" width="1919" height="96">
+      <text id="89:10049" name="Reuniones, contratos, y un descanso" x="10" y="10" width="1899" height="33" />
+      <text id="89:10050" name="Tenemos todo para tus asuntos" x="10" y="53" width="1899" height="33" />
+    </frame>
+    <text id="89:10051" name="Alojamiento" x="790" y="628" width="339" height="56" />
+    <instance id="89:10052" name="ShowCarousel" x="0" y="696" width="1919" height="529" />
+    <instance id="89:10053" name="Footer" x="0" y="1237" width="1919" height="100" />
+  </frame>
+  <frame id="89:10054" name="HabitacionS" x="22867" y="4183" width="1024" height="1229">
+    <instance id="94:12871" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="95:16938" name="Frame 70" x="0" y="72" width="1024" height="1157">
+      <frame id="89:10056" name="Frame 19" x="12" y="12" width="1000" height="535">
+        <instance id="89:10057" name="RoomL" x="24" y="24" width="952" height="487" />
+      </frame>
+      <frame id="95:16939" name="Frame 66" x="12" y="559" width="1000" height="586">
+        <text id="95:16940" name="Ver Más Habitaciones" x="8" y="0" width="467" height="49" />
+        <instance id="95:16941" name="ShowCarousel" x="8" y="57" width="984" height="529" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="95:17121" name="HabitacionS" x="22867" y="5648" width="1919" height="1229">
+    <instance id="95:17122" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="95:17123" name="Frame 70" x="0" y="72" width="1919" height="1157">
+      <frame id="95:17124" name="Frame 19" x="447.5" y="12" width="1024" height="535">
+        <instance id="95:17125" name="RoomL" x="24" y="24" width="976" height="487" />
+      </frame>
+      <frame id="95:17126" name="Frame 66" x="12" y="559" width="1895" height="586">
+        <text id="95:17127" name="Ver Más Habitaciones" x="8" y="0" width="467" height="49" />
+        <instance id="95:17128" name="ShowCarousel" x="8" y="57" width="1879" height="529" />
+      </frame>
+    </frame>
+  </frame>
+  <instance id="89:10062" name="Snackbar" x="23079" y="5481" width="600" height="41" />
+  <frame id="89:10063" name="Comprar" x="27532" y="4862" width="1023" height="1439">
+    <instance id="89:10064" name="NavigationL" x="0" y="0" width="1023" height="72" />
+    <frame id="89:10065" name="Frame 7" x="0" y="72" width="1023" height="69">
+      <instance id="89:10066" name="SearchBarL" x="8" y="8" width="1007" height="53" />
+    </frame>
+    <frame id="89:10067" name="Frame 19" x="0" y="141" width="1023" height="1298">
+      <instance id="89:10068" name="RoomL" x="67.5" y="8" width="280" height="629" />
+      <instance id="89:10069" name="RoomL" x="371.5" y="8" width="280" height="629" />
+      <instance id="105:20832" name="RoomL" x="675.5" y="8" width="280" height="629" />
+      <instance id="105:20883" name="RoomL" x="219.5" y="661" width="280" height="629" />
+      <instance id="105:20934" name="RoomL" x="523.5" y="661" width="280" height="629" />
+    </frame>
+  </frame>
+  <frame id="105:20985" name="Comprar" x="27532" y="6483" width="1919" height="1439">
+    <instance id="105:20986" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="105:20987" name="Frame 7" x="0" y="72" width="1919" height="69">
+      <instance id="105:20988" name="SearchBarL" x="8" y="8" width="1903" height="53" />
+    </frame>
+    <frame id="105:20989" name="Frame 19" x="0" y="141" width="1919" height="1298">
+      <instance id="105:20990" name="RoomL" x="59.5" y="8" width="280" height="629" />
+      <instance id="105:20991" name="RoomL" x="363.5" y="8" width="280" height="629" />
+      <instance id="105:20992" name="RoomL" x="667.5" y="8" width="280" height="629" />
+      <instance id="105:20993" name="RoomL" x="971.5" y="8" width="280" height="629" />
+      <instance id="105:20994" name="RoomL" x="1275.5" y="8" width="280" height="629" />
+      <instance id="105:21264" name="RoomL" x="1579.5" y="8" width="280" height="629" />
+      <instance id="105:21315" name="RoomL" x="211.5" y="661" width="280" height="629" />
+      <instance id="105:21366" name="RoomL" x="515.5" y="661" width="280" height="629" />
+      <instance id="105:21417" name="RoomL" x="819.5" y="661" width="280" height="629" />
+      <instance id="105:21468" name="RoomL" x="1123.5" y="661" width="280" height="629" />
+      <instance id="105:21519" name="RoomL" x="1427.5" y="661" width="280" height="629" />
+    </frame>
+  </frame>
+  <frame id="89:10080" name="Carrito" x="29944" y="4782" width="1024" height="1060">
+    <instance id="89:10081" name="NavigationSM" x="0" y="0" width="1024" height="80" />
+    <frame id="89:10084" name="Frame 19" x="0" y="80" width="1024" height="776">
+      <frame id="105:21994" name="Frame 72" x="8" y="8" width="1008" height="374">
+        <frame id="89:10082" name="Frame 35" x="0" y="0" width="612" height="374">
+          <text id="89:10083" name="Carrito" x="12" y="4" width="147" height="49" />
+          <text id="89:10085" name="Tu carrito esta vacío." x="12" y="65" width="588" height="33" />
+        </frame>
+        <frame id="105:23502" name="Frame 72" x="612" y="0" width="396" height="374">
+          <frame id="105:23503" name="Frame 36" x="12" y="95.5" width="372" height="33">
+            <text id="105:23504" name="Total:" x="0" y="0" width="76" height="33" />
+            <instance id="105:23505" name="FilterCostL" x="84" y="0" width="288" height="33" />
+          </frame>
+          <frame id="105:23506" name="Frame 37" x="12" y="152.5" width="372" height="126">
+            <instance id="105:23508" name="Button" x="0" y="0" width="372" height="57" />
+            <instance id="105:23507" name="Button" x="0" y="69" width="372" height="57" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="105:21996" name="Frame 66" x="8" y="394" width="1008" height="374">
+        <text id="105:21997" name="Ver Más Habitaciones" x="8" y="0" width="467" height="49" />
+        <instance id="105:21998" name="ShowCarousel" x="8" y="57" width="992" height="529" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="105:22249" name="Carrito" x="29944" y="6163" width="1024" height="1424">
+    <instance id="105:22250" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="105:22251" name="Frame 19" x="0" y="72" width="1024" height="1414">
+      <frame id="105:22252" name="Frame 72" x="8" y="8" width="1008" height="808">
+        <frame id="105:22253" name="Frame 35" x="0" y="0" width="612" height="808">
+          <text id="105:22254" name="Carrito" x="12" y="4" width="147" height="49" />
+          <frame id="105:22806" name="Frame 73" x="12" y="65" width="588" height="739">
+            <instance id="105:23085" name="Carrito" x="0" y="0" width="588" height="97" />
+            <instance id="105:23086" name="Carrito" x="0" y="107" width="588" height="97" />
+            <instance id="105:23087" name="Carrito" x="0" y="214" width="588" height="97" />
+            <instance id="105:23088" name="Carrito" x="0" y="321" width="588" height="97" />
+            <instance id="105:23089" name="Carrito" x="0" y="428" width="588" height="97" />
+            <instance id="105:23090" name="Carrito" x="0" y="535" width="588" height="97" />
+            <instance id="105:23091" name="Carrito" x="0" y="642" width="588" height="97" />
+          </frame>
+        </frame>
+        <frame id="105:22256" name="Frame 71" x="612" y="0" width="396" height="808">
+          <frame id="105:22257" name="Frame 36" x="12" y="312.5" width="372" height="33">
+            <text id="105:22258" name="Total:" x="0" y="0" width="76" height="33" />
+            <instance id="105:22259" name="FilterCostL" x="84" y="0" width="288" height="33" />
+          </frame>
+          <frame id="105:22260" name="Frame 37" x="12" y="369.5" width="372" height="126">
+            <instance id="105:22262" name="Button" x="0" y="0" width="372" height="57" />
+            <instance id="105:22261" name="Button" x="0" y="69" width="372" height="57" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="105:22263" name="Frame 66" x="8" y="828" width="1008" height="578">
+        <text id="105:22264" name="Ver Más Habitaciones" x="8" y="0" width="467" height="49" />
+        <instance id="105:22265" name="ShowCarousel" x="8" y="57" width="992" height="529" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="105:23517" name="Carrito" x="29944" y="7701" width="1919" height="1424">
+    <instance id="105:23518" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="105:23519" name="Frame 19" x="0" y="72" width="1919" height="1414">
+      <frame id="105:23520" name="Frame 72" x="8" y="8" width="1903" height="808">
+        <frame id="105:23521" name="Frame 35" x="0" y="0" width="1507" height="808">
+          <text id="105:23522" name="Carrito" x="12" y="4" width="147" height="49" />
+          <frame id="105:23523" name="Frame 73" x="12" y="65" width="1483" height="739">
+            <instance id="105:23524" name="Carrito" x="0" y="0" width="1483" height="97" />
+            <instance id="105:23525" name="Carrito" x="0" y="107" width="1483" height="97" />
+            <instance id="105:23526" name="Carrito" x="0" y="214" width="1483" height="97" />
+            <instance id="105:23527" name="Carrito" x="0" y="321" width="1483" height="97" />
+            <instance id="105:23528" name="Carrito" x="0" y="428" width="1483" height="97" />
+            <instance id="105:23529" name="Carrito" x="0" y="535" width="1483" height="97" />
+            <instance id="105:23530" name="Carrito" x="0" y="642" width="1483" height="97" />
+          </frame>
+        </frame>
+        <frame id="105:23531" name="Frame 71" x="1507" y="0" width="396" height="808">
+          <frame id="105:23532" name="Frame 36" x="12" y="312.5" width="372" height="33">
+            <text id="105:23533" name="Total:" x="0" y="0" width="76" height="33" />
+            <instance id="105:23534" name="FilterCostL" x="84" y="0" width="288" height="33" />
+          </frame>
+          <frame id="105:23535" name="Frame 37" x="12" y="369.5" width="372" height="126">
+            <instance id="105:23536" name="Button" x="0" y="0" width="372" height="57" />
+            <instance id="105:23537" name="Button" x="0" y="69" width="372" height="57" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="105:23538" name="Frame 66" x="8" y="828" width="1903" height="578">
+        <text id="105:23539" name="Ver Más Habitaciones" x="8" y="0" width="467" height="49" />
+        <instance id="105:23540" name="ShowCarousel" x="8" y="57" width="1887" height="529" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:10133" name="Carrito" x="32220" y="9661" width="1024" height="1080">
+    <instance id="89:10134" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="89:10135" name="Frame 44" x="0" y="72" width="1024" height="1008">
+      <text id="89:10136" name="Se han realizado sus reservaciones" x="12" y="315" width="1000" height="49" />
+      <frame id="89:10137" name="Frame 43" x="416" y="396" width="192" height="192">
+        <frame id="89:10138" name="Check" x="36" y="36" width="120" height="120">
+          <vector id="89:10139" name="Vector" x="0" y="0" width="120" height="120" />
+          <vector id="89:10140" name="Vector" x="0" y="14.258102416992188" width="120" height="91.48379516601562" />
+        </frame>
+      </frame>
+      <instance id="89:10141" name="Button" x="389" y="620" width="246" height="73" />
+    </frame>
+  </frame>
+  <frame id="89:10142" name="Carrito" x="32220" y="10856" width="1919" height="1080">
+    <instance id="89:10143" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="89:10144" name="Frame 44" x="0" y="72" width="1919" height="1008">
+      <text id="89:10145" name="Se han realizado sus reservaciones" x="12" y="315" width="1895" height="49" />
+      <frame id="89:10146" name="Frame 43" x="863.5" y="396" width="192" height="192">
+        <frame id="89:10147" name="Check" x="36" y="36" width="120" height="120">
+          <vector id="89:10148" name="Vector" x="0" y="0" width="120" height="120" />
+          <vector id="89:10149" name="Vector" x="0" y="14.258102416992188" width="120" height="91.48379516601562" />
+        </frame>
+      </frame>
+      <instance id="89:10150" name="Button" x="836.5" y="620" width="246" height="73" />
+    </frame>
+  </frame>
+  <frame id="89:10160" name="Carrito" x="32220" y="7085" width="1024" height="1080">
+    <instance id="89:10161" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="89:10162" name="Frame 44" x="0" y="72" width="1024" height="1008">
+      <text id="89:10163" name="Algo salió mal" x="12" y="313" width="1000" height="49" />
+      <frame id="89:10164" name="Frame 43" x="414" y="394" width="196" height="196">
+        <frame id="89:10165" name="Sentiment very dissatisfied" x="24" y="24" width="148" height="148" />
+      </frame>
+      <instance id="89:10170" name="Button" x="389" y="622" width="246" height="73" />
+    </frame>
+  </frame>
+  <frame id="89:10171" name="Carrito" x="32220" y="8373" width="1919" height="1080">
+    <instance id="89:10172" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="89:10173" name="Frame 44" x="0" y="72" width="1919" height="1008">
+      <text id="89:10174" name="Algo salió mal" x="12" y="313" width="1895" height="49" />
+      <frame id="89:10175" name="Frame 43" x="861.5" y="394" width="196" height="196">
+        <frame id="89:10176" name="Sentiment very dissatisfied" x="24" y="24" width="148" height="148" />
+      </frame>
+      <instance id="89:10181" name="Button" x="836.5" y="622" width="246" height="73" />
+    </frame>
+  </frame>
+  <frame id="89:10182" name="Carrito" x="29954" y="9244" width="1024" height="1243">
+    <instance id="89:10183" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="89:10184" name="Frame 42" x="0" y="72" width="1024" height="57">
+      <text id="89:10185" name="Informacion de Pago" x="12" y="4" width="447" height="49" />
+    </frame>
+    <frame id="89:10186" name="Frame 38" x="0" y="129" width="1024" height="192">
+      <frame id="89:10187" name="Frame 39" x="12" y="8" width="1000" height="70">
+        <text id="89:10188" name="Número de Tarjeta:" x="0" y="0" width="205" height="25" />
+        <instance id="89:10189" name="FieldsL" x="0" y="29" width="1000" height="41" />
+      </frame>
+      <frame id="89:10190" name="Frame 40" x="12" y="90" width="1000" height="41">
+        <text id="89:10191" name="Fecha de Caducidad:" x="0" y="8" width="231" height="25" />
+        <instance id="89:10192" name="FieldsL" x="239" y="0" width="86" height="41" />
+      </frame>
+      <frame id="89:10193" name="Frame 41" x="12" y="143" width="1000" height="41">
+        <text id="89:10194" name="CVV:" x="0" y="8" width="52" height="25" />
+        <instance id="89:10195" name="FieldsL" x="60" y="0" width="64" height="41" />
+      </frame>
+    </frame>
+    <frame id="89:10196" name="Frame 35" x="0" y="321" width="1024" height="41">
+      <text id="89:10197" name="Resumen de Reservaciones" x="12" y="4" width="398" height="33" />
+    </frame>
+    <frame id="89:10198" name="Frame 19" x="0" y="362" width="1024" height="881">
+      <instance id="89:10199" name="Checkout" x="8" y="8" width="1008" height="95" />
+      <instance id="89:10200" name="Checkout" x="8" y="115" width="1008" height="95" />
+      <instance id="89:10201" name="Checkout" x="8" y="222" width="1008" height="95" />
+      <instance id="89:10202" name="Checkout" x="8" y="329" width="1008" height="95" />
+      <instance id="89:10203" name="Checkout" x="8" y="436" width="1008" height="95" />
+      <instance id="89:10204" name="Checkout" x="8" y="543" width="1008" height="95" />
+      <instance id="89:10205" name="Checkout" x="8" y="650" width="1008" height="95" />
+      <frame id="89:10206" name="Frame 36" x="8" y="757" width="1008" height="47">
+        <text id="89:10207" name="Total:" x="0" y="14" width="76" height="33" />
+        <instance id="89:10208" name="FilterCostL" x="720" y="14" width="288" height="33" />
+      </frame>
+      <frame id="89:10209" name="Frame 37" x="8" y="816" width="1008" height="57">
+        <instance id="89:10210" name="Button" x="0" y="0" width="263" height="57" />
+        <instance id="89:10211" name="Button" x="871" y="0" width="137" height="57" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="105:24630" name="Carrito" x="29944" y="10606" width="1919" height="1268">
+    <instance id="105:24631" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="105:24632" name="Frame 42" x="0" y="72" width="1919" height="57">
+      <text id="105:24633" name="Informacion de Pago" x="12" y="4" width="447" height="49" />
+    </frame>
+    <frame id="105:24634" name="Frame 38" x="0" y="129" width="1919" height="217">
+      <frame id="105:24635" name="Frame 39" x="12" y="8" width="1895" height="95">
+        <text id="105:24636" name="Número de Tarjeta:" x="0" y="0" width="205" height="25" />
+        <instance id="105:24637" name="FieldsL" x="0" y="29" width="1895" height="41" />
+        <text id="105:25008" name="El número de tarjeta solo puede tener 16 digitos" x="0" y="74" width="425" height="21" />
+      </frame>
+      <frame id="105:24638" name="Frame 40" x="12" y="115" width="1895" height="41">
+        <text id="105:24639" name="Fecha de Caducidad:" x="0" y="8" width="231" height="25" />
+        <instance id="105:24640" name="FieldsL" x="239" y="0" width="86" height="41" />
+      </frame>
+      <frame id="105:24641" name="Frame 41" x="12" y="168" width="1895" height="41">
+        <text id="105:24642" name="CVV:" x="0" y="8" width="52" height="25" />
+        <instance id="105:24643" name="FieldsL" x="60" y="0" width="64" height="41" />
+      </frame>
+    </frame>
+    <frame id="105:24644" name="Frame 35" x="0" y="346" width="1919" height="41">
+      <text id="105:24645" name="Resumen de Reservaciones" x="12" y="4" width="398" height="33" />
+    </frame>
+    <frame id="105:24646" name="Frame 19" x="0" y="387" width="1919" height="881">
+      <instance id="105:24647" name="Checkout" x="8" y="8" width="1903" height="95" />
+      <instance id="105:24648" name="Checkout" x="8" y="115" width="1903" height="95" />
+      <instance id="105:24649" name="Checkout" x="8" y="222" width="1903" height="95" />
+      <instance id="105:24650" name="Checkout" x="8" y="329" width="1903" height="95" />
+      <instance id="105:24651" name="Checkout" x="8" y="436" width="1903" height="95" />
+      <instance id="105:24652" name="Checkout" x="8" y="543" width="1903" height="95" />
+      <instance id="105:24653" name="Checkout" x="8" y="650" width="1903" height="95" />
+      <frame id="105:24654" name="Frame 36" x="8" y="757" width="1903" height="47">
+        <text id="105:24655" name="Total:" x="0" y="14" width="76" height="33" />
+        <instance id="105:24656" name="FilterCostL" x="1615" y="14" width="288" height="33" />
+      </frame>
+      <frame id="105:24657" name="Frame 37" x="8" y="816" width="1903" height="57">
+        <instance id="105:24658" name="Button" x="0" y="0" width="263" height="57" />
+        <instance id="105:24659" name="Button" x="1766" y="0" width="137" height="57" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:10299" name="Filtros" x="21407" y="4254" width="540" height="1009">
+    <frame id="89:10300" name="Frame 10" x="12" y="12" width="516" height="72">
+      <text id="89:10301" name="Filtros" x="0" y="0" width="173" height="66" />
+      <frame id="89:10302" name="Close" x="468" y="9" width="48" height="48" />
+    </frame>
+    <frame id="89:10305" name="Frame 12" x="12" y="108" width="516" height="123">
+      <text id="89:10306" name="Categorías" x="0" y="0" width="159" height="33" />
+      <frame id="89:10307" name="Frame 11" x="0" y="45" width="516" height="78">
+        <instance id="89:10308" name="TagsL" x="2" y="2" width="148" height="33" />
+        <instance id="89:10309" name="TagsL" x="158" y="2" width="148" height="33" />
+        <instance id="89:10310" name="TagsL" x="314" y="2" width="148" height="33" />
+        <instance id="89:10311" name="TagsL" x="2" y="43" width="148" height="33" />
+      </frame>
+    </frame>
+    <frame id="89:10312" name="Frame 13" x="12" y="255" width="516" height="152">
+      <text id="89:10313" name="Comodidades" x="0" y="0" width="202" height="33" />
+      <frame id="89:10314" name="Frame 11" x="0" y="45" width="516" height="107">
+        <instance id="89:10315" name="AttributeL" x="2" y="2" width="128" height="29" />
+        <instance id="89:10316" name="AttributeL" x="138" y="2" width="128" height="29" />
+        <instance id="89:10317" name="AttributeL" x="274" y="2" width="128" height="29" />
+        <instance id="89:10318" name="AttributeL" x="2" y="39" width="128" height="29" />
+        <instance id="89:10319" name="AttributeL" x="138" y="39" width="128" height="29" />
+        <instance id="89:10320" name="AttributeL" x="274" y="39" width="128" height="29" />
+        <instance id="89:10321" name="AttributeL" x="2" y="76" width="128" height="29" />
+      </frame>
+    </frame>
+    <frame id="89:10322" name="Frame 14" x="12" y="431" width="516" height="115">
+      <text id="89:10323" name="Precio" x="0" y="0" width="91" height="33" />
+      <frame id="89:10324" name="Frame 15" x="0" y="45" width="516" height="70">
+        <frame id="89:10325" name="Frame 16" x="0" y="0" width="516" height="33">
+          <text id="89:10326" name="Desde" x="0" y="4" width="70" height="25" />
+          <instance id="89:10327" name="FilterCostL" x="96" y="0" width="420" height="33" />
+        </frame>
+        <frame id="89:10328" name="Frame 17" x="0" y="37" width="516" height="33">
+          <text id="89:10329" name="Hasta" x="0" y="4" width="65" height="25" />
+          <instance id="89:10330" name="FilterCostL" x="96" y="0" width="420" height="33" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="89:10331" name="Frame 18" x="12" y="570" width="516" height="33">
+      <text id="89:10332" name="Disponibilidad" x="0" y="0" width="203" height="33" />
+      <instance id="89:10333" name="QuantityL" x="402" y="0" width="114" height="33" />
+    </frame>
+  </frame>
+  <frame id="89:10334" name="ReservacionesM" x="20319" y="4183" width="1024" height="1080">
+    <instance id="89:10335" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="89:14773" name="Frame 65" x="0" y="72" width="1024" height="1008">
+      <frame id="89:14707" name="Frame 60" x="0" y="0" width="255" height="1008">
+        <frame id="89:14721" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="89:14720" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="89:14722" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="89:14723" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="89:14725" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="89:14726" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="89:14772" name="Frame 64" x="255" y="0" width="769" height="1008">
+        <frame id="89:14774" name="Frame 7" x="0" y="0" width="769" height="56">
+          <instance id="89:14775" name="SearchBarL" x="8" y="8" width="753" height="53" />
+        </frame>
+        <frame id="89:14805" name="Frame 19" x="0" y="56" width="769" height="952">
+          <instance id="89:14806" name="RoomL" x="92.5" y="8" width="280" height="539" />
+          <instance id="89:14807" name="RoomL" x="396.5" y="8" width="280" height="539" />
+          <instance id="89:14879" name="RoomL" x="92.5" y="571" width="280" height="539" />
+          <instance id="89:14916" name="RoomL" x="396.5" y="571" width="280" height="539" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:15249" name="ReservacionesM" x="20319" y="5360" width="1919" height="1080">
+    <instance id="89:15250" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="89:15251" name="Frame 65" x="0" y="72" width="1919" height="1008">
+      <frame id="89:15252" name="Frame 60" x="0" y="0" width="255" height="1008">
+        <frame id="89:15253" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="89:15254" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="89:15255" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="89:15256" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="89:15257" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="89:15258" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="89:15259" name="Frame 64" x="255" y="0" width="1664" height="1008">
+        <frame id="89:15260" name="Frame 7" x="0" y="0" width="1664" height="69">
+          <instance id="89:15261" name="SearchBarL" x="8" y="8" width="1648" height="53" />
+        </frame>
+        <frame id="89:15262" name="Frame 19" x="0" y="69" width="1664" height="939">
+          <instance id="89:15263" name="RoomL" x="84" y="8" width="280" height="539" />
+          <instance id="89:15264" name="RoomL" x="388" y="8" width="280" height="539" />
+          <instance id="89:15265" name="RoomL" x="692" y="8" width="280" height="539" />
+          <instance id="89:15434" name="RoomL" x="996" y="8" width="280" height="539" />
+          <instance id="89:15508" name="RoomL" x="1300" y="8" width="280" height="539" />
+          <instance id="89:15545" name="RoomL" x="388" y="571" width="280" height="539" />
+          <instance id="89:15471" name="RoomL" x="692" y="571" width="280" height="539" />
+          <instance id="89:15266" name="RoomL" x="996" y="571" width="280" height="539" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="89:10337" name="Perfil" x="25239" y="7154" width="1024" height="768">
+    <instance id="89:10338" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="89:10339" name="Frame 28" x="0" y="72" width="1024" height="696">
+      <frame id="89:10340" name="Frame 29" x="12" y="24" width="1000" height="265">
+        <frame id="89:10341" name="Person" x="404" y="0" width="192" height="192">
+          <vector id="89:10342" name="Vector" x="0" y="0" width="192" height="192" />
+          <vector id="89:10343" name="Vector" x="48" y="48" width="96" height="96" />
+        </frame>
+        <text id="89:10344" name="NOMBRE DE USUARIO" x="252.5" y="216" width="495" height="49" />
+      </frame>
+      <frame id="89:10345" name="Frame 30" x="12" y="321" width="1000" height="70">
+        <text id="89:10346" name="correo.electronico@dominio.ext" x="331" y="0" width="338" height="25" />
+        <text id="89:10347" name="Administrador" x="398.5" y="37" width="203" height="33" />
+      </frame>
+      <instance id="89:10348" name="Button" x="390.5" y="423" width="243" height="57" />
+    </frame>
+  </frame>
+  <frame id="89:10349" name="Nosotros" x="25255" y="8946" width="1024" height="1344">
+    <instance id="89:10350" name="NavigationSM" x="0" y="0" width="1024" height="80" />
+    <frame id="89:10351" name="Frame 28" x="0" y="80" width="1024" height="1164">
+      <text id="89:10352" name="ASTIR" x="332.5" y="12" width="359" height="148" />
+      <frame id="89:10353" name="Frame 31" x="12" y="208" width="1000" height="200">
+        <text id="89:10354" name="ASTIR es una entidad dedicada al desarrollo de herramientas digitales para la gestión de reservaciones hoteleras. Su actividad se enfoca en facilitar el registro, la organización y la consulta de información relacionada con las reservaciones, las habitaciones y las estancias de los huéspedes." x="0" y="37.5" width="792" height="125" />
+        <rounded-rectangle id="89:10355" name="Rectangle 1" x="800" y="0" width="200" height="200" />
+      </frame>
+      <frame id="89:10356" name="Frame 32" x="12" y="456" width="1000" height="200">
+        <rounded-rectangle id="89:10357" name="Rectangle 2" x="0" y="0" width="200" height="200" />
+        <text id="89:10358" name="Este tipo de sistemas permite mantener la información organizada en un solo lugar, facilitando las tareas relacionadas con la administración de alojamientos. También ayuda a llevar un mejor control de las reservaciones y a reducir el uso de registros manuales." x="208" y="50" width="792" height="100" />
+      </frame>
+      <frame id="89:10359" name="Frame 33" x="12" y="704" width="1000" height="200">
+        <text id="89:10360" name="ASTIR se enfoca en atender las necesidades básicas de organización que existen dentro de la gestión hotelera, tomando en cuenta las actividades que se realizan al recibir, registrar y administrar reservaciones." x="0" y="62.5" width="792" height="75" />
+        <rounded-rectangle id="89:10361" name="Rectangle 3" x="800" y="0" width="200" height="200" />
+      </frame>
+      <frame id="89:10362" name="Frame 34" x="12" y="952" width="1000" height="200">
+        <rounded-rectangle id="89:10363" name="Rectangle 4" x="0" y="0" width="200" height="200" />
+        <text id="89:10364" name="De esta manera, buscamos que la gestión de reservaciones sea un proceso más ordenado y sencillo, mediante el uso de herramientas digitales que permitan manejar la información de forma clara y facilitar las actividades administrativas relacionadas con el alojamiento." x="208" y="50" width="792" height="100" />
+      </frame>
+    </frame>
+    <instance id="89:10365" name="Footer" x="0" y="1244" width="1024" height="100" />
+  </frame>
+  <frame id="89:10366" name="Nosotros" x="25255" y="10386" width="1919" height="1080">
+    <instance id="89:10367" name="NavigationSM" x="0" y="0" width="1919" height="80" />
+    <frame id="89:10368" name="Frame 28" x="0" y="80" width="1919" height="900">
+      <text id="89:10369" name="ASTIR" x="780" y="12" width="359" height="148" />
+      <frame id="89:10370" name="Frame 31" x="12" y="160" width="1895" height="200">
+        <text id="89:10371" name="ASTIR es una entidad dedicada al desarrollo de herramientas digitales para la gestión de reservaciones hoteleras. Su actividad se enfoca en facilitar el registro, la organización y la consulta de información relacionada con las reservaciones, las habitaciones y las estancias de los huéspedes." x="0" y="75" width="1687" height="50" />
+        <rounded-rectangle id="89:10372" name="Rectangle 1" x="1695" y="0" width="200" height="200" />
+      </frame>
+      <frame id="89:10373" name="Frame 32" x="12" y="360" width="1895" height="200">
+        <rounded-rectangle id="89:10374" name="Rectangle 2" x="0" y="0" width="200" height="200" />
+        <text id="89:10375" name="Este tipo de sistemas permite mantener la información organizada en un solo lugar, facilitando las tareas relacionadas con la administración de alojamientos. También ayuda a llevar un mejor control de las reservaciones y a reducir el uso de registros manuales." x="208" y="75" width="1687" height="50" />
+      </frame>
+      <frame id="89:10376" name="Frame 33" x="12" y="560" width="1895" height="200">
+        <text id="89:10377" name="ASTIR se enfoca en atender las necesidades básicas de organización que existen dentro de la gestión hotelera, tomando en cuenta las actividades que se realizan al recibir, registrar y administrar reservaciones." x="0" y="75" width="1687" height="50" />
+        <rounded-rectangle id="89:10378" name="Rectangle 3" x="1695" y="0" width="200" height="200" />
+      </frame>
+      <frame id="89:10379" name="Frame 34" x="12" y="760" width="1895" height="200">
+        <rounded-rectangle id="89:10380" name="Rectangle 4" x="0" y="0" width="200" height="200" />
+        <text id="89:10381" name="De esta manera, buscamos que la gestión de reservaciones sea un proceso más ordenado y sencillo, mediante el uso de herramientas digitales que permitan manejar la información de forma clara y facilitar las actividades administrativas relacionadas con el alojamiento." x="208" y="75" width="1687" height="50" />
+      </frame>
+    </frame>
+    <instance id="89:10382" name="Footer" x="0" y="980" width="1919" height="100" />
+  </frame>
+  <frame id="89:10383" name="Perfil" x="25255" y="8087" width="1919" height="768">
+    <instance id="89:10384" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="105:20696" name="Frame 28" x="0" y="72" width="1919" height="696">
+      <frame id="105:20697" name="Frame 29" x="12" y="24" width="1895" height="265">
+        <frame id="105:20698" name="Person" x="851.5" y="0" width="192" height="192">
+          <vector id="105:20699" name="Vector" x="0" y="0" width="192" height="192" />
+          <vector id="105:20700" name="Vector" x="48" y="48" width="96" height="96" />
+        </frame>
+        <text id="105:20701" name="NOMBRE DE USUARIO" x="700" y="216" width="495" height="49" />
+      </frame>
+      <frame id="105:20702" name="Frame 30" x="12" y="321" width="1895" height="70">
+        <text id="105:20703" name="correo.electronico@dominio.ext" x="778.5" y="0" width="338" height="25" />
+        <text id="105:20704" name="Usuario" x="892" y="37" width="111" height="33" />
+      </frame>
+      <instance id="105:20705" name="Button" x="838" y="423" width="243" height="57" />
+    </frame>
+  </frame>
+  <frame id="89:10457" name="Reservas" x="27532" y="8177" width="1024" height="1386">
+    <instance id="89:10458" name="NavigationSM" x="0" y="0" width="1024" height="80" />
+    <frame id="89:10459" name="Frame 20" x="0" y="80" width="1024" height="57">
+      <instance id="89:10460" name="SearchBarM" x="8" y="8" width="1008" height="41" />
+    </frame>
+    <frame id="89:10461" name="Frame 21" x="0" y="137" width="1024" height="1249">
+      <instance id="89:10462" name="ReservacionesL" x="99.5" y="8" width="259" height="342" />
+      <instance id="89:10463" name="ReservacionesL" x="382.5" y="8" width="259" height="342" />
+      <instance id="89:10464" name="ReservacionesL" x="665.5" y="8" width="259" height="395" />
+      <instance id="89:10465" name="ReservacionesL" x="99.5" y="427" width="259" height="395" />
+      <instance id="89:10466" name="ReservacionesL" x="382.5" y="427" width="259" height="395" />
+      <instance id="89:10467" name="ReservacionesL" x="665.5" y="427" width="259" height="342" />
+      <instance id="89:10468" name="ReservacionesL" x="241" y="846" width="259" height="342" />
+      <instance id="89:10469" name="ReservacionesL" x="524" y="846" width="259" height="395" />
+    </frame>
+  </frame>
+  <frame id="105:21702" name="Reservas" x="27531" y="9696" width="1919" height="1386">
+    <instance id="105:21703" name="NavigationSM" x="0" y="0" width="1919" height="80" />
+    <frame id="105:21704" name="Frame 20" x="0" y="80" width="1919" height="57">
+      <instance id="105:21705" name="SearchBarM" x="8" y="8" width="1903" height="41" />
+    </frame>
+    <frame id="105:21706" name="Frame 21" x="0" y="137" width="1919" height="1249">
+      <instance id="105:21707" name="ReservacionesL" x="122.5" y="8" width="259" height="342" />
+      <instance id="105:21708" name="ReservacionesL" x="405.5" y="8" width="259" height="342" />
+      <instance id="105:21709" name="ReservacionesL" x="688.5" y="8" width="259" height="395" />
+      <instance id="105:21710" name="ReservacionesL" x="971.5" y="8" width="259" height="395" />
+      <instance id="105:21711" name="ReservacionesL" x="1254.5" y="8" width="259" height="395" />
+      <instance id="105:21712" name="ReservacionesL" x="1537.5" y="8" width="259" height="342" />
+      <instance id="105:21866" name="ReservacionesL" x="122.5" y="427" width="259" height="395" />
+      <instance id="105:21867" name="ReservacionesL" x="405.5" y="427" width="259" height="342" />
+      <instance id="105:21902" name="ReservacionesL" x="688.5" y="427" width="259" height="395" />
+      <instance id="105:21903" name="ReservacionesL" x="971.5" y="427" width="259" height="342" />
+      <instance id="105:21713" name="ReservacionesL" x="1254.5" y="427" width="259" height="342" />
+      <instance id="105:21714" name="ReservacionesL" x="1537.5" y="427" width="259" height="395" />
+      <instance id="105:21938" name="ReservacionesL" x="547" y="846" width="259" height="342" />
+      <instance id="105:21939" name="ReservacionesL" x="830" y="846" width="259" height="342" />
+      <instance id="105:21940" name="ReservacionesL" x="1113" y="846" width="259" height="395" />
+    </frame>
+  </frame>
+  <text id="89:10483" name="Text" x="28103" y="4939" width="0" height="10" />
+  <text id="89:10484" name="Text" x="24501" y="4039" width="0" height="25" />
+  <instance id="89:10485" name="Snackbar" x="27532" y="6350" width="976" height="49" />
+  <instance id="89:10486" name="Snackbar" x="29987" y="5929" width="976" height="49" />
+  <instance id="89:10487" name="Snackbar" x="26187" y="3267" width="600" height="41" />
+  <instance id="89:10488" name="Snackbar" x="25239" y="7980" width="976" height="49" />
+  <frame id="89:10489" name="ConfirmDelete" x="20319" y="11175" width="1024" height="1080">
+    <instance id="89:10490" name="DialogWarnsL" x="160" y="430" width="704" height="220" />
+  </frame>
+  <frame id="89:10491" name="ConfirmEdit" x="20319" y="13476" width="1024" height="1080">
+    <instance id="89:10492" name="DialogWarnsM" x="126" y="467" width="772" height="146" />
+  </frame>
+  <frame id="89:10493" name="ConfirmCancel" x="20319" y="12326" width="1919" height="1080">
+    <instance id="89:10494" name="DialogWarnsM" x="573.5" y="452.5" width="772" height="175" />
+  </frame>
+  <frame id="91:16961" name="ReservacionesM" x="20319" y="6537" width="1024" height="1080">
+    <instance id="91:16962" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="91:16963" name="Frame 65" x="0" y="72" width="1024" height="1008">
+      <frame id="91:16964" name="Frame 60" x="0" y="0" width="255" height="1008">
+        <frame id="91:16965" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="91:16966" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="91:16967" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="91:16968" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="91:16969" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="91:16970" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="91:16971" name="Frame 64" x="255" y="0" width="769" height="1008">
+        <frame id="91:16972" name="Frame 7" x="0" y="0" width="769" height="69">
+          <instance id="91:16973" name="SearchBarL" x="8" y="8" width="753" height="53" />
+        </frame>
+        <frame id="89:10259" name="Frame 20" x="0" y="81" width="769" height="129">
+          <frame id="89:10260" name="Sentiment very dissatisfied" x="336.5" y="0" width="96" height="96" />
+          <text id="89:10265" name="No se encontraron resultados" x="0" y="96" width="769" height="33" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="95:18991" name="ReservacionesM" x="22867" y="7036" width="1024" height="1853">
+    <instance id="95:18992" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="95:18993" name="Frame 65" x="0" y="72" width="1024" height="1781">
+      <frame id="95:18994" name="Frame 60" x="0" y="0" width="255" height="1781">
+        <frame id="95:18995" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="95:18996" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="95:18997" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="95:18998" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="95:18999" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="95:19000" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="95:19001" name="Frame 64" x="255" y="0" width="769" height="1781">
+        <frame id="95:19002" name="Frame 7" x="0" y="0" width="769" height="69">
+          <instance id="95:19003" name="SearchBarL" x="8" y="8" width="753" height="53" />
+        </frame>
+        <frame id="95:19044" name="Frame 21" x="0" y="69" width="769" height="1712">
+          <instance id="95:19045" name="GestionRoomL" x="8" y="8" width="187" height="415" />
+          <instance id="95:19046" name="GestionRoomL" x="207" y="8" width="172" height="374" />
+          <instance id="95:19047" name="GestionRoomL" x="391" y="8" width="187" height="415" />
+          <instance id="95:19048" name="GestionRoomL" x="8" y="435" width="172" height="374" />
+          <instance id="95:19049" name="GestionRoomL" x="192" y="435" width="187" height="415" />
+          <instance id="95:19050" name="GestionRoomL" x="391" y="435" width="187" height="415" />
+          <instance id="95:19051" name="GestionRoomL" x="8" y="862" width="172" height="374" />
+          <instance id="95:19052" name="GestionRoomL" x="192" y="862" width="187" height="415" />
+          <instance id="95:19053" name="GestionRoomL" x="391" y="862" width="187" height="415" />
+          <instance id="95:19054" name="GestionRoomL" x="8" y="1289" width="187" height="415" />
+          <instance id="95:19055" name="GestionRoomL" x="207" y="1289" width="172" height="374" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="103:19973" name="ReservacionesM" x="25239" y="4485" width="1024" height="1209">
+    <instance id="103:19974" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="103:19975" name="Frame 65" x="0" y="72" width="1024" height="1137">
+      <frame id="103:19976" name="Frame 60" x="0" y="0" width="255" height="1137">
+        <frame id="103:19977" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="103:19978" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="103:19979" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="103:19980" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="103:19981" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="103:19982" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="103:19983" name="Frame 64" x="255" y="0" width="769" height="1137">
+        <frame id="103:19984" name="Frame 7" x="0" y="0" width="769" height="69">
+          <instance id="103:19985" name="SearchBarL" x="8" y="8" width="753" height="53" />
+        </frame>
+        <frame id="103:19986" name="Frame 21" x="0" y="69" width="769" height="1068">
+          <instance id="89:10401" name="UserL" x="92.5" y="8" width="280" height="245" />
+          <instance id="89:10402" name="UserL" x="396.5" y="8" width="280" height="245" />
+          <instance id="89:10403" name="UserL" x="92.5" y="277" width="280" height="245" />
+          <instance id="89:10404" name="UserL" x="396.5" y="277" width="280" height="245" />
+          <instance id="89:10405" name="UserL" x="92.5" y="546" width="280" height="245" />
+          <instance id="89:10406" name="UserL" x="396.5" y="546" width="280" height="245" />
+          <instance id="89:10407" name="UserL" x="92.5" y="815" width="280" height="245" />
+          <instance id="89:10408" name="UserL" x="396.5" y="815" width="280" height="245" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="103:20410" name="ReservacionesM" x="25239" y="5777" width="1919" height="1209">
+    <instance id="103:20411" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="103:20412" name="Frame 65" x="0" y="72" width="1919" height="1137">
+      <frame id="103:20413" name="Frame 60" x="0" y="0" width="255" height="1137">
+        <frame id="103:20414" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="103:20415" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="103:20416" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="103:20417" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="103:20418" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="103:20419" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="103:20420" name="Frame 64" x="255" y="0" width="1664" height="1137">
+        <frame id="103:20421" name="Frame 7" x="0" y="0" width="1664" height="69">
+          <instance id="103:20422" name="SearchBarL" x="8" y="8" width="1648" height="53" />
+        </frame>
+        <frame id="103:20423" name="Frame 21" x="0" y="69" width="1664" height="1068">
+          <instance id="103:20424" name="UserL" x="84" y="8" width="280" height="245" />
+          <instance id="103:20425" name="UserL" x="388" y="8" width="280" height="245" />
+          <instance id="103:20426" name="UserL" x="692" y="8" width="280" height="245" />
+          <instance id="103:20427" name="UserL" x="996" y="8" width="280" height="245" />
+          <instance id="103:20428" name="UserL" x="1300" y="8" width="280" height="245" />
+          <instance id="103:20429" name="UserL" x="84" y="277" width="280" height="245" />
+          <instance id="103:20430" name="UserL" x="388" y="277" width="280" height="245" />
+          <instance id="103:20535" name="UserL" x="692" y="277" width="280" height="245" />
+          <instance id="103:20536" name="UserL" x="996" y="277" width="280" height="245" />
+          <instance id="103:20559" name="UserL" x="1300" y="277" width="280" height="245" />
+          <instance id="103:20560" name="UserL" x="84" y="546" width="280" height="245" />
+          <instance id="103:20583" name="UserL" x="388" y="546" width="280" height="245" />
+          <instance id="103:20584" name="UserL" x="692" y="546" width="280" height="245" />
+          <instance id="103:20607" name="UserL" x="996" y="546" width="280" height="245" />
+          <instance id="103:20608" name="UserL" x="1300" y="546" width="280" height="245" />
+          <instance id="103:20631" name="UserL" x="388" y="815" width="280" height="245" />
+          <instance id="103:20632" name="UserL" x="692" y="815" width="280" height="245" />
+          <instance id="103:20431" name="UserL" x="996" y="815" width="280" height="245" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="95:19757" name="ReservacionesM" x="22867" y="9125" width="1919" height="999">
+    <instance id="95:19758" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="95:19759" name="Frame 65" x="0" y="72" width="1919" height="927">
+      <frame id="95:19760" name="Frame 60" x="0" y="0" width="255" height="927">
+        <frame id="95:19761" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="95:19762" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="95:19763" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="95:19764" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="95:19765" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="95:19766" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="95:19767" name="Frame 64" x="255" y="0" width="1664" height="927">
+        <frame id="95:19768" name="Frame 7" x="0" y="0" width="1664" height="69">
+          <instance id="95:19769" name="SearchBarL" x="8" y="8" width="1648" height="53" />
+        </frame>
+        <frame id="95:19770" name="Frame 21" x="0" y="69" width="1664" height="858">
+          <instance id="95:19771" name="GestionRoomL" x="8" y="8" width="187" height="415" />
+          <instance id="95:19772" name="GestionRoomL" x="207" y="8" width="172" height="374" />
+          <instance id="95:19773" name="GestionRoomL" x="391" y="8" width="187" height="415" />
+          <instance id="95:19774" name="GestionRoomL" x="590" y="8" width="172" height="374" />
+          <instance id="95:19775" name="GestionRoomL" x="774" y="8" width="187" height="415" />
+          <instance id="95:19776" name="GestionRoomL" x="973" y="8" width="187" height="415" />
+          <instance id="95:19777" name="GestionRoomL" x="1172" y="8" width="172" height="374" />
+          <instance id="95:19778" name="GestionRoomL" x="1356" y="8" width="187" height="415" />
+          <instance id="95:19779" name="GestionRoomL" x="8" y="435" width="187" height="415" />
+          <instance id="95:19780" name="GestionRoomL" x="207" y="435" width="187" height="415" />
+          <instance id="95:19781" name="GestionRoomL" x="406" y="435" width="172" height="374" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="92:17333" name="ReservacionesM" x="20319" y="7714" width="1919" height="1080">
+    <instance id="92:17334" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="92:17335" name="Frame 65" x="0" y="72" width="1919" height="1008">
+      <frame id="92:17336" name="Frame 60" x="0" y="0" width="255" height="1008">
+        <frame id="92:17337" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="92:17338" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="92:17339" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="92:17340" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="92:17341" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="92:17342" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="92:17343" name="Frame 64" x="255" y="0" width="1664" height="1008">
+        <frame id="92:17344" name="Frame 7" x="0" y="0" width="1664" height="69">
+          <instance id="92:17345" name="SearchBarL" x="8" y="8" width="1648" height="53" />
+        </frame>
+        <frame id="92:17346" name="Frame 20" x="0" y="81" width="1664" height="129">
+          <frame id="92:17347" name="Sentiment very dissatisfied" x="784" y="0" width="96" height="96" />
+          <text id="92:17352" name="No se encontraron resultados" x="0" y="96" width="1664" height="33" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="92:17381" name="ReservacionesM" x="20319" y="8898" width="1024" height="1080">
+    <instance id="92:17382" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="92:17383" name="Frame 65" x="0" y="72" width="1024" height="1008">
+      <frame id="92:17384" name="Frame 60" x="0" y="0" width="255" height="1008">
+        <frame id="92:17385" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="92:17386" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="92:17387" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="92:17388" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="92:17389" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="92:17390" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="92:17391" name="Frame 64" x="255" y="0" width="769" height="1008">
+        <instance id="89:10247" name="RoomInfoL" x="24" y="24" width="721" height="835" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="94:12730" name="ReservacionesM" x="21494" y="8898" width="1024" height="1080">
+    <instance id="94:12731" name="NavigationL" x="0" y="0" width="1024" height="72" />
+    <frame id="94:12732" name="Frame 65" x="0" y="72" width="1024" height="1008">
+      <frame id="94:12733" name="Frame 60" x="0" y="0" width="255" height="1008">
+        <frame id="94:12734" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="94:12735" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="94:12736" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="94:12737" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="94:12738" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="94:12739" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="94:12740" name="Frame 64" x="255" y="0" width="769" height="282">
+        <frame id="89:10153" name="Frame 44" x="24" y="24" width="721" height="234">
+          <text id="89:10154" name="Se ha agregado la habitación" x="12" y="12" width="697" height="33" />
+          <frame id="89:10155" name="Frame 43" x="324.5" y="77" width="72" height="72">
+            <frame id="89:10156" name="Check" x="12" y="12" width="48" height="48">
+              <vector id="89:10157" name="Vector" x="0" y="0" width="48" height="48" />
+              <vector id="89:10158" name="Vector" x="6.409999847412109" y="10.59000015258789" width="35.18000030517578" height="26.81999969482422" />
+            </frame>
+          </frame>
+          <instance id="89:10159" name="Button" x="299" y="181" width="123" height="41" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="94:12487" name="ReservacionesM" x="20319" y="10085" width="1919" height="982.9999389648438">
+    <instance id="94:12488" name="NavigationL" x="0" y="0" width="1919" height="72" />
+    <frame id="94:12489" name="Frame 65" x="0" y="72" width="1919" height="910.9999389648438">
+      <frame id="94:12490" name="Frame 60" x="0" y="0" width="255" height="910.9999389648438">
+        <frame id="94:12491" name="Frame 61" x="10" y="10" width="235" height="49">
+          <text id="94:12492" name="Habitaciones" x="12" y="8" width="190" height="33" />
+        </frame>
+        <frame id="94:12493" name="Frame 62" x="10" y="69" width="235" height="49">
+          <text id="94:12494" name="Reservaciones" x="12" y="8" width="211" height="33" />
+        </frame>
+        <frame id="94:12495" name="Frame 63" x="10" y="128" width="235" height="49">
+          <text id="94:12496" name="Usuarios" x="12" y="8" width="127" height="33" />
+        </frame>
+      </frame>
+      <frame id="94:12497" name="Frame 64" x="255" y="0" width="1664" height="910.9999389648438">
+        <instance id="94:12498" name="RoomInfoL" x="24" y="24" width="1616" height="862.9999389648438" />
+      </frame>
+    </frame>
+  </frame>
+</canvas>

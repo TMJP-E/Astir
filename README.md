@@ -6,49 +6,53 @@ Aplicacion de gestion de reservaciones hoteleras.
 
 Para instalar y ejecutar la aplicacion, es necesario contar con la version 8.2.12-0 o superior de XAMPP, los modulos de servidor web y MySQL e importar la base de datos con anterioridad.
 
-Todos los archivos de la aplicacion se colocan en una carpeta, esa carpeta se coloca dentro de `htdocs` en la instalacion de XAMPP.
+Coloca el proyecto en `htdocs/Proyecto-DAW`. Inicia Apache y MySQL, crea la base `urbano` con codificación `utf8mb4` e importa `urbano.sql` en la base vacía. Si utilizas otro nombre o credenciales, ajústalos en `config.inc.php`. Abre `http://localhost/Proyecto-DAW/`.
+
+La portada, el catálogo y el carrito admiten visitas sin cuenta. Al confirmar una reservación se solicita iniciar sesión. La confirmación registra las habitaciones y actualiza las existencias en MariaDB. El proyecto no procesa pagos con tarjeta.
+
+La sección **Gestión** del menú se muestra a los administradores. Desde allí se administran habitaciones, reservaciones y roles. Las notas y los frames en `docs/` corresponden al prototipo de diseño.
 
 ## Funcionalidades
 
 General
 
-- [ ] Registro de usuario: Los usuarios se registran con nombre, correo y contraseña, por defecto, todos los usuarios son usuarios comunes.
-- [ ] Inicio de sesion: Acceso a una cuenta ya existente con el correo y contraseña adecuados.
-- [ ] Perfil de usuario: Muestra datos personales y cierre de sesion.
+- [x] Registro de usuario: Los usuarios se registran con nombre, correo y contraseña, por defecto, todos los usuarios son usuarios comunes.
+- [x] Inicio de sesion: Acceso a una cuenta ya existente con el correo y contraseña adecuados.
+- [x] Perfil de usuario: Muestra datos personales y cierre de sesion.
 
 Gestion
 
-- [ ] Agregar habitacion: Las habitaciones cuentan con nombre, descripcion, categoria, precio, cantidad e imagen.
-- [ ] Editar habitacion.
-- [ ] Eliminar habitacion.
-- [ ] Busqueda de habitaciones.
-- [ ] Filtrado de busqueda por categoria.
-- [ ] Ver las reservaciones realizadas.
-- [ ] Cambiar los tipos de usuario.
+- [x] Agregar habitacion: Las habitaciones cuentan con nombre, descripcion, categoria, precio, cantidad e imagen.
+- [x] Editar habitacion.
+- [x] Eliminar habitacion.
+- [x] Busqueda de habitaciones.
+- [x] Filtrado de busqueda por categoria.
+- [x] Ver las reservaciones realizadas.
+- [x] Cambiar los tipos de usuario.
 
 Reservaciones
 
-- [ ] Busqueda para reservaciones
-- [ ] Filtrado de busqueda.
-- [ ] Vista previa y extendida.
+- [x] Busqueda para reservaciones
+- [x] Filtrado de busqueda.
+- [x] Vista previa y extendida.
 
 Carrito
 
 - [x] Agregar al carrito.
-- [x] Editar numero de resrvas.
+- [x] Editar número de reservas.
 - [x] Presentar costos subtotales y totales.
 
 ### Caracteristicas
 
 General
 
-- [ ] Pagina de introduccion y acceso limitado a usuarios sin sesion.
+- [x] Pagina de introduccion y acceso limitado a usuarios sin sesion.
 - [ ] Validar todas las entradas.
-- [ ] Cada interaccion inadecuada del usuario debepresentar un mensaje de error.
+- [ ] Cada interaccion inadecuada del usuario debe presentar un mensaje de error.
 
 Gestion
 
-- [ ] Solo administradores pueden gestionar los elementos del catalogo.
+- [x] Solo administradores pueden gestionar los elementos del catalogo.
 
 Reservaciones
 
@@ -56,11 +60,11 @@ Reservaciones
 
 Carrito
 
-- [x] Se almacena utilizando JSON y `localstorage`.
+- [x] Cada sesión del navegador tiene una clave propia en `localStorage`. El JSON asocia el UUID de cada habitación con su cantidad.
 - [x] Valida el numero maximo de reservas.
 
 Manejo de Sesion
 
-- [ ] Se almacena la sesion mediante un header `HTTPOnly`, se genera, guarda y valida a traves del servidor.
-- [ ] El rol del usuario se almacena en `localstorage`.
-- [ ] Validacion para paginas protegidas que requieren una sesion.
+- [x] El servidor genera y valida la sesión. La cookie de sesión utiliza `HttpOnly`.
+- [x] El servidor conserva el UUID y el rol del usuario en la sesión PHP y consulta el rol vigente para autorizar el acceso.
+- [x] Validacion para paginas protegidas que requieren una sesion.
