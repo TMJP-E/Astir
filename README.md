@@ -34,9 +34,9 @@ Reservaciones
 
 Carrito
 
-- [ ] Agregar al carrito.
-- [ ] Editar numero de resrvas.
-- [ ] Presentar costos subtotales y totales.
+- [x] Agregar al carrito.
+- [x] Editar numero de resrvas.
+- [x] Presentar costos subtotales y totales.
 
 ### Caracteristicas
 
@@ -56,8 +56,8 @@ Reservaciones
 
 Carrito
 
-- [ ] Se almacena utilizando JSON y `localstorage`.
-- [ ] Valida el numero maximo de reservas.
+- [x] Se almacena utilizando JSON y `localstorage`.
+- [x] Valida el numero maximo de reservas.
 
 Manejo de Sesion
 
