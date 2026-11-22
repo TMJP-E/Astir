@@ -33,6 +33,8 @@
   // astirConfirm({ html: "¿Desea <em>eliminar</em>...?", sub: "texto pequeño", onConfirm: fn })
   // "html" debe armarse con astirEsc() para cualquier dato del usuario.
   window.astirConfirm = function (o) {
+    // Un doble clic no debe abrir dos diálogos ni enviar la acción dos veces.
+    if (document.querySelector(".dialog-wrap")) return;
     const wrap = document.createElement("div");
     wrap.className = "dialog-wrap";
     wrap.innerHTML =
