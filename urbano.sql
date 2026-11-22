@@ -1,23 +1,23 @@
 CREATE TABLE
-    `users` (
-        `uuid` CHAR(36) PRIMARY KEY DEFAULT (UUID ()),
-        `name` VARCHAR(48) NOT NULL,
-        `email` VARCHAR(96) UNIQUE NOT NULL,
-        `password` VARCHAR(255) NOT NULL,
-        `role` ENUM ('regular', 'admin') NOT NULL DEFAULT 'regular'
+    users (
+        uuid CHAR(36) PRIMARY KEY DEFAULT (UUID ()),
+        name VARCHAR(48) NOT NULL,
+        email VARCHAR(96) UNIQUE NOT NULL,
+        password VARCHAR(255) NOT NULL,
+        role ENUM ('regular', 'admin') NOT NULL DEFAULT 'regular'
     ) ENGINE = InnoDB;
 
 CREATE TABLE
     rooms (
-        `uuid` CHAR(36) PRIMARY KEY DEFAULT (UUID ()),
-        `name` VARCHAR(255) UNIQUE NOT NULL,
-        `description` VARCHAR(4095) NOT NULL,
-        `category` ENUM ('express', 'regular', 'comfort', 'suite') NOT NULL DEFAULT 'regular',
-        `price` DECIMAL(10, 2) NOT NULL,
-        `available` INT NOT NULL,
-        INDEX `idx_rooms_category` (`category`),
-        CONSTRAINT `chk_rooms_available` CHECK (`available` >= 0),
-        CONSTRAINT `chk_rooms_price` CHECK (`price` >= 0)
+        uuid CHAR(36) PRIMARY KEY DEFAULT (UUID ()),
+        name VARCHAR(255) UNIQUE NOT NULL,
+        description VARCHAR(4095) NOT NULL,
+        category ENUM ('express', 'regular', 'comfort', 'suite') NOT NULL DEFAULT 'regular',
+        price DECIMAL(11, 2) NOT NULL,
+        available INT NOT NULL,
+        INDEX idx_rooms_category (category),
+        CONSTRAINT chk_rooms_available CHECK (available >= 0),
+        CONSTRAINT chk_rooms_price CHECK (price >= 0)
     ) ENGINE = InnoDB;
 
 CREATE TABLE
