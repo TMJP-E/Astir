@@ -39,7 +39,7 @@ final class InputValidator
             throw new InvalidImageException("Imagen", "No fue posible subir la imagen correctamente.");
         }
 
-        if (!isset($image["size"]) || !is_int($image["size"]) || $image["size"] > 8 * 1024 * 1024) {
+        if (!isset($image["size"]) || !is_int($image["size"]) || $image["size"] > 20 * 1024 * 1024) {
             throw new InvalidImageException("Imagen", "No puede superar los 8 MB.");
         }
 

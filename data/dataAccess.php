@@ -997,8 +997,6 @@ function updateRoom(
         $commodities ??= $currentCommodities;
         $images ??= $currentImages;
         try {
-            Validator::validateStringArray("Comodidades", $commodities);
-            Validator::validateStringArray("Imágenes", $images);
             $room = new Room(
                 $uuid,
                 $name ?? $roomData["name"],
