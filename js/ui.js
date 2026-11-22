@@ -57,7 +57,13 @@
 
 async function astirSubmit(body) {
   body.set("csrf", window.ASTIR.csrf);
-  const response = await fetch("actions.php", {method: "POST", body});
-  const result = await response.json();
+  let response;
+  try {
+    response = await fetch("actions.php", {method: "POST", body});
+  } catch {
+    throw new Error("No hay conexión con el servidor. Inténtalo de nuevo.");
+  }
+  // Si PHP imprime un aviso en HTML, la respuesta no es JSON válido.
+  const result = await response.json().catch(() => ({}));
   if (!response.ok || !result.ok) throw new Error(result.error || "No fue posible completar la operación.");
 }
