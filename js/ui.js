@@ -1,6 +1,10 @@
 // Piezas de interfaz compartidas: snackbar y dialogo de confirmacion.
 (function () {
   let timer = null;
+  // Región viva fija: los lectores de pantalla solo anuncian cambios dentro de una región que ya existía.
+  const region = document.createElement("div");
+  region.setAttribute("role", "status");
+  document.body.appendChild(region);
 
   // astirSnackbar("Mensaje", { action: "Deshacer", onAction: fn })
   window.astirSnackbar = function (mensaje, opciones) {
@@ -12,7 +16,6 @@
     const bar = document.createElement("div");
     bar.id = "snackbar";
     bar.className = "snackbar";
-    bar.setAttribute("role", "status");
     const txt = document.createElement("span");
     txt.textContent = mensaje;
     bar.appendChild(txt);
@@ -26,7 +29,7 @@
       });
       bar.appendChild(b);
     }
-    document.body.appendChild(bar);
+    region.appendChild(bar);
     timer = setTimeout(function () { bar.remove(); }, opciones.ms || 5000);
   };
 
