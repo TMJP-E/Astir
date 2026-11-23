@@ -19,7 +19,7 @@
   <?php endforeach; ?>
 <?php else: ?>
   <?php foreach ($bookings ?? [] as $booking): ?>
-    <article class="row" data-category="<?= h($booking['category']) ?>" data-price="<?= h((string)$booking['price']) ?>">
+    <article class="row" data-search="<?= h(bookingSearchText($booking, $page === 'gestion-reservaciones')) ?>" data-category="<?= h($booking['category']) ?>" data-price="<?= h((string)$booking['price']) ?>">
       <?php if ($booking['image']): ?>
         <img class="row__img" src="<?= h(ltrim($booking['image'], '/')) ?>" alt="">
       <?php else: ?><div class="row__img ph-img" aria-hidden="true"></div><?php endif; ?>

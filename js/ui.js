@@ -63,6 +63,27 @@
   };
 })();
 
+function astirStepQuantity(input, step) {
+  const next = input.valueAsNumber + step;
+  if (!Number.isSafeInteger(next) || next < Number(input.min) || (input.max !== "" && next > Number(input.max))) {
+    astirSnackbar(input.max === "" ? "Ingresa una disponibilidad entera igual o mayor que cero." : "Selecciona una cantidad entre " + input.min + " y " + input.max + ".");
+    return false;
+  }
+  input.value = String(next);
+  return true;
+}
+
+function astirValidFilters(min, max, available) {
+  if (!min || !max) return true;
+  max.setCustomValidity("");
+  const rangeInvalid = min.value !== "" && max.value !== "" && min.valueAsNumber > max.valueAsNumber;
+  if (rangeInvalid) max.setCustomValidity("El precio máximo debe ser igual o mayor que el mínimo.");
+  for (const field of [min, max, available]) {
+    if (field && !field.reportValidity()) return false;
+  }
+  return true;
+}
+
 async function astirSubmit(body) {
   body.set("csrf", window.ASTIR.csrf);
   let response;

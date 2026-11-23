@@ -23,13 +23,13 @@ require __DIR__ . "/app/page.php";
       <div class="form__fields form__fields--tight">
         <div class="field">
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          <input type="text" id="nombre" name="nombre" maxlength="48" autocomplete="name" required>
           <span class="field__error">Ingresa tu nombre.</span>
         </div>
         <div class="field">
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-          <span class="field__error">El correo ingresado no es valido.</span>
+          <input type="email" id="email" name="email" maxlength="96" autocomplete="email" required>
+          <span class="field__error">El correo ingresado no es válido.</span>
         </div>
         <div class="field">
           <label for="password">Contraseña:</label>

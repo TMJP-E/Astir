@@ -13,11 +13,12 @@ function marcar(input, valido) {
 // Devuelve la lista de caracteristicas que le faltan a la contraseña.
 function faltantes(valor) {
   const falta = [];
-  if (valor.length < 12) falta.push("mínimo 12 caracteres");
+  if (Array.from(valor).length < 12) falta.push("mínimo 12 caracteres");
   if (!/[0-9]/.test(valor)) falta.push("un número");
   if (!/[A-Z]/.test(valor)) falta.push("una mayúscula");
   if (!/[a-z]/.test(valor)) falta.push("una minúscula");
   if (!/[^A-Za-z0-9]/.test(valor)) falta.push("un símbolo");
+  if (new TextEncoder().encode(valor).length > 72) falta.push("un máximo de 72 bytes");
   return falta;
 }
 

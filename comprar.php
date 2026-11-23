@@ -42,14 +42,14 @@ require __DIR__ . "/app/page.php";
       <section><h3>Comodidades</h3><div class="fchips" id="f-amen"></div></section>
       <section>
         <h3>Precio</h3>
-        <label class="money">Desde <span class="money__box"><span>$</span><input type="number" id="f-min" min="0" step="0.01" placeholder="0.00"></span></label>
-        <label class="money">Hasta <span class="money__box"><span>$</span><input type="number" id="f-max" min="0" step="0.01" placeholder="0.00"></span></label>
+        <label class="money">Desde <span class="money__box"><span>$</span><input type="number" id="f-min" min="0" max="999999999.99" step="0.01" placeholder="0.00"></span></label>
+        <label class="money">Hasta <span class="money__box"><span>$</span><input type="number" id="f-max" min="0" max="999999999.99" step="0.01" placeholder="0.00"></span></label>
       </section>
       <div class="stepper-row">
         <span>Disponibilidad</span>
         <div class="stepper">
           <button type="button" id="av-minus" aria-label="Menos">−</button>
-          <input type="number" id="f-av" value="0" min="0" aria-label="Disponibilidad mínima">
+          <input type="number" id="f-av" max="2147483647" value="0" min="0" aria-label="Disponibilidad mínima">
           <button type="button" id="av-plus" aria-label="Más">+</button>
         </div>
       </div>

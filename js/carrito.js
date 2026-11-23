@@ -32,7 +32,7 @@ function filaItem(x, editable) {
         "</div>" +
         '<div class="cart-item__row">Precio Individual: <span class="price">' + money(r.price) + "</span></div>" +
       "</div>" +
-      '<div class="cart-item__total">Total: <strong>' + money(r.price * x.qty) + "</strong>" +
+      '<div class="cart-item__total">Subtotal: <strong>' + money(r.price * x.qty) + "</strong>" +
         (editable ? '<button class="btn-trash" type="button" data-del aria-label="Quitar del carrito">' + TRASH + "</button>" : "") +
       "</div>" +
     "</article>"
@@ -42,6 +42,7 @@ function filaItem(x, editable) {
 // ---------- Lista / vacio ----------
 function vistaLista() {
   const lista = items();
+  lastView = JSON.stringify(astirCart.read());
   const vacio = lista.length === 0;
   cont.innerHTML =
     '<h1 class="cart__title">Carrito</h1>' +
@@ -65,8 +66,7 @@ function vistaLista() {
     const q = e.target.closest("[data-q]");
     if (q) {
       const input = fila.querySelector("input");
-      const max = Number(input.max) || 1;
-      cambiarCantidad(id, Math.min(max, Math.max(1, Number(input.value) + Number(q.dataset.q))));
+      if (astirStepQuantity(input, Number(q.dataset.q))) cambiarCantidad(id, input.valueAsNumber);
     } else if (e.target.closest("[data-del]")) {
       const antes = window.astirCart.read();
       if (!window.astirCart.write(antes.filter((c) => c.id !== id))) return;
@@ -117,7 +117,8 @@ function vistaConfirmacion() {
     const reviewed = Object.fromEntries(lista.map(x => [x.room.id, x.qty]));
     const current = Object.fromEntries(astirCart.read().map(x => [x.id, x.qty]));
     if (JSON.stringify(reviewed) !== JSON.stringify(current)) {
-      location.reload();
+      vistaLista();
+      astirSnackbar("El carrito cambió. Revisa las cantidades antes de confirmar.");
       return;
     }
     event.currentTarget.disabled = true;
@@ -132,6 +133,7 @@ function vistaConfirmacion() {
         .map(item => ({id: item.id, qty: item.qty - (reviewed[item.id] || 0)}))
         .filter(item => item.qty > 0);
       astirCart.write(remaining);
+      lastView = JSON.stringify(astirCart.read());
       vistaEstado(true);
     } catch (error) {
       vistaEstado(false);
@@ -153,9 +155,14 @@ function vistaEstado(ok) {
 
 // ---------- Inicio ----------
 const saved = astirCart.read();
-window.addEventListener("storage", event => {
-  if (event.key === data.storageKey) location.reload();
-});
+astirCart.channel?.addEventListener("message", () => location.reload());
+// Al volver desde otra pestaña, comprueba también el cierre de sesión y los navegadores sin canal.
+let lastView;
+function refreshIfChanged() {
+  if (lastView !== undefined && JSON.stringify(astirCart.read()) !== lastView) location.reload();
+}
+window.addEventListener("focus", refreshIfChanged);
+window.addEventListener("pageshow", event => { if (event.persisted) location.reload(); });
 if (saved.length) {
   try {
     const response = await fetch("index.php?action=cart_rooms", {
@@ -165,6 +172,7 @@ if (saved.length) {
     const result = await response.json();
     if (!response.ok) throw new Error(result.error);
     const fresh = new Map(result.rooms.map(room => [room.uuid, room]));
+    if (JSON.stringify(saved) !== JSON.stringify(astirCart.read())) { location.reload(); return; }
     const adjusted = [];
     for (const item of saved) {
       const room = fresh.get(item.id);

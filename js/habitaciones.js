@@ -36,11 +36,17 @@ alternar($("f-cats"), filtros.categorias);
 alternar($("f-amen"), filtros.comodidades);
 
 $("search").addEventListener("input", (e) => { filtros.texto = e.target.value.trim().toLowerCase(); pintar(); });
-$("f-min").addEventListener("input", (e) => { filtros.min = e.target.value === "" ? null : Number(e.target.value); pintar(); });
-$("f-max").addEventListener("input", (e) => { filtros.max = e.target.value === "" ? null : Number(e.target.value); pintar(); });
-$("f-av").addEventListener("input", (e) => { filtros.disp = Math.max(0, Number(e.target.value) || 0); pintar(); });
-$("av-minus").addEventListener("click", () => { $("f-av").value = Math.max(0, Number($("f-av").value) - 1); $("f-av").dispatchEvent(new Event("input")); });
-$("av-plus").addEventListener("click", () => { $("f-av").value = Number($("f-av").value) + 1; $("f-av").dispatchEvent(new Event("input")); });
+function actualizarFiltros() {
+  if (!astirValidFilters($("f-min"), $("f-max"), $("f-av"))) return;
+  filtros.min = $("f-min").value === "" ? null : $("f-min").valueAsNumber;
+  filtros.max = $("f-max").value === "" ? null : $("f-max").valueAsNumber;
+  filtros.disp = Number($("f-av").value);
+  pintar();
+}
+for (const id of ["f-min", "f-max", "f-av"]) $(id).addEventListener("input", actualizarFiltros);
+for (const [id, step] of [["av-minus", -1], ["av-plus", 1]]) {
+  $(id).onclick = () => { if (astirStepQuantity($("f-av"), step)) actualizarFiltros(); };
+}
 
 // Abrir/cerrar panel
 function panel(abrir) {
@@ -85,8 +91,7 @@ if (modo === "comprar") {
     const q = e.target.closest("[data-q]");
     if (q) {
       const input = q.parentElement.querySelector("input");
-      const max = Number(input.max) || 1;
-      input.value = Math.min(max, Math.max(1, Number(input.value) + Number(q.dataset.q)));
+      astirStepQuantity(input, Number(q.dataset.q));
       return;
     }
     const add = e.target.closest("[data-add]");

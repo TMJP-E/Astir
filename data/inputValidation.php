@@ -2,6 +2,8 @@
 
 final class InputValidator
 {
+    public const MAX_IMAGE_BYTES = 8 * 1024 * 1024;
+
     private function __construct()
     {
     }
@@ -10,6 +12,9 @@ final class InputValidator
     {
         if (!is_string($password) || mb_strlen($password, "UTF-8") < 12) {
             throw new StringLengthException("Contraseña", "Debe contener al menos 12 caracteres.");
+        }
+        if (strlen($password) > 72 || str_contains($password, "\0")) {
+            throw new StringLengthException("Contraseña", "Usa hasta 72 bytes y evita caracteres nulos.");
         }
 
         if (!preg_match("/[^a-zA-Z0-9]/", $password)) {
@@ -35,11 +40,15 @@ final class InputValidator
             throw new InvalidImageException("Imagen", "El archivo enviado no es válido.");
         }
 
+        if (in_array($image["error"] ?? null, [UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_FORM_SIZE], true)) {
+            throw new InvalidImageException("Imagen", "Supera el tamaño de carga permitido por el servidor.");
+        }
+
         if (!isset($image["error"]) || $image["error"] !== UPLOAD_ERR_OK) {
             throw new InvalidImageException("Imagen", "No fue posible subir la imagen correctamente.");
         }
 
-        if (!isset($image["size"]) || !is_int($image["size"]) || $image["size"] > 20 * 1024 * 1024) {
+        if (!isset($image["size"]) || !is_int($image["size"]) || $image["size"] > self::MAX_IMAGE_BYTES) {
             throw new InvalidImageException("Imagen", "No puede superar los 8 MB.");
         }
 

@@ -28,13 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 $body = json_decode(file_get_contents("php://input"), true);
 $uuids = is_array($body) ? ($body["uuids"] ?? null) : null;
-if (!is_array($uuids) || count($uuids) > 100) {
+if (!is_array($uuids) || !array_is_list($uuids) || count($uuids) > 100) {
     sendJson(["error" => "La selección del carrito no es válida."], 400);
 }
-foreach ($uuids as $uuid) {
-    if (!is_string($uuid) || !preg_match('/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i', $uuid)) {
-        sendJson(["error" => "Uno o más identificadores de habitación no son válidos."], 400);
+try {
+    foreach ($uuids as $uuid) {
+        Validator::validateUuid('Habitación', $uuid);
     }
+} catch (ValidationException $error) {
+    sendJson(['error' => $error->getMessage()], 400);
 }
 try {
     $rooms = getRoomsByUuids($uuids);

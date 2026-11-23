@@ -666,3 +666,7 @@ a.filters__cover { display: block; }
 
 img.room__img, img.cart-item__img, img.row__img, img.about__img { object-fit: cover; }
 .room__name a { color: inherit; }
+
+.booking-history { margin: 1rem 0; }
+.booking-history details { margin: .75rem 0 .75rem 1rem; }
+.booking-history summary { cursor: pointer; overflow-wrap: anywhere; }

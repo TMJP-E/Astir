@@ -23,13 +23,10 @@ final class Validator
 
     public static function validateUuid(string $property, mixed $value): void
     {
-        if (!is_string($value) || trim($value) === "") {
+        if (!is_string($value) || !preg_match('/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/iD', $value)) {
             throw new InvalidUuidException($property, "Debe contener un identificador válido.");
         }
 
-        if (mb_strlen($value, "UTF-8") > 36) {
-            throw new InvalidUuidException($property, "No puede superar los 36 caracteres.");
-        }
     }
 
     public static function validateEnum(string $property, mixed $value, array $allowedValues): void
@@ -47,6 +44,9 @@ final class Validator
 
         if ($value < $minimum) {
             throw new NumericConstraintException($property, "Debe ser mayor o igual que {$minimum}.");
+        }
+        if ($value > 2147483647) {
+            throw new NumericConstraintException($property, "No puede superar 2147483647.");
         }
     }
 

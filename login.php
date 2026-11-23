@@ -23,7 +23,7 @@ require __DIR__ . "/app/page.php";
       <div class="form__fields">
         <div class="field">
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
+          <input type="email" id="email" name="email" maxlength="96" autocomplete="email" required>
           <span class="field__error">El correo ingresado no es válido.</span>
         </div>
         <div class="field">

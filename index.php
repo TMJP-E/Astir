@@ -28,7 +28,7 @@ require __DIR__ . "/app/page.php";
             <button class="carousel__btn" id="prev" type="button" aria-label="Anterior">
               <svg viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
             </button>
-            <span id="carousel-text">TEXT</span>
+            <span id="carousel-text">Nuestras habitaciones</span>
             <button class="carousel__btn" id="next" type="button" aria-label="Siguiente">
               <svg viewBox="0 0 24 24"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </button>
@@ -38,7 +38,7 @@ require __DIR__ . "/app/page.php";
     </section>
 
     <div class="home__text">
-      <p>Reuniones, contratos, y un descanso</p>
+      <p>Reuniones, contratos y un descanso</p>
       <p>Tenemos todo para tus asuntos</p>
     </div>
 

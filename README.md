@@ -67,8 +67,8 @@ Carrito
 General
 
 - [x] Pagina de introduccion y acceso limitado a usuarios sin sesion.
-- [ ] Validar todas las entradas.
-- [ ] Cada interaccion inadecuada del usuario debe presentar un mensaje de error.
+- [x] Validar todas las entradas. Los formularios, filtros y acciones comprueban los datos recibidos. Las imágenes admiten hasta 8 MB por archivo (JPEG, PNG, GIF o WebP).
+- [x] Cada interacción inadecuada del usuario debe presentar un mensaje de error. Por ejemplo, se indica cuándo el rango de precios está invertido, la cantidad supera las existencias o la sesión ha caducado.
 
 Gestion
 
@@ -76,11 +76,11 @@ Gestion
 
 Reservaciones
 
-- [ ] Se guardan los resultados de busquedas anteriores.
+- [x] Se guardan los resultados de búsquedas anteriores. En **Mis reservaciones** y **Gestión de reservaciones**, pulsa **Buscar** o **Enter** para guardar una copia de los resultados del momento. Cada pantalla conserva sus últimas 25 búsquedas en **Historial de búsquedas** durante la sesión, incluidas las que tuvieron cero coincidencias. Cerrar sesión descarta ambos historiales.
 
 Carrito
 
-- [x] Cada sesión del navegador tiene una clave propia en `localStorage`. El JSON asocia el UUID de cada habitación con su cantidad.
+- [x] JavaScript guarda el UUID y la cantidad de cada habitación en una cookie de sesión. El carrito se conserva al iniciar sesión y se vacía al cerrarla.
 - [x] Valida el numero maximo de reservas.
 
 Manejo de Sesion

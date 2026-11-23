@@ -984,7 +984,7 @@ function updateRoom(
         mysqli_free_result($roomResult);
         $roomResult = null;
         if ($roomData === null) {
-            throw new RuntimeException("La habitación seleccionada no existe.");
+            throw new DomainException("La habitación seleccionada no existe.");
         }
         // Retrieve the current commodities.
         $commoditiesResult = mysqli_execute_query(
@@ -1169,7 +1169,7 @@ function decreaseUserRoom(string $userUuid, string $roomUuid): bool
         mysqli_free_result($roomResult);
         $roomResult = null;
         if ($roomData === null) {
-            throw new RuntimeException("La habitación seleccionada no existe.");
+            throw new DomainException("La habitación seleccionada no existe.");
         }
         // Lock and retrieve the reservation.
         $reservationResult = mysqli_execute_query(
@@ -1184,7 +1184,7 @@ function decreaseUserRoom(string $userUuid, string $roomUuid): bool
         mysqli_free_result($reservationResult);
         $reservationResult = null;
         if ($reservationData === null) {
-            throw new RuntimeException("No existe una reservación para esta habitación y usuario.");
+            throw new DomainException("No existe una reservación para esta habitación y usuario.");
         }
         $quantity = (int) $reservationData["quantity"];
         // Remove the reservation if only one room remains.
@@ -1281,7 +1281,7 @@ function removeUserRoom(string $userUuid, string $roomUuid): bool
         mysqli_free_result($roomResult);
         $roomResult = null;
         if ($roomData === null) {
-            throw new RuntimeException("La habitación seleccionada no existe.");
+            throw new DomainException("La habitación seleccionada no existe.");
         }
         // Lock and retrieve the reservation quantity.
         $reservationResult = mysqli_execute_query(
@@ -1296,7 +1296,7 @@ function removeUserRoom(string $userUuid, string $roomUuid): bool
         mysqli_free_result($reservationResult);
         $reservationResult = null;
         if ($reservationData === null) {
-            throw new RuntimeException("No existe una reservación para esta habitación y usuario.");
+            throw new DomainException("No existe una reservación para esta habitación y usuario.");
         }
         $quantity = (int) $reservationData["quantity"];
         // Remove the entire reservation.
@@ -1383,7 +1383,7 @@ function toggleUserRole(string $userUuid, ?string $desiredRole = null): bool
         mysqli_free_result($userResult);
         $userResult = null;
         if ($userData === null) {
-            throw new RuntimeException("El usuario seleccionado no existe.");
+            throw new DomainException("El usuario seleccionado no existe.");
         }
         $newRole = $desiredRole ?? ($userData["role"] === "regular" ? "admin" : "regular");
         Validator::validateEnum("Rol", $newRole, ["regular", "admin"]);
@@ -1455,7 +1455,7 @@ function deleteRoom(string $uuid): bool
             throw new RuntimeException("No fue posible eliminar la habitación.");
         }
         if (mysqli_affected_rows($connection) === 0) {
-            throw new RuntimeException("La habitación seleccionada no existe.");
+            throw new DomainException("La habitación seleccionada no existe.");
         }
         return true;
     } catch (mysqli_sql_exception $exception) {

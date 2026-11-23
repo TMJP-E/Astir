@@ -54,10 +54,9 @@ function vistaUsuario() {
   activarGaleria();
 
   const qty = document.getElementById("qty");
-  function ajustar(n) { qty.value = Math.min(room.available, Math.max(1, n)); }
-  document.getElementById("q-minus").addEventListener("click", () => ajustar(Number(qty.value) - 1));
-  document.getElementById("q-plus").addEventListener("click", () => ajustar(Number(qty.value) + 1));
-  qty.addEventListener("change", () => ajustar(Number(qty.value) || 1));
+  document.getElementById("q-minus").onclick = () => astirStepQuantity(qty, -1);
+  document.getElementById("q-plus").onclick = () => astirStepQuantity(qty, 1);
+  qty.onchange = () => qty.reportValidity();
 
   const add = document.getElementById("to-cart");
   add.disabled = room.available === 0;
@@ -78,8 +77,8 @@ function vistaAdmin() {
         '<label><input type="checkbox" name="amenities[]" value="' + esc(a) + '"' + (room.attributes.includes(a) ? ' checked' : '') + '> ' + esc(a) + '</label> '
       ).join('') + '</fieldset>' +
       '<div class="field"><label for="a-images">Agregar fotos</label><input type="file" id="a-images" name="images[]" accept="image/jpeg,image/png,image/webp,image/gif" multiple></div>' +
-      '<div class="field"><label for="a-price">Precio:</label><input name="price" required id="a-price" type="number" min="0" step="0.01" value="' + esc(room.price) + '"><span class="field__error">Ingresa un precio válido.</span></div>' +
-      '<div class="field"><label for="a-av">Disponibilidad:</label><input name="available" required id="a-av" type="number" min="0" value="' + esc(room.available) + '"></div>' +
+      '<div class="field"><label for="a-price">Precio:</label><input name="price" required id="a-price" type="number" min="0" max="999999999.99" step="0.01" value="' + esc(room.price) + '"><span class="field__error">Ingresa un precio válido.</span></div>' +
+      '<div class="field"><label for="a-av">Disponibilidad:</label><input name="available" required id="a-av" type="number" min="0" max="2147483647" value="' + esc(room.available) + '"></div>' +
       '<div class="admin-form__actions">' +
         '<button class="btn" type="submit">Guardar</button>' +
         '<button class="btn btn--ghost" type="button" id="a-cancel">Cancelar</button>' +
@@ -92,11 +91,21 @@ function vistaAdmin() {
 
   document.getElementById("admin-form").addEventListener("submit", (e) => {
     e.preventDefault();
-    const nameOk = document.getElementById("a-name").value.trim() !== "";
-    const priceOk = Number(document.getElementById("a-price").value) >= 0;
-    document.getElementById("a-name").closest(".field").classList.toggle("field--invalid", !nameOk);
-    document.getElementById("a-price").closest(".field").classList.toggle("field--invalid", !priceOk);
-    if (!nameOk || !priceOk) return;
+    for (const id of ["a-name", "a-desc"]) {
+      const field = document.getElementById(id);
+      if (!field.value.trim()) {
+        field.setCustomValidity("Ingresa texto en este campo.");
+        field.reportValidity();
+        field.setCustomValidity("");
+        return;
+      }
+    }
+    for (const file of document.getElementById("a-images").files) {
+      if (file.size > data.maxImageBytes || (file.type && !["image/jpeg", "image/png", "image/gif", "image/webp"].includes(file.type))) {
+        astirSnackbar(file.name + " debe ser JPEG, PNG, GIF o WebP y pesar como máximo 8 MB.");
+        return;
+      }
+    }
     window.astirConfirm({
       html: "¿Desea guardar los cambios de la habitación " + nombreActual() + "?",
       onConfirm: () => submitRoom("save-room")

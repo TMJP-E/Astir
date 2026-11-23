@@ -11,7 +11,6 @@ session_set_cookie_params([
 ]);
 session_start();
 header('Cache-Control: no-store');
-$_SESSION['cart_id'] ??= bin2hex(random_bytes(16));
 $_SESSION['csrf'] ??= bin2hex(random_bytes(32));
 
 const ROOM_CATEGORIES = ['express', 'regular', 'comfort', 'suite'];
@@ -41,6 +40,25 @@ function checkCsrf(): void
     }
 }
 
+function postText(string $key, string $label): string
+{
+    $value = $_POST[$key] ?? '';
+    if (!is_string($value) || !mb_check_encoding($value, 'UTF-8')) {
+        throw new DomainException("El campo $label debe contener texto válido.");
+    }
+    return $value;
+}
+
+function expireCartCookie(): void
+{
+    // Sin Path explícito se usa el mismo directorio que al escribir desde JavaScript.
+    setcookie('astir_cart', '', [
+        'expires' => time() - 3600,
+        'secure' => session_get_cookie_params()['secure'],
+        'samesite' => 'Lax'
+    ]);
+}
+
 function currentAccount(): ?array
 {
     if (!isset($_SESSION['user_uuid'])) {
@@ -52,7 +70,7 @@ function currentAccount(): ?array
         if (!$user) {
             $_SESSION = [];
             session_regenerate_id(true);
-            $_SESSION['cart_id'] = bin2hex(random_bytes(16));
+            expireCartCookie();
             $_SESSION['csrf'] = bin2hex(random_bytes(32));
             return null;
         }

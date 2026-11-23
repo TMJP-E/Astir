@@ -5,7 +5,8 @@ header('Content-Type: application/json; charset=utf-8');
 
 function handleAction(array $account): void
 {
-    $action = $_POST['action'] ?? '';
+    $action = postText('action', 'operación');
+    Validator::validateEnum('Operación', $action, ['reserve', 'cancel', 'role', 'delete-room', 'save-room']);
     $admin = $account['role'] === 'admin';
     if ($action === 'reserve') {
         $token = $_POST['checkout'] ?? '';
@@ -13,14 +14,12 @@ function handleAction(array $account): void
             http_response_code(409);
             throw new DomainException('La confirmación ya se procesó o caducó. Consulta tus reservaciones.');
         }
-        $rooms = json_decode($_POST['rooms'] ?? '', true);
+        $rooms = json_decode(postText('rooms', 'carrito'), true);
         if (!is_array($rooms) || !$rooms || count($rooms) > 100) {
             throw new DomainException('El carrito no es válido.');
         }
         foreach ($rooms as $id => $quantity) {
-            if (!is_string($id) || !preg_match('/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/iD', $id)) {
-                throw new DomainException('El carrito contiene un identificador inválido.');
-            }
+            Validator::validateUuid('Habitación', $id);
             Validator::validateInteger('Cantidad', $quantity, 1);
         }
         ksort($rooms);
@@ -28,9 +27,17 @@ function handleAction(array $account): void
         unset($_SESSION['checkout']);
         return;
     }
-    $uuid = $_POST['uuid'] ?? '';
+    $uuid = postText('uuid', 'habitación o usuario');
+    if ($action !== 'save-room' || $uuid !== '') {
+        Validator::validateUuid('Identificador', $uuid);
+    }
     if ($action === 'cancel') {
-        $owner = $admin ? ($_POST['owner'] ?? $account['uuid']) : $account['uuid'];
+        $owner = $_POST['owner'] ?? $account['uuid'];
+        Validator::validateUuid('Cliente', $owner);
+        if (!$admin && $owner !== $account['uuid']) {
+            http_response_code(403);
+            throw new DomainException('Solo puedes cancelar tus propias reservaciones.');
+        }
         if (($_POST['units'] ?? '') === 'all') {
             removeUserRoom($owner, $uuid);
         } elseif (($_POST['units'] ?? '') === 'one') {
@@ -68,24 +75,32 @@ function handleAction(array $account): void
 
 function saveRoomForm(string $uuid): void
 {
-    $name = trim($_POST['name'] ?? '');
-    $description = trim($_POST['description'] ?? '');
-    $category = $_POST['category'] ?? '';
-    $available = filter_var($_POST['available'] ?? '', FILTER_VALIDATE_INT);
-    $price = filter_var($_POST['price'] ?? '', FILTER_VALIDATE_FLOAT);
+    $name = trim(postText('name', 'nombre'));
+    $description = trim(postText('description', 'descripción'));
+    $category = postText('category', 'categoría');
+    Validator::validateRequiredString('Nombre', $name, 255);
+    Validator::validateRequiredString('Descripción', $description, 4095);
+    Validator::validateEnum('Categoría', $category, ROOM_CATEGORIES);
+    $available = filter_var(postText('available', 'disponibilidad'), FILTER_VALIDATE_INT);
+    $price = filter_var(postText('price', 'precio'), FILTER_VALIDATE_FLOAT);
     Validator::validateInteger('Disponibilidad', $available, 0);
     Validator::validatePrice('Precio', $price);
     $amenities = $_POST['amenities'] ?? [];
     Validator::validateStringArray('Comodidades', $amenities);
     $allowed = array_map(fn($c) => $c->getType(), getAllCommodities());
-    if (array_diff($amenities, $allowed)) { throw new DomainException('Selecciona comodidades del catálogo.'); }
+    if (!array_is_list($amenities) || count($amenities) !== count(array_unique($amenities)) || array_diff($amenities, $allowed)) { throw new DomainException('Selecciona comodidades del catálogo.'); }
+    $original = null;
+    if ($uuid !== '' && isset($_POST['originalAvailable'])) {
+        $original = filter_var(postText('originalAvailable', 'disponibilidad original'), FILTER_VALIDATE_INT);
+        Validator::validateInteger('Disponibilidad original', $original, 0);
+    }
     $paths = saveRoomImages($_FILES['images'] ?? [], __DIR__ . '/room_images');
     try {
         if ($uuid === '') {
             insertRoom($name, $description, $category, $price, $available, $amenities, $paths);
         } else {
             // Los archivos nuevos se agregan a la galería en la misma transacción.
-            $newAvailable = (string)$available === ($_POST['originalAvailable'] ?? null) ? null : $available;
+            $newAvailable = $available === $original ? null : $available;
             updateRoom($uuid, $name, $description, $category, $price, $newAvailable, $amenities, null, $paths);
         }
     } catch (Throwable $error) {
@@ -99,6 +114,10 @@ try {
         http_response_code(405);
         header('Allow: POST');
         throw new DomainException('Método no permitido.');
+    }
+    if (!$_POST && !$_FILES && (int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 0) {
+        http_response_code(413);
+        throw new DomainException('No se pudo leer el formulario. Si adjuntaste fotos, reduce el tamaño de la carga.');
     }
     $account = currentAccount();
     if (!$account) {
