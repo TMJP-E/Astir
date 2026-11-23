@@ -441,11 +441,14 @@ a.room-link { text-decoration: none; color: inherit; display: block; }
 .snackbar button { background: none; border: 0; color: var(--primary-tint); font-family: var(--font-text); font-size: 20px; cursor: pointer; }
 
 /* ---------- Dialogo de confirmacion ---------- */
-.dialog-wrap { position: fixed; inset: 0; z-index: 90; background: var(--cover); display: flex; align-items: center; justify-content: center; padding: 12px; }
+.dialog::backdrop { background: var(--cover); }
+.dialog:not([open]) { display: none; }
 .dialog {
-  width: 100%;
+  width: calc(100% - 24px);
   max-width: 320px;
+  margin: auto; /* el reseteo global "* { margin: 0 }" quita el centrado nativo de <dialog> */
   padding: 16px;
+  border: 0;
   border-radius: 12px;
   background: var(--tint);
   text-align: center;
