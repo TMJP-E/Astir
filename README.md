@@ -6,7 +6,24 @@ Aplicacion de gestion de reservaciones hoteleras.
 
 Para instalar y ejecutar la aplicacion, es necesario contar con la version 8.2.12-0 o superior de XAMPP, los modulos de servidor web y MySQL e importar la base de datos con anterioridad.
 
-Coloca el proyecto en `htdocs/Proyecto-DAW`. Inicia Apache y MySQL, crea la base `urbano` con codificación `utf8mb4` e importa `urbano.sql` en la base vacía. Si utilizas otro nombre o credenciales, ajústalos en `config.inc.php`. Abre `http://localhost/Proyecto-DAW/`.
+Coloca el proyecto en una carpeta dentro de `htdocs`, por ejemplo `htdocs/Proyecto-DAW`. El nombre de la carpeta puede ser cualquiera, porque todas las rutas son relativas. Inicia Apache y MySQL, crea la base `urbano` con codificación `utf8mb4` e importa `urbano.sql` en la base vacía. Si utilizas otro nombre de base o credenciales, ajústalos en `config.inc.php`. Abre `http://localhost/Proyecto-DAW/` (o el nombre de tu carpeta).
+
+En macOS y Linux, Apache de XAMPP se ejecuta con otro usuario del sistema y necesita permiso para guardar las imágenes de las habitaciones. Desde la carpeta del proyecto ejecuta:
+
+```bash
+chmod 777 room_images
+```
+
+En Windows no hace falta este paso.
+
+### Cuentas de prueba
+
+`urbano.sql` crea usuarios de prueba. Las cuentas nuevas creadas desde el registro siempre son usuarios comunes, así que para entrar a **Gestión** usa una cuenta de administrador:
+
+| Rol | Correo | Contraseña |
+|---|---|---|
+| Administrador | `ana.garcia@gmail.com` | `UrbanoDemo2026!` |
+| Usuario | `sofia.ramirez@gmail.com` | `ClientePrueba26!` |
 
 La portada, el catálogo y el carrito admiten visitas sin cuenta. Al confirmar una reservación se solicita iniciar sesión. La confirmación registra las habitaciones y actualiza las existencias en MariaDB. El proyecto no procesa pagos con tarjeta.
 
@@ -24,10 +41,11 @@ Gestion
 
 - [x] Agregar habitacion: Las habitaciones cuentan con nombre, descripcion, categoria, precio, cantidad e imagen.
 - [x] Editar habitacion.
-- [x] Eliminar habitacion.
+- [x] Eliminar habitacion. **Atención:** al eliminar una habitación también se eliminan todas sus reservaciones.
 - [x] Busqueda de habitaciones.
 - [x] Filtrado de busqueda por categoria.
 - [x] Ver las reservaciones realizadas.
+- [x] Cancelar reservaciones de cualquier cliente, una unidad o todas.
 - [x] Cambiar los tipos de usuario.
 
 Reservaciones
@@ -35,12 +53,14 @@ Reservaciones
 - [x] Busqueda para reservaciones
 - [x] Filtrado de busqueda.
 - [x] Vista previa y extendida.
+- [x] Cancelar las reservaciones propias, una unidad o todas.
 
 Carrito
 
 - [x] Agregar al carrito.
 - [x] Editar número de reservas.
 - [x] Presentar costos subtotales y totales.
+- [x] Deshacer al quitar una habitación del carrito.
 
 ### Caracteristicas
 
