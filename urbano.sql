@@ -552,41 +552,18 @@ VALUES
     ((SELECT uuid FROM users ORDER BY email LIMIT 4, 1), (SELECT uuid FROM rooms ORDER BY name LIMIT 12, 1), 3),
     ((SELECT uuid FROM users ORDER BY email LIMIT 4, 1), (SELECT uuid FROM rooms ORDER BY name LIMIT 20, 1), 2);
 
+-- Cada habitación recibe 2 de las 20 fotos de muestra, en ciclo (habitación 1: fotos 1 y 2; habitación 11: fotos 1 y 2 de nuevo).
 INSERT INTO images (room_uuid, url)
 SELECT
     r.uuid,
-    CONCAT('/room_images/dummy', i.image_number, '.jpg')
+    CONCAT('/room_images/dummy', MOD((r.room_number - 1) * 2 + i.n, 20) + 1, '.jpg')
 FROM (
     SELECT
         uuid,
         ROW_NUMBER() OVER (ORDER BY name) AS room_number
-    FROM (
-        SELECT uuid, name
-        FROM rooms
-        ORDER BY name
-        LIMIT 0, 10
-    ) AS selected_rooms
+    FROM rooms
 ) AS r
-JOIN (
-    SELECT 1 AS room_number, 1 AS image_number
-    UNION ALL SELECT 1, 2
-    UNION ALL SELECT 2, 3
-    UNION ALL SELECT 2, 4
-    UNION ALL SELECT 3, 5
-    UNION ALL SELECT 3, 6
-    UNION ALL SELECT 4, 7
-    UNION ALL SELECT 4, 8
-    UNION ALL SELECT 5, 9
-    UNION ALL SELECT 5, 10
-    UNION ALL SELECT 6, 11
-    UNION ALL SELECT 6, 12
-    UNION ALL SELECT 7, 13
-    UNION ALL SELECT 7, 14
-    UNION ALL SELECT 8, 15
-    UNION ALL SELECT 8, 16
-    UNION ALL SELECT 9, 17
-    UNION ALL SELECT 9, 18
-    UNION ALL SELECT 10, 19
-    UNION ALL SELECT 10, 20
+CROSS JOIN (
+    SELECT 0 AS n
+    UNION ALL SELECT 1
 ) AS i
-    ON r.room_number = i.room_number
