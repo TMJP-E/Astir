@@ -20,10 +20,10 @@ En Windows no hace falta este paso.
 
 `urbano.sql` crea usuarios de prueba. Las cuentas nuevas creadas desde el registro siempre son usuarios comunes, así que para entrar a **Gestión** usa una cuenta de administrador:
 
-| Rol | Correo | Contraseña |
-|---|---|---|
-| Administrador | `ana.garcia@gmail.com` | `UrbanoDemo2026!` |
-| Usuario | `sofia.ramirez@gmail.com` | `ClientePrueba26!` |
+| Rol           | Correo              | Contraseña        |
+| ------------- | ------------------- | ----------------- |
+| Administrador | `admin@gmail.com`   | `Administrar#123` |
+| Usuario       | `regular@gmail.com` | `Usuario2026!`    |
 
 La portada, el catálogo y el carrito admiten visitas sin cuenta. Al confirmar una reservación se solicita iniciar sesión. La confirmación registra las habitaciones y actualiza las existencias en MariaDB. El proyecto no procesa pagos con tarjeta.
 

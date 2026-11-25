@@ -1,7 +1,7 @@
 <?php
 
-include_once(__DIR__ . "/exceptions.php");
-include_once(__DIR__ . "/dataValidation.php");
+include_once __DIR__ . "/exceptions.php";
+include_once __DIR__ . "/dataValidation.php";
 
 class User
 {
@@ -172,7 +172,7 @@ class Room
 
     public function setCategory(mixed $category): void
     {
-        Validator::validateEnum("Categoría", $category, ["express", "regular", "comfort", "suite"]);
+        Validator::validateEnum("Categoría", $category, ["Express", "Regular", "Comfort", "Suite"]);
         $this->category = $category;
     }
 

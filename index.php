@@ -4,16 +4,19 @@ require __DIR__ . "/app/page.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Astir | Para juntas y negocios</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <div id="app-nav"></div>
-  <script>window.ASTIR = <?= scriptJson($client) ?>;</script>
-  <?php if ($pageError): ?><p class="empty" role="alert"><?= h($pageError) ?></p><?php endif; ?>
+  <script>window.ASTIR = <?= scriptJSON($client) ?>;</script>
+  <?php if ($pageError): ?>
+    <p class="empty" role="alert"><?= htmlEncode($pageError) ?></p><?php endif; ?>
 
   <main class="home">
     <section class="hero">
@@ -26,11 +29,15 @@ require __DIR__ . "/app/page.php";
           <div class="carousel__img ph-img" role="img" aria-label="Imagen del carrusel"></div>
           <div class="carousel__bar">
             <button class="carousel__btn" id="prev" type="button" aria-label="Anterior">
-              <svg viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
             </button>
             <span id="carousel-text">Nuestras habitaciones</span>
             <button class="carousel__btn" id="next" type="button" aria-label="Siguiente">
-              <svg viewBox="0 0 24 24"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+              </svg>
             </button>
           </div>
         </div>
@@ -52,4 +59,5 @@ require __DIR__ . "/app/page.php";
   <script src="js/rooms.js"></script>
   <script src="js/home.js"></script>
 </body>
+
 </html>

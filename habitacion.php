@@ -4,16 +4,19 @@ require __DIR__ . "/app/page.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Habitación | Astir</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <div id="app-nav"></div>
-  <script>window.ASTIR = <?= scriptJson($client) ?>;</script>
-  <?php if ($pageError): ?><p class="empty" role="alert"><?= h($pageError) ?></p><?php endif; ?>
+  <script>window.ASTIR = <?= scriptJSON($client) ?>;</script>
+  <?php if ($pageError): ?>
+    <p class="empty" role="alert"><?= htmlEncode($pageError) ?></p><?php endif; ?>
 
   <main class="home">
     <section class="detail" id="detail"></section>
@@ -31,4 +34,5 @@ require __DIR__ . "/app/page.php";
   <script src="cart.js"></script>
   <script src="js/habitacion.js"></script>
 </body>
+
 </html>

@@ -2,7 +2,7 @@
 include_once(__DIR__ . "/../data/dataEntities.php");
 include_once(__DIR__ . "/../data/inputValidation.php");
 
-$lock = true;
+$lock = false;
 if ($lock) {
     header("Location:/urbano/");
     die();
@@ -24,9 +24,10 @@ $passwords = [
     "ReservaHotel26!",
     "UsuarioDemo2026#",
     "SuitePrueba2026$",
-    "TrabajoHotel26@"
+    "TrabajoHotel26@",
+    "Administrar#123",
+    "Usuario2026!"
 ];
-
 
 foreach ($passwords as $password) {
     try {

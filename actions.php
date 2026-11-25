@@ -59,7 +59,9 @@ function handleAction(array $account): void
             return;
         case 'delete-room':
             $room = getRoomByUuid($uuid);
-            if (!$room) { throw new DomainException('La habitación ya no existe.'); }
+            if (!$room) {
+                throw new DomainException('La habitación ya no existe.');
+            }
             deleteRoom($uuid);
             // Las fotos de muestra pueden estar compartidas. Solo retiramos archivos propios de la carga.
             $uploads = preg_grep('~^room_images/[a-f0-9]{32}\.(jpg|png|gif|webp)$~D', $room->getImages());
@@ -80,7 +82,6 @@ function saveRoomForm(string $uuid): void
     $category = postText('category', 'categoría');
     Validator::validateRequiredString('Nombre', $name, 255);
     Validator::validateRequiredString('Descripción', $description, 4095);
-    Validator::validateEnum('Categoría', $category, ROOM_CATEGORIES);
     $available = filter_var(postText('available', 'disponibilidad'), FILTER_VALIDATE_INT);
     $price = filter_var(postText('price', 'precio'), FILTER_VALIDATE_FLOAT);
     Validator::validateInteger('Disponibilidad', $available, 0);
@@ -88,7 +89,9 @@ function saveRoomForm(string $uuid): void
     $amenities = $_POST['amenities'] ?? [];
     Validator::validateStringArray('Comodidades', $amenities);
     $allowed = array_map(fn($c) => $c->getType(), getAllCommodities());
-    if (!array_is_list($amenities) || count($amenities) !== count(array_unique($amenities)) || array_diff($amenities, $allowed)) { throw new DomainException('Selecciona comodidades del catálogo.'); }
+    if (!array_is_list($amenities) || count($amenities) !== count(array_unique($amenities)) || array_diff($amenities, $allowed)) {
+        throw new DomainException('Selecciona comodidades del catálogo.');
+    }
     $original = null;
     if ($uuid !== '' && isset($_POST['originalAvailable'])) {
         $original = filter_var(postText('originalAvailable', 'disponibilidad original'), FILTER_VALIDATE_INT);
@@ -115,7 +118,7 @@ try {
         header('Allow: POST');
         throw new DomainException('Método no permitido.');
     }
-    if (!$_POST && !$_FILES && (int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 0) {
+    if (!$_POST && !$_FILES && (int) ($_SERVER['CONTENT_LENGTH'] ?? 0) > 0) {
         http_response_code(413);
         throw new DomainException('No se pudo leer el formulario. Si adjuntaste fotos, reduce el tamaño de la carga.');
     }
@@ -124,15 +127,16 @@ try {
         http_response_code(401);
         throw new DomainException('Inicia sesión para continuar.');
     }
-    checkCsrf();
+    checkCSRF();
     handleAction($account);
     echo '{"ok":true}';
 } catch (Throwable $error) {
-    if (http_response_code() < 400) { http_response_code(422); }
+    if (http_response_code() < 400) {
+        http_response_code(422);
+    }
     $message = publicError($error);
     if (($_POST['action'] ?? '') === 'reserve' && $error instanceof RuntimeException && !$error->getPrevious()) {
         $message = 'No se pudo reservar la selección. Revisa la disponibilidad del carrito.';
     }
     echo json_encode(['error' => $message], JSON_UNESCAPED_UNICODE);
 }
-

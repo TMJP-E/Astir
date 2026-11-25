@@ -4,22 +4,25 @@ require __DIR__ . "/app/page.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Registrar usuario | Astir</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <div id="app-nav"></div>
-  <script>window.ASTIR = <?= scriptJson($client) ?>;</script>
-  <?php if ($pageError): ?><p class="empty" role="alert"><?= h($pageError) ?></p><?php endif; ?>
+  <script>window.ASTIR = <?= scriptJSON($client) ?>;</script>
+  <?php if ($pageError): ?>
+      <p class="empty" role="alert"><?= htmlEncode($pageError) ?></p><?php endif; ?>
 
   <main class="main">
     <h1 class="title">Registrar Usuario</h1>
 
     <form class="form" id="registro-form" method="post" novalidate>
-      <input type="hidden" name="csrf" value="<?= h($_SESSION['csrf']) ?>">
+      <input type="hidden" name="csrf" value="<?= htmlEncode($_SESSION['csrf']) ?>">
       <div class="form__fields form__fields--tight">
         <div class="field">
           <label for="nombre">Nombre:</label>
@@ -50,4 +53,5 @@ require __DIR__ . "/app/page.php";
   <script src="js/nav.js"></script>
   <script src="js/registro.js"></script>
 </body>
+
 </html>

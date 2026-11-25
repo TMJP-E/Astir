@@ -1,8 +1,8 @@
 <?php
 
-include_once(__DIR__ . "/../config.inc.php");
-include_once(__DIR__ . "/dataEntities.php");
-include_once(__DIR__ . "/inputValidation.php");
+include_once __DIR__ . "/../config.inc.php";
+include_once __DIR__ . "/dataEntities.php";
+include_once __DIR__ . "/inputValidation.php";
 
 
 /**
@@ -295,17 +295,11 @@ function searchRooms(
         if (!empty($commodities)) {
             $placeholders = implode(", ", array_fill(0, count($commodities), "?"));
             $conditions[] = "r.uuid IN (
-
                 SELECT room_uuid
-
                 FROM room_commodities
-
                 WHERE type IN ($placeholders)
-
                 GROUP BY room_uuid
-
                 HAVING COUNT(DISTINCT type) = ?
-
             )";
             foreach ($commodities as $commodity) {
                 $parameters[] = $commodity;

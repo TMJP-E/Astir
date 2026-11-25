@@ -2,7 +2,10 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/session.php';
-if (!isset($page)) { http_response_code(404); exit; }
+if (!isset($page)) {
+    http_response_code(404);
+    exit;
+}
 if ($page === 'index' && ($_GET['action'] ?? '') === 'cart_rooms') {
     require __DIR__ . '/cart_rooms.php';
 }
@@ -11,19 +14,28 @@ try {
     $account = currentAccount();
 } catch (Throwable $error) {
     http_response_code(503);
-    exit(h(publicError($error)));
+    exit(htmlEncode(publicError($error)));
 }
 $admin = ($account['role'] ?? '') === 'admin';
 $adminPage = in_array($page, ['habitaciones', 'gestion-reservaciones', 'usuarios'], true)
     || ($page === 'habitacion' && (isset($_GET['nuevo']) || isset($_GET['editar'])));
-if ($adminPage || in_array($page, ['reservaciones', 'perfil'], true)) {
-    if (!$account) { redirectTo('login.php'); }
-    if ($adminPage && !$admin) { http_response_code(403); exit('Se requiere una cuenta de administrador.'); }
+if ($adminPage || in_array($page, ['reservaciones', 'perfil', 'habitacion'], true)) {
+    if (!$account) {
+        redirectTo('login.php');
+    }
+    if ($adminPage && !$admin) {
+        http_response_code(403);
+        exit('Se requiere una cuenta de administrador.');
+    }
 }
-if ($account && in_array($page, ['login', 'registro'], true)) { redirectTo('perfil.php'); }
+if ($account && in_array($page, ['login', 'registro'], true)) {
+    redirectTo('perfil.php');
+}
 
 $bookingPage = in_array($page, ['reservaciones', 'gestion-reservaciones'], true);
-if ($bookingPage) { require_once __DIR__ . '/booking_search.php'; }
+if ($bookingPage) {
+    require_once __DIR__ . '/booking_search.php';
+}
 $pageError = null;
 $client = [
     'role' => $admin ? 'admin' : ($account ? 'user' : 'anon'),
@@ -54,7 +66,7 @@ try {
         throw new DomainException('Operación desconocida.');
     }
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        checkCsrf();
+        checkCSRF();
         switch ($page) {
             case 'registro':
                 $password = postText('password', 'contraseña');
@@ -67,7 +79,9 @@ try {
                 $email = trim(postText('email', 'correo'));
                 Validator::validateEmail('Correo', $email);
                 $password = postText('password', 'contraseña');
-                if ($password === '') { throw new DomainException('Ingresa tu contraseña.'); }
+                if ($password === '') {
+                    throw new DomainException('Ingresa tu contraseña.');
+                }
                 $user = getUserWithEmailAndPassword($email, $password);
                 session_regenerate_id(true);
                 $_SESSION['csrf'] = bin2hex(random_bytes(32));
@@ -116,4 +130,3 @@ try {
     $pageError = publicError($error);
     $client['loadError'] = true;
 }
-

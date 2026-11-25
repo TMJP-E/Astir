@@ -13,25 +13,25 @@ session_start();
 header('Cache-Control: no-store');
 $_SESSION['csrf'] ??= bin2hex(random_bytes(32));
 
-const ROOM_CATEGORIES = ['express', 'regular', 'comfort', 'suite'];
+const ROOM_CATEGORIES = ['Express', 'Regular', 'Comfort', 'Suite'];
 
-function h(string $value): string
+function htmlEncode(string $value): string
 {
     return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
-function scriptJson(mixed $value): string
+function scriptJSON(mixed $value): string
 {
     return json_encode($value, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_THROW_ON_ERROR);
 }
 
 function redirectTo(string $path): never
 {
-    header('Location: ' . $path, true, 303);
+    header("Location: " . $path, true, 303);
     exit;
 }
 
-function checkCsrf(): void
+function checkCSRF(): void
 {
     $token = $_POST['csrf'] ?? '';
     if (!is_string($token) || !hash_equals($_SESSION['csrf'], $token)) {
@@ -44,7 +44,7 @@ function postText(string $key, string $label): string
 {
     $value = $_POST[$key] ?? '';
     if (!is_string($value) || !mb_check_encoding($value, 'UTF-8')) {
-        throw new DomainException("El campo $label debe contener texto válido.");
+        throw new DomainException("El campo {$label} debe contener texto válido.");
     }
     return $value;
 }
@@ -99,11 +99,15 @@ function publicError(Throwable $error): string
 
 function roomView(Room $room): array
 {
-    $images = array_map(fn($path) => str_starts_with($path, '/room_images/') ? substr($path, 1) : $path, $room->getImages());
     return [
-        'id' => $room->getUuid(), 'name' => $room->getName(), 'description' => $room->getDescription(),
-        'price' => $room->getPrice(), 'available' => $room->getAvailable(), 'category' => $room->getCategory(),
-        'attributes' => $room->getCommodities(), 'images' => $images, 'image' => $images[0] ?? null
+        'id' => $room->getUuid(),
+        'name' => $room->getName(),
+        'description' => $room->getDescription(),
+        'price' => $room->getPrice(),
+        'available' => $room->getAvailable(),
+        'category' => $room->getCategory(),
+        'attributes' => $room->getCommodities(),
+        'images' => $room->getImages(),
+        'image' => $room->getImages()[0] ?? null
     ];
 }
-
